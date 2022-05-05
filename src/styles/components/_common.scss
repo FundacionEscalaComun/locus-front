@@ -1,0 +1,37 @@
+$azul: #033ad3;
+$amarillo: #ffbe00;
+$rosado: #f5b5cd;
+
+.color-azul {
+	color: $azul;
+}
+
+.color-blanco {
+	color: white;
+}
+
+.fondo-azul {
+	background-color: $azul;
+}
+
+.fondo-amarillo {
+	background-color: $amarillo;
+}
+
+.fondo-rosado {
+	background-color: $rosado;
+}
+
+.font-hbold {
+	font-family: 'HalyardMicroBold';
+}
+
+@font-face {
+	font-family: 'HalyardMicroBold';
+	src: url('../../fonts/Halyard Micro Bold.otf');
+}
+
+@font-face {
+	font-family: 'HalyardMicroLight';
+	src: url('../../fonts/Halyard Micro Light.otf');
+}
