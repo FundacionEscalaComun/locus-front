@@ -2,6 +2,16 @@ $azul: #033ad3;
 $amarillo: #ffbe00;
 $rosado: #f5b5cd;
 
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	color: $azul;
+}
+
+main {
+	margin-top: 173px;
+}
+
 .color-azul {
 	color: $azul;
 }
@@ -26,6 +36,10 @@ $rosado: #f5b5cd;
 	font-family: 'HalyardMicroBold';
 }
 
+.font-hlight {
+	font-family: 'HalyardMicroLight';
+}
+
 @font-face {
 	font-family: 'HalyardMicroBold';
 	src: url('../../fonts/Halyard Micro Bold.otf');
@@ -34,4 +48,15 @@ $rosado: #f5b5cd;
 @font-face {
 	font-family: 'HalyardMicroLight';
 	src: url('../../fonts/Halyard Micro Light.otf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../fonts/Montserrat-Bold.ttf');
+	font-weight: bold;
 }
