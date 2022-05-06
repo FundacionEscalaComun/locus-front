@@ -54,7 +54,7 @@ GENIUS LOCI</h2>
 				<section>
 					<h2>NOTICIAS</h2>
 					<article>
-						<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' /></div>
+						<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
 						<p><Link href="/"><a>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
 					</article>
 				</section>
@@ -62,21 +62,21 @@ GENIUS LOCI</h2>
 				<section className='color-azul fondo-rosado'>
 					<h2>EQUIPO</h2>
 					<article>
-						<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' /></div>
+						<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
 						<h3>PIERA MEDINA</h3>
 						<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</p>
 					</article>
 
 					<h2>DISEÑO</h2>
 					<article>
-						<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' /></div>
+						<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
 						<h3>NOMBRE APELLIDO</h3>
 						<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</p>
 					</article>
 
 					<h2>COMUNICACIONES</h2>
 					<article>
-						<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' /></div>
+						<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
 						<h3>NOMBRE APELLIDO</h3>
 						<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</p>
 					</article>
@@ -91,12 +91,12 @@ GENIUS LOCI</h2>
 
 				<section>
 					<h2>ORGANIZA</h2>
-					<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' /></div>
+					<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</section>
 
 				<section>
 					<h2>COLABORAN</h2>
-					<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' /></div>
+					<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='logo' /></div>
 					<p>La ejecución de este proyecto es posible gracias al financiamiento del Fondo
 Organización de Festivales, Ferias, y Encuentros, del Ministerio de las Culturas, las Artes y el Patrimonio de Chile</p>
 				</section>
