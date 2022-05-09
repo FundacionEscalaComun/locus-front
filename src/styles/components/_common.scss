@@ -32,6 +32,65 @@ main {
 	background-color: $rosado;
 }
 
+.fondo-figura-blanca {
+	background-image: url('../../img/figuras-fondo-blanca-1.svg');
+}
+
+.fondo-figura-rosa {
+	background-image: url('../../img/figuras-fondo-rosa.svg');
+}
+
+.fondo-figura-azul {
+	background-image: url('../../img/figuras-fondo-amarilla.svg');
+}
+
+.fondo-figura-blanca {
+	background-repeat: no-repeat;
+	@media (min-width: 640px) {
+		background-size: 1920px;
+	    background-position-x: calc(-936px + (100vw - 640px)/2);
+	}
+	@media (min-width: 768px) {
+		background-size: 2304px;
+	    background-position-x: calc(-1124px + (100vw - 768px)/2);
+	}
+	@media (min-width: 1024px) { 
+		background-size: 3072px;
+	    background-position-x: calc(-1498px + (100vw - 1024px)/2);
+	}
+	@media (min-width: 1280px) { 
+		background-size: 3840px;
+	    background-position-x: calc(-1873px + (100vw - 1280px)/2);
+	}
+	@media (min-width: 1536px) { 
+		background-size: 4608px;
+	    background-position-x: calc(-2247px + (100vw - 1536px)/2);
+	}
+}
+
+.fondo-figura-rosa {
+	@media (min-width: 640px) {
+		background-size: 1920px;
+	    background-position-x: calc(-365px + (100vw - 640px)/2);
+	}
+	@media (min-width: 768px) {
+		background-size: 2304px;
+	    background-position-x: calc(-438px + (100vw - 768px)/2);
+	}
+	@media (min-width: 1024px) { 
+		background-size: 3072px;
+	    background-position-x: calc(-584px + (100vw - 1024px)/2);
+	}
+	@media (min-width: 1280px) { 
+		background-size: 3840px;
+	    background-position-x: calc(-730px + (100vw - 1280px)/2);
+	}
+	@media (min-width: 1536px) { 
+		background-size: 4608px;
+	    background-position-x: calc(-876px + (100vw - 1536px)/2);
+	}
+}
+
 .font-hbold {
 	font-family: 'HalyardMicroBold';
 }

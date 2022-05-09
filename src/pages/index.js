@@ -49,7 +49,7 @@ export default function Home() {
 						¡La ciudad también es tuya!</strong></p>
 
 					</div>
-					<div className='container flex justify-between pb-40' id="convocatorias">
+					<div className='container flex justify-between pb-36' id="convocatorias">
 						<div className='convocatorias-abiertas flex items-center justify-center text-center'>
 							<h3 className='font-hbold text-3xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
 						</div>
@@ -65,16 +65,18 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='container py-40'>
-					<h2 className='font-hbold text-5xl'>NOTICIAS</h2>
-					<article>
-						<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
-						<p><Link href="/"><a>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
-					</article>
+				<section className='pt-80 pb-40 fondo-amarillo fondo-figura-blanca'>
+					<div className='container pt-40'>
+						<h2 className='font-hbold text-5xl'>NOTICIAS</h2>
+						<article>
+							<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
+							<p><Link href="/"><a>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
+						</article>
+					</div>
 				</section>
 
-				<section className='fondo-rosado py-40' id='equipo'>
-					<div className='container'>
+				<section className='pt-80 pb-40 fondo-blanco fondo-figura-rosa' id='equipo'>
+					<div className='container pt-40'>
 						<h2 className='font-hbold text-5xl'>EQUIPO</h2>
 						<article>
 							<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
@@ -98,11 +100,12 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='container py-40' id='redes'>
-					<h2 className='font-hbold text-5xl'>REDES SOCIALES</h2>
-					<p>@festival.locus</p>
-					<h3>FESTIVAL LOCUS</h3>
-
+				<section className='pt-72 pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
+					<div className='container'>
+						<h2 className='font-hbold text-5xl'>REDES SOCIALES</h2>
+						<p>@festival.locus</p>
+						<h3>FESTIVAL LOCUS</h3>
+					</div>
 				</section>
 
 				<section className='container'>
