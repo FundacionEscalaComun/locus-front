@@ -1,0 +1,29 @@
+.banner {
+	width: 100%;
+	height: 44vw;
+}
+
+.convocatorias-abiertas {
+	width: 40%;
+	background-image: url('../../img/figuras-azul-grande.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+}
+
+.bullet {
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -6rem;
+		top: 0;
+		width: 4rem;
+		height: 4rem;
+		background-image: url('../../img/figuras-azul-pequena.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}

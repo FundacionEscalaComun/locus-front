@@ -8,9 +8,6 @@ module.exports = {
 			center: true,
 			padding: '1rem',
 		},
-		fontSize: {
-			'4xl': '2.75rem'
-		},
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
