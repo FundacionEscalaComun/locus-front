@@ -75,49 +75,94 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='pt-80 pb-40 fondo-blanco fondo-figura-rosa' id='equipo'>
+				<section className='pt-80 pb-8 fondo-blanco fondo-figura-rosa' id='equipo'>
 					<div className='container pt-40'>
-						<h2 className='font-hbold text-5xl'>EQUIPO</h2>
-						<article>
-							<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
-							<h3>PIERA MEDINA</h3>
-							<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</p>
-						</article>
+						<h2 className='font-hbold text-5xl mb-12'>EQUIPO</h2>
+						<div className='grid grid-cols-3 gap-x-32 gap-y-12 justify-between'>
+							<article className='w-56'>
+								<div className='relative h-48'><Image src="/img/foto-piera.png" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-hbold mt-6 mb-3 text-xl'>PIERA MEDINA</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56 justify-self-center'>
+								<div className='relative h-48'><Image src="/img/foto-dani.png" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-hbold mt-6 mb-3 text-xl'>DANITZA VYMAZAL</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56 justify-self-end'>
+								<div className='relative h-48'><Image src="/img/foto-carole.png" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-hbold mt-6 mb-3 text-xl'>CAROLE GURDON</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56'>
+								<div className='relative h-48'><Image src="/img/foto-eliana.png" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-hbold mt-6 mb-3 text-xl'>ELIANA STAITE</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56 justify-self-center'>
+								<div className='relative h-48'><Image src="/img/foto-fernanda.png" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-hbold mt-6 mb-3 text-xl'>FERNANDA CHESTA</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+						</div>
 
-						<h2 className='font-hbold text-5xl'>DISEÑO</h2>
-						<article>
-							<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
-							<h3>NOMBRE APELLIDO</h3>
-							<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</p>
-						</article>
+						<h2 className='font-hbold text-5xl mt-20 mb-10'>DISEÑO</h2>
+						<div className='grid grid-cols-3 gap-x-32 gap-y-12 justify-between'>
+							<article className='w-56'>
+								<h3 className='font-hbold mb-3 text-xl'>NOMBRE APELLIDO</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56'>
+								<h3 className='font-hbold mb-3 text-xl'>NOMBRE APELLIDO</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56'>
+								<h3 className='font-hbold mb-3 text-xl'>NOMBRE APELLIDO</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+						</div>
 
-						<h2 className='font-hbold text-5xl'>COMUNICACIONES</h2>
-						<article>
-							<div className='relative w-32 h-32'><Image src="/img/2.png" layout='fill' objectFit='contain' alt='foto' /></div>
-							<h3>NOMBRE APELLIDO</h3>
-							<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</p>
-						</article>
+						<h2 className='font-hbold text-5xl mt-20 mb-10'>COMUNICACIONES</h2>
+						<div className='grid grid-cols-3 gap-x-32 gap-y-12 justify-between'>
+							<article className='w-56'>
+								<h3 className='font-hbold mb-3 text-xl'>NOMBRE APELLIDO</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56'>
+								<h3 className='font-hbold mb-3 text-xl'>NOMBRE APELLIDO</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+							<article className='w-56'>
+								<h3 className='font-hbold mb-3 text-xl'>NOMBRE APELLIDO</h3>
+								<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</p>
+							</article>
+						</div>
 					</div>
 				</section>
 
 				<section className='pt-72 pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
 					<div className='container'>
 						<h2 className='font-hbold text-5xl'>REDES SOCIALES</h2>
-						<p>@festival.locus</p>
-						<h3>FESTIVAL LOCUS</h3>
+						<h3 className='font-hbold text-5xl mt-20 mb-10'>@festival.locus</h3>
+						<h3 className='font-hbold text-5xl mt-20 mb-10'>FESTIVAL LOCUS</h3>
 					</div>
 				</section>
 
-				<section className='container'>
+				<section className='container text-center'>
 					<h2 className='font-hbold text-5xl'>ORGANIZA</h2>
-					<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='relative w-44 h-44 mx-auto my-10'><Image src="/img/logos-escala-comun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</section>
 
-				<section className='container'>
+				<section className='max-w-screen-md mx-auto text-center mt-20'>
 					<h2 className='font-hbold text-5xl'>COLABORAN</h2>
-					<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='logo' /></div>
-					<p>La ejecución de este proyecto es posible gracias al financiamiento del Fondo
-Organización de Festivales, Ferias, y Encuentros, del Ministerio de las Culturas, las Artes y el Patrimonio de Chile</p>
+					<div className='grid grid-cols-2 gap-10 my-12'>
+						<div className='relative h-32'><Image src="/img/logos-pucv.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+						<div className='relative h-32'><Image src="/img/logos-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+						<div className='relative h-32'><Image src="/img/logo-ead.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+						<div className='relative h-32'><Image src="/img/logos-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+						<div className='col-span-2 relative h-32'><Image src="/img/logos-fondart.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					</div>
+					<p className='text-left'>La ejecución de este proyecto es posible gracias al financiamiento del Fondo Organización de Festivales, Ferias, y Encuentros, del Ministerio de las Culturas, las Artes y el Patrimonio de Chile</p>
 				</section>
 
 				<section className='container text-center py-20'>
