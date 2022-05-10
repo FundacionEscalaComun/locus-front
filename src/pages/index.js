@@ -68,17 +68,31 @@ export default function Home() {
 				<section className='pt-80 pb-40 fondo-amarillo fondo-figura-blanca'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-5xl'>NOTICIAS</h2>
-						<article>
-							<div className='relative w-32 h-32'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
-							<p><Link href="/"><a>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
-						</article>
+						<div className='grid grid-cols-3 gap-y-12 mt-10'>
+							<article className='w-72'>
+								<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
+								<p><Link href="/"><a className='link'>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
+							</article>
+							<article className='w-72 justify-self-center'>
+								<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
+								<p><Link href="/"><a className='link'>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
+							</article>
+							<article className='w-72 justify-self-end'>
+								<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
+								<p><Link href="/"><a className='link'>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
+							</article>
+							<article className='w-72'>
+								<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
+								<p><Link href="/"><a className='link'>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
+							</article>
+						</div>
 					</div>
 				</section>
 
 				<section className='pt-80 pb-8 fondo-blanco fondo-figura-rosa' id='equipo'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-5xl mb-12'>EQUIPO</h2>
-						<div className='grid grid-cols-3 gap-x-32 gap-y-12 justify-between'>
+						<div className='grid grid-cols-3 gap-y-12 justify-between'>
 							<article className='w-56'>
 								<div className='relative h-48'><Image src="/img/foto-piera.png" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-hbold mt-6 mb-3 text-xl'>PIERA MEDINA</h3>
