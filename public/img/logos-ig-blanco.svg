@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 69.65 69.65"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="logos-ig.svg"
+   inkscape:version="1.1.2 (08b2f3d93c, 2022-04-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.8104808"
+     inkscape:cx="34.760984"
+     inkscape:cy="34.825001"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="337"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#033ad3;}</style>
+  </defs>
+  <g
+     id="Capa_6"
+     data-name="Capa 6"
+     style="fill:#ffffff">
+    <path
+       class="cls-1"
+       d="M52.42,69.65H17.23A17.25,17.25,0,0,1,0,52.42V17.23A17.25,17.25,0,0,1,17.23,0H52.42A17.25,17.25,0,0,1,69.65,17.23V52.42A17.25,17.25,0,0,1,52.42,69.65ZM17.23,4.86A12.39,12.39,0,0,0,4.86,17.23V52.42A12.39,12.39,0,0,0,17.23,64.79H52.42A12.39,12.39,0,0,0,64.79,52.42V17.23A12.39,12.39,0,0,0,52.42,4.86Z"
+       id="path6"
+       style="fill:#ffffff" />
+    <path
+       class="cls-1"
+       d="M34.82,53.45A18.63,18.63,0,1,1,53.45,34.82,18.64,18.64,0,0,1,34.82,53.45Zm0-32.39A13.77,13.77,0,1,0,48.59,34.82,13.77,13.77,0,0,0,34.82,21.06Z"
+       id="path8"
+       style="fill:#ffffff" />
+    <path
+       class="cls-1"
+       d="M54.87,10.32a4.61,4.61,0,1,1-4.74,4.54A4.65,4.65,0,0,1,54.87,10.32Z"
+       id="path10"
+       style="fill:#ffffff" />
+  </g>
+</svg>

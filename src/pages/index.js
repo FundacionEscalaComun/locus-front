@@ -157,8 +157,14 @@ export default function Home() {
 				<section className='pt-72 pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
 					<div className='container'>
 						<h2 className='font-hbold text-5xl'>REDES SOCIALES</h2>
-						<h3 className='font-hbold text-5xl mt-20 mb-10'>@festival.locus</h3>
-						<h3 className='font-hbold text-5xl mt-20 mb-10'>FESTIVAL LOCUS</h3>
+						<h3 className='font-hbold text-5xl mt-20 mb-10 flex items-center gap-12'>
+							<div className='relative w-16 h-16'><Image src="/img/logos-ig.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+							@festival.locus
+						</h3>
+						<h3 className='font-hbold text-5xl mt-20 mb-10 flex items-center gap-12'>
+							<div className='relative w-16 h-16'><Image src="/img/logos-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+							FESTIVAL LOCUS
+						</h3>
 					</div>
 				</section>
 
@@ -191,8 +197,14 @@ export default function Home() {
 						<p className='w-80 h-32 relative'><Image src="/img/logos-locus.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
 					</section>
 					<section className='flex flex-col gap-4'>
-						<a href="#" className='font-bold uppercase'>Instagram</a>
-						<a href="#" className='font-bold uppercase'>Youtube</a>
+						<a href="https://www.instagram.com/locusfest/" className='font-bold uppercase flex gap-4 items-center'>
+							<div className='relative w-8 h-8'><Image src="/img/logos-ig-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+							Instagram
+						</a>
+						<a href="#" className='font-bold uppercase flex gap-4 items-center'>
+							<div className='relative w-8 h-8'><Image src="/img/logos-youtube-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+							Youtube
+						</a>
 					</section>
 				</div>
 			</footer>
