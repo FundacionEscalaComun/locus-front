@@ -1,5 +1,5 @@
 .header {
-	height: 173px;
+	height: 130px;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -9,5 +9,8 @@
 		font-size: 15px;
 		display: block;
 		text-align: center;
+	}
+	@media (min-width: 1024px) { 
+		height: 173px;
 	}
 }
