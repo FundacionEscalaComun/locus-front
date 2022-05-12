@@ -142,17 +142,23 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='pt-56 lg:pt-72 pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
+				<section className='pt-56 lg:pt-72 pb-16 lg:pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
 					<div className='container'>
 						<h2 className='font-hbold text-3xl lg:text-5xl text-center lg:text-left'>REDES SOCIALES</h2>
-						<h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
-							<div className='relative w-16 h-16'><Image src="/img/logos-ig.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-							@festival.locus
-						</h3>
-						<h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
-							<div className='relative w-16 h-16'><Image src="/img/logos-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-							FESTIVAL LOCUS
-						</h3>
+						<div className='lg:hidden flex justify-center gap-8 my-8'>
+							<a href="https://www.instagram.com/locusfest/" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-ig-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
+							<a href="#" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-youtube-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
+						</div>
+						<div className='hidden lg:block'>
+							<h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
+								<div className='relative w-16 h-16'><Image src="/img/logos-ig.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+								@festival.locus
+							</h3>
+							<h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
+								<div className='relative w-16 h-16'><Image src="/img/logos-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+								FESTIVAL LOCUS
+							</h3>
+						</div>
 					</div>
 				</section>
 
