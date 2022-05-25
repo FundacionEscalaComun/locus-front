@@ -1,6 +1,7 @@
 $azul: #033ad3;
 $amarillo: #ffbe00;
 $rosado: #f5b5cd;
+$naranja: #ff6c11;
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -9,10 +10,7 @@ body {
 }
 
 main {
-	margin-top: 130px;
-	@media (min-width: 1024px) { 
-		margin-top: 173px;
-	}
+	margin-top: 88px;
 }
 
 .color-azul {
@@ -21,6 +19,10 @@ main {
 
 .color-blanco {
 	color: white;
+}
+
+.color-naranja {
+	color: $naranja;
 }
 
 .fondo-azul {
