@@ -32,6 +32,12 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
+	&.flor-naranja::before {
+		background-image: url('../../img/flor-naranja.svg');
+	}
+	&.flor-azul::before {
+		background-image: url('../../img/flor-azul.svg');
+	}
 }
 
 .circulo-redes {

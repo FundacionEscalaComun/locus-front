@@ -38,15 +38,19 @@ main {
 }
 
 .fondo-figura-blanca {
-	background-image: url('../../img/figuras-fondo-blanca-1.svg');
+	background-image: url('../../img/fondos/web-fondo-blanco-1.svg');
 }
 
 .fondo-figura-rosa {
-	background-image: url('../../img/figuras-fondo-rosa.svg');
+	background-image: url('../../img/fondos/web-fondo-rosado-1.svg');
 }
 
 .fondo-figura-azul {
-	background-image: url('../../img/figuras-fondo-amarilla.svg');
+	background-image: url('../../img/fondos/web-fondos-azul.svg');
+}
+
+.fondo-figura-amarilla {
+	background-image: url('../../img/fondos/web-fondos-amarillo.svg');
 }
 
 .link {
@@ -86,6 +90,23 @@ main {
 	@media (min-width: 1536px) { 
 		background-size: 4608px;
 	    background-position-x: calc(-876px + (100vw - 1536px)/2);
+	}
+}
+
+.fondo-figura-azul {
+	background-size: 2304px;
+	background-position-x: calc(-738px + (100vw - 768px)/2);
+	@media (min-width: 1024px) { 
+		background-size: 3072px;
+	    background-position-x: calc(-984px + (100vw - 1024px)/2);
+	}
+	@media (min-width: 1280px) { 
+		background-size: 3840px;
+	    background-position-x: calc(-1230px + (100vw - 1280px)/2);
+	}
+	@media (min-width: 1536px) { 
+		background-size: 4608px;
+	    background-position-x: calc(-1476px + (100vw - 1536px)/2);
 	}
 }
 

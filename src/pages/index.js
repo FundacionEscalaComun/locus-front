@@ -142,7 +142,7 @@ export default function Home() {
 
 				<section className='pt-56 lg:pt-72 pb-16 lg:pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
 					<div className='max-w-screen-sm mx-auto'>
-						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
+						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-naranja'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
 						<div className='lg:hidden flex justify-center gap-8 my-8'>
 							<a href="https://www.instagram.com/locusfest/" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-ig-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
 							<a href="#" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-youtube-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
@@ -157,7 +157,7 @@ export default function Home() {
 								@festival.locus
 							</h3>
 						</div>
-						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
+						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-azul color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
 					</div>
 				</section>
 			</main>

@@ -1,45 +1,52 @@
 import Image from 'next/image'
 
 const Footer = ({ ...props }) => (
-	<footer className='fondo-azul color-blanco py-40'>
-		<section className='container flex justify-start'>
+	<footer className='fondo-blanco fondo-figura-azul color-blanco pt-28'>
+		<section className='container flex justify-start gap-16'>
 			<div>
-				<h2 className='text-xl'>ORGANIZA</h2>
-				<div className='relative w-44 h-44 mx-auto my-10'><Image src="/img/logos-escala-comun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<h2 className='text-lg mb-8'>ORGANIZA</h2>
+				<div className='relative w-28 h-28'><Image src="/img/logos/web-logo-escala-comun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
 			<div>
-				<h2 className='text-xl'>FINANCIA</h2>
-				<div className='col-span-2 relative h-32'><Image src="/img/logos-fondart.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<h2 className='text-lg mb-8'>FINANCIA</h2>
+				<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/web-logo-ministerio-cultura.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
 		</section>
 
 		<section className='container'>
-			<h2 className='text-xl'>PATROCINAN</h2>
-			<div className='flex justify-between'>
-				<div className='relative h-32'><Image src="/img/logos-pucv.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-32'><Image src="/img/logos-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-32'><Image src="/img/logo-ead.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-32'><Image src="/img/logos-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+			<h2 className='text-lg mt-12 mb-8'>PATROCINAN</h2>
+			<div className='flex justify-between gap-16'>
+				<div className='relative h-28 w-28'><Image src="/img/logos/web-logo-viña-del-mar.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-escuela-arq-diseño-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-20'><Image src="/img/logos/web-logo-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-unicef.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-32'><Image src="/img/logos/web-logo-catolica-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-36'><Image src="/img/logos/web-logo-federico-santa-maria.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
 		</section>
 
-		<div className='container flex justify-between'>
+		<div className='container flex justify-between items-start mt-36'>
 			<section>
-				<p className='w-80 h-32 relative'><Image src="/img/logos-locus.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
+				<p className='w-80 h-32 relative'><Image src="/img/logos/web-logo-locus-frase.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
 			</section>
 			<section className='flex gap-10'>
 				<a href="https://www.instagram.com/locusfest/" className='font-bold uppercase flex gap-4 items-center'>
-					<div className='relative w-8 h-8'><Image src="/img/logos-ig-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-instagram.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</a>
 				<a href="#" className='font-bold uppercase flex gap-4 items-center'>
-					<div className='relative w-8 h-8'><Image src="/img/logos-youtube-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				</a>
+				<a href="#" className='font-bold uppercase flex gap-4 items-center'>
+					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-linkedin.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</a>
 			</section>
 			<section className=''>
-				<h2 className='font-hlight text-xl'>¡CONVERSEMOS!</h2>
-				<a href="mailto:hola@locusfest.cl" className='font-hbold text-xl'>hola@locusfest.cl</a>
+				<h2 className='font-hlight text-2xl'>¡CONVERSEMOS!</h2>
+				<a href="mailto:hola@locusfest.cl" className='font-hbold text-2xl'>hola@locusfest.cl</a>
 			</section>
 		</div>
+
+		<div className='text-center text-xs pt-12 pb-10'>SITIO WEB DESARROLLADO POR ANDRÉS VALENZUELA</div>
 	</footer>
 )
 
