@@ -60,19 +60,19 @@ main {
 
 .fondo-figura-blanca {
 	background-repeat: no-repeat;
-	background-size: 2304px;
-	background-position-x: calc(-1124px + (100vw - 768px)/2);
+	background-size: 2760px;
+	background-position-x: calc(-1218px + (100vw - 768px)/2);
 	@media (min-width: 1024px) { 
-		background-size: 3072px;
-	    background-position-x: calc(-1498px + (100vw - 1024px)/2);
+		background-size: 3680px;
+	    background-position-x: calc(-1624px + (100vw - 1024px)/2);
 	}
 	@media (min-width: 1280px) { 
-		background-size: 3840px;
-	    background-position-x: calc(-1873px + (100vw - 1280px)/2);
+		background-size: 4600px;
+	    background-position-x: calc(-2030px + (100vw - 1280px)/2);
 	}
 	@media (min-width: 1536px) { 
-		background-size: 4608px;
-	    background-position-x: calc(-2247px + (100vw - 1536px)/2);
+		background-size: 5520px;
+	    background-position-x: calc(-2436px + (100vw - 1536px)/2);
 	}
 }
 
@@ -84,8 +84,8 @@ main {
 	    background-position-x: calc(-584px + (100vw - 1024px)/2);
 	}
 	@media (min-width: 1280px) { 
-		background-size: 3840px;
-	    background-position-x: calc(-730px + (100vw - 1280px)/2);
+		background-size: 4100px;
+	    background-position-x: calc(-1180px + (100vw - 1280px)/2);
 	}
 	@media (min-width: 1536px) { 
 		background-size: 4608px;
@@ -131,6 +131,18 @@ main {
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../fonts/Montserrat-Medium.ttf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../fonts/Montserrat-SemiBold.ttf');
+	font-weight: 600;
 }
 
 @font-face {

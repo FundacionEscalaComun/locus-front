@@ -36,7 +36,7 @@ const Footer = ({ ...props }) => (
 				<a href="#" className='font-bold uppercase flex gap-4 items-center'>
 					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</a>
-				<a href="#" className='font-bold uppercase flex gap-4 items-center'>
+				<a href="https://www.linkedin.com/company/locus-fest" className='font-bold uppercase flex gap-4 items-center'>
 					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-linkedin.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</a>
 			</section>

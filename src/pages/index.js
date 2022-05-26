@@ -38,7 +38,7 @@ export default function Home() {
 						<strong>LOCUS.</strong></p>
 						<p className='my-8'>¡La ciudad también es tuya!</p>
 					</div>
-					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-10 lg:pb-36' id="convocatorias">
+					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8' id="convocatorias">
 						<div className='convocatorias-abiertas flex items-center justify-center text-center mb-10 mx-auto py-32'>
 							<h3 className='font-hbold text-lg lg:text-xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
 						</div>
@@ -55,7 +55,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='pt-20 lg:pt-80 lg:pb-40 fondo-amarillo fondo-figura-blanca'>
+				<section className='fondo-amarillo fondo-figura-blanca'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center'>NOTICIAS</h2>
 						<div className='grid lg:grid-cols-3 gap-y-12 mt-10'>
@@ -79,68 +79,68 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='pt-20 lg:pt-80 pb-8 fondo-blanco fondo-figura-rosa' id='equipo'>
+				<section className='fondo-blanco fondo-figura-rosa' id='equipo'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
 						<div className='flex flex-wrap justify-center gap-y-20 text-center pb-10'>
 							<article className='w-1/3'>
-								<div className='relative h-48'><Image src="/img/foto-piera.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-3 text-xl'>Piera Medina</h3>
-								<p className='text-sm'>DIRECTORA GENERAL</p>
+								<div className='relative h-48'><Image src="/img/fotos/fotos-piera-medina.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-bold mt-6 mb-2 text-xl'>Piera Medina</h3>
+								<p className='text-sm font-medium'>DIRECTORA GENERAL</p>
 							</article>
 							<article className='w-1/3'>
-								<div className='relative h-48'><Image src="/img/foto-dani.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-3 text-xl'>Danitza Vymazal</h3>
-								<p className='text-sm'>DIRECTORA DE PRODUCCIÓN</p>
+								<div className='relative h-48'><Image src="/img/fotos/fotos-danitza-vymazal.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-bold mt-6 mb-2 text-xl'>Danitza Vymazal</h3>
+								<p className='text-sm font-medium'>DIRECTORA DE PRODUCCIÓN</p>
 							</article>
 							<article className='w-1/3'>
-								<div className='relative h-48'><Image src="/img/foto-carole.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-3 text-xl'>Carole Gurdon</h3>
-								<p className='text-sm'>DIRECTORA DE CONTENIDOS</p>
+								<div className='relative h-48'><Image src="/img/fotos/fotos-carole-gurdon.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-bold mt-6 mb-2 text-xl'>Carole Gurdon</h3>
+								<p className='text-sm font-medium'>DIRECTORA DE CONTENIDOS</p>
 							</article>
 							<article className='w-1/3'>
-								<div className='relative h-48'><Image src="/img/foto-eliana.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-3 text-xl'>Macarena Cima</h3>
-								<p className='text-sm'>ASISTENTE DE PRODUCCIÓN</p>
+								<div className='relative h-48'><Image src="/img/fotos/fotos-macarena-cima.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-bold mt-6 mb-2 text-xl'>Macarena Cima</h3>
+								<p className='text-sm font-medium'>ASISTENTE DE PRODUCCIÓN</p>
 							</article>
 							<article className='w-1/3'>
-								<div className='relative h-48'><Image src="/img/foto-fernanda.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-3 text-xl'>Fernanda Chesta</h3>
-								<p className='text-sm'>ASISTENTE DE CONTENIDOS</p>
+								<div className='relative h-48'><Image src="/img/fotos/fotos-fernanda-chesta.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<h3 className='font-bold mt-6 mb-2 text-xl'>Fernanda Chesta</h3>
+								<p className='text-sm font-medium'>ASISTENTE DE CONTENIDOS</p>
 							</article>
 						</div>
 
 						<div className='grid lg:grid-cols-3 gap-8 my-10 text-center'>
 							<article>
-								<h3 className='font-hbold mb-3 text-xl'>PRENSA</h3>
-								<p>Agencia Minka</p>
+								<h3 className='font-hbold mb-4 text-xl'>PRENSA</h3>
+								<p className='font-semibold'>Agencia Minka</p>
 							</article>
 							<article>
-								<h3 className='font-hbold mb-3 text-xl'>COMUNICACIONES</h3>
-								<p>Macarena Ovalle</p>
+								<h3 className='font-hbold mb-4 text-xl'>COMUNICACIONES</h3>
+								<p className='font-semibold'>Macarena Ovalle</p>
 							</article>
 							<article>
-								<h3 className='font-hbold mb-3 text-xl'>REDES SOCIALES</h3>
-								<p>Teresita Quezada</p>
+								<h3 className='font-hbold mb-4 text-xl'>REDES SOCIALES</h3>
+								<p className='font-semibold'>Teresita Quezada</p>
 							</article>
 						</div>
 
-						<h2 className='font-hbold text-xl mt-20 mb-10 text-center'>DISEÑO</h2>
-						<div className='grid lg:grid-cols-3 gap-8 text-center'>
+						<h2 className='font-hbold text-xl mt-20 mb-4 text-center'>DISEÑO</h2>
+						<div className='grid lg:grid-cols-3 gap-8 text-center font-semibold'>
 							<p>Sergio Ramírez</p>
 							<p>Valentina Alcántara</p>
 							<p>Martín Pastenes</p>
 						</div>
 
-						<h2 className='font-hbold text-xl mt-20 mb-10 text-center'>AUDIOVISUAL</h2>
+						<h2 className='font-hbold text-xl mt-20 mb-4 text-center'>AUDIOVISUAL</h2>
 						<div className='grid gap-8 text-center'>
-							<p>Los Navegantes Films</p>
+							<p className='font-semibold'>Los Navegantes Films</p>
 						</div>
 						
 					</div>
 				</section>
 
-				<section className='pt-56 lg:pt-72 pb-16 lg:pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
+				<section className='pt-52 pb-16 lg:pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
 					<div className='max-w-screen-sm mx-auto'>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-naranja'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
 						<div className='lg:hidden flex justify-center gap-8 my-8'>
