@@ -9,21 +9,21 @@ const Header = ({ ...props }) => (
 				<ul className='flex items-stretch justify-between gap-4 font-bold w-full'>
 					<li className='flex items-stretch'><a href="#convocatorias">¡CONVOCATORIAS<br />ABIERTAS!</a></li>
 					<li className='relative flex items-stretch'>
-						<a href="#sobre">SOBRE LOCUS</a>
+						<Link href='/#sobre'><a>SOBRE LOCUS</a></Link>
 						<ul className='submenu'>
 							<li><a href="#sobre">FAQ</a></li>
 						</ul>
 					</li>
 					<li className='relative flex items-stretch'>
-						<a href="#programa">PROGRAMA</a>
+						<Link href='/#programa'><a>PROGRAMA</a></Link>
 						<ul className='submenu'>
-							<li><a href="#sobre">CONGRESO CIUDAD E INFANCIA</a></li>
-							<li><a href="#sobre">INTERVENCIONES URBANAS</a></li>
+							<li><Link href='/congreso-ciudad-e-infancia'><a>CONGRESO CIUDAD E INFANCIA</a></Link></li>
+							<li><Link href='/intervenciones-urbanas-en-vina-del-mar'><a>INTERVENCIONES URBANAS</a></Link></li>
 						</ul>
 					</li>
-					<li className='flex items-stretch'><a href="#equipo">EQUIPO</a></li>
-					<li className='flex items-stretch'><a href="#redes">REDES SOCIALES</a></li>
-					<li className='flex items-stretch'><a href="#redes">NEWSLETTER</a></li>
+					<li className='flex items-stretch'><Link href='/#equipo'><a>EQUIPO</a></Link></li>
+					<li className='flex items-stretch'><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
+					<li className='flex items-stretch'><Link href='/#redes'><a>NEWSLETTER</a></Link></li>
 				</ul>
 			</nav>
 		</div>
