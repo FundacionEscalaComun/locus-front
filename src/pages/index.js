@@ -44,13 +44,13 @@ export default function Home() {
 						</div>
 						<div>
 							<h2 className='font-hbold text-3xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
-							<p className='pl-24'><a href="#" className='text-2xl uppercase'>Postular</a></p>
+							<p className='pl-24'><Link href="/congreso-ciudad-e-infancia"><a className='text-2xl uppercase'>Postular</a></Link></p>
 						<div>
 						</div>
 							<h2 className='font-hbold text-3xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
 							URBANAS EN VIÑA DEL MAR:<br />
 							CONCURSO GENIUS LOCI</h2>
-							<p className='pl-24'><a href="#" className='text-2xl uppercase'>Postular</a></p>
+							<p className='pl-24'><Link href='/intervenciones-urbanas-en-vina-del-mar'><a className='text-2xl uppercase'>Postular</a></Link></p>
 						</div>
 					</div>
 				</section>
