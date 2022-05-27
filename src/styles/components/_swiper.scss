@@ -1,0 +1,21 @@
+.swiper {
+	.swiper-button-prev {
+		left: 0;
+		&::after {
+			content: '';
+			width: 20px;
+			height: 35px;
+			background-image: url('../../img/flecha-izq.svg');
+		}
+	}
+	
+	.swiper-button-next {
+		right: 0;
+		&::after {
+			content: '';
+			width: 20px;
+			height: 35px;
+			background-image: url('../../img/flecha-der.svg');
+		}
+	}
+}
