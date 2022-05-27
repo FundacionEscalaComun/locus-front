@@ -15,7 +15,7 @@ const Footer = ({ ...props }) => (
 
 		<section className='container'>
 			<h2 className='text-lg mt-12 mb-8'>PATROCINAN</h2>
-			<div className='flex justify-between gap-16'>
+			<div className='lg:flex justify-between gap-16'>
 				<div className='relative h-28 w-28'><Image src="/img/logos/web-logo-viña-del-mar.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-escuela-arq-diseño-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-20'><Image src="/img/logos/web-logo-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
@@ -25,7 +25,7 @@ const Footer = ({ ...props }) => (
 			</div>
 		</section>
 
-		<div className='container flex justify-between items-start mt-36'>
+		<div className='container flex flex-col lg:flex-row justify-between items-center lg:items-start gap-y-16 lg:lap-y-0 mt-16 lg:mt-36'>
 			<section>
 				<p className='w-80 h-32 relative'><Image src="/img/logos/web-logo-locus-frase.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
 			</section>

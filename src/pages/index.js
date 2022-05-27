@@ -44,11 +44,11 @@ export default function Home() {
 							<h3 className='font-hbold text-lg lg:text-xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
 						</div>
 						<div>
-							<h2 className='font-hbold text-3xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
+							<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
 							<p className='pl-24'><Link href="/congreso-ciudad-e-infancia"><a className='text-2xl uppercase'>Postular</a></Link></p>
 						<div>
 						</div>
-							<h2 className='font-hbold text-3xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
+							<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
 							URBANAS EN VIÑA DEL MAR:<br />
 							CONCURSO GENIUS LOCI</h2>
 							<p className='pl-24'><Link href='/intervenciones-urbanas-en-vina-del-mar'><a className='text-2xl uppercase'>Postular</a></Link></p>
@@ -62,7 +62,7 @@ export default function Home() {
 						<Swiper
 						modules={[Navigation]}
 						spaceBetween={50}
-						slidesPerView={3}
+						slidesPerView={(window.innerWidth <= 768)? 1 : 3}
 						navigation={{ 
 							clickable: true, 
 						}}
@@ -101,27 +101,27 @@ export default function Home() {
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
 						<div className='flex flex-wrap justify-center gap-y-20 text-center pb-10'>
-							<article className='w-1/3'>
+							<article className='w-1/2 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-piera-medina.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Piera Medina</h3>
 								<p className='text-sm font-medium'>DIRECTORA GENERAL</p>
 							</article>
-							<article className='w-1/3'>
+							<article className='w-1/2 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-danitza-vymazal.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Danitza Vymazal</h3>
 								<p className='text-sm font-medium'>DIRECTORA DE PRODUCCIÓN</p>
 							</article>
-							<article className='w-1/3'>
+							<article className='w-1/2 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-carole-gurdon.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Carole Gurdon</h3>
 								<p className='text-sm font-medium'>DIRECTORA DE CONTENIDOS</p>
 							</article>
-							<article className='w-1/3'>
+							<article className='w-1/2 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-macarena-cima.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Macarena Cima</h3>
 								<p className='text-sm font-medium'>ASISTENTE DE PRODUCCIÓN</p>
 							</article>
-							<article className='w-1/3'>
+							<article className='w-1/2 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-fernanda-chesta.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Fernanda Chesta</h3>
 								<p className='text-sm font-medium'>ASISTENTE DE CONTENIDOS</p>
