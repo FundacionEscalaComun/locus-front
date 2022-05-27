@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useAuth } from '@/hooks/auth'
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -10,8 +9,6 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export default function Home() {
-    const { user } = useAuth({ middleware: 'guest' })
-
     return (
         <>
             <Head>
