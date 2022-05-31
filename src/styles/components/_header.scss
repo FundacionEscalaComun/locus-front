@@ -1,9 +1,12 @@
 .header {
-	height: 88px;
+	min-height: 88px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 5;
+	@media (min-width: 1024px) { 
+		height: 88px;
+	}
 	a {
 		color: white;
 		font-size: 15px;
@@ -12,24 +15,27 @@
 		text-align: center;
 	}
 	.submenu {
-		display: none;
-		position: absolute;
-		left: -1.5rem;
-		top: 88px;
-		min-width: calc(100% + 3rem);
-		a {
-			background-color: $azul;
-			color: white;
-			border: 1px solid white;
-			border-radius: 30px;
-			padding: 1rem 1.5rem;
-			min-width: 100%;
-			white-space: nowrap;
-			text-align: left;
-			margin-top: 10px;
+		@media (min-width: 1024px) { 
+			display: none;
+			position: absolute;
+			left: -1.5rem;
+			top: 88px;
+			min-width: calc(100% + 3rem);
+			a {
+				background-color: $azul;
+				color: white;
+				border: 1px solid white;
+				border-radius: 30px;
+				padding: 1rem 1.5rem;
+				min-width: 100%;
+				white-space: nowrap;
+				text-align: left;
+				margin-top: 10px;
+			}
 		}
 	}
 	li:hover .submenu {
 		display: block;
 	}
+	
 }
