@@ -4,16 +4,16 @@
 }
 
 .convocatorias-abiertas {
-	width: 100%;
-	height: 70vw;
+	width: 280px;
+	height: 280px;
 	background-image: url('../../img/figuras-azul-grande.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	color: white;
 	@media (min-width: 1024px) { 
-		width: 40%;
-		height: auto;
+		width: 310px;
+		height: 310px;
 	}
 }
 

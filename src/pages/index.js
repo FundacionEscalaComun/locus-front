@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Navigation } from 'swiper';
+import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css/pagination";
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -17,8 +17,24 @@ export default function Home() {
 
             <Header />
 			<main>
-				<section className='relative banner'>
-					<Image src="/img/banner-img.png" layout='fill' objectFit='contain' alt='banner' />
+				<section className='relative'>
+					<Swiper
+						modules={[Pagination]}
+						pagination={{ 
+							clickable: true, 
+						}}
+						>
+						<SwiperSlide>
+							<div className='banner'>
+								<Image src="/img/banner-img.png" layout='fill' objectFit='cover' alt='banner' />
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='banner'>
+								<Image src="/img/banner-img.png" layout='fill' objectFit='cover' alt='banner' />
+							</div>
+						</SwiperSlide>
+					</Swiper>
 				</section>
 
 				<section className='color-azul fondo-amarillo' id='sobre'>
@@ -34,9 +50,8 @@ export default function Home() {
 						programa de workshops, concurso de arquitectura y encuentros con
 						expertos, <strong>LOCUS</strong> será una rápida y masiva inmersión de la participación
 						infantil en el diseño de sus ciudades.</p>
-						<p className='my-8'>Síguenos en Instagram @LOCUSFEST para conocer nuestra programación y
-						participar de nuestras convocatorias y actividades. No te pierdas el festival
-						<strong>LOCUS.</strong></p>
+						<p className='my-8'>Síguenos en Instagram <a href="https://www.instagram.com/locusfest/"><strong>@LOCUSFEST</strong></a> para conocer nuestra programación y
+						participar de nuestras convocatorias y actividades. No te pierdas el festival <strong>LOCUS.</strong></p>
 						<p className='my-8'>¡La ciudad también es tuya!</p>
 					</div>
 					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8' id="convocatorias">
@@ -44,19 +59,23 @@ export default function Home() {
 							<h3 className='font-hbold text-lg lg:text-xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
 						</div>
 						<div>
-							<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
-							<p className='pl-24'><Link href="/congreso-ciudad-e-infancia"><a className='text-2xl uppercase'>Postular</a></Link></p>
+							<Link href="/congreso-ciudad-e-infancia"><a>
+								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
+								<p className='pl-24 text-2xl uppercase'>Postular</p>
+							</a></Link>
 						<div>
 						</div>
-							<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
-							URBANAS EN VIÑA DEL MAR:<br />
-							CONCURSO GENIUS LOCI</h2>
-							<p className='pl-24'><Link href='/intervenciones-urbanas-en-vina-del-mar'><a className='text-2xl uppercase'>Postular</a></Link></p>
+							<Link href='/intervenciones-urbanas-en-vina-del-mar'><a>
+								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
+								URBANAS EN VIÑA DEL MAR:<br />
+								CONCURSO GENIUS LOCI</h2>
+								<p className='pl-24 text-2xl uppercase'>Próximamente</p>
+							</a></Link>
 						</div>
 					</div>
 				</section>
 
-				<section className='fondo-blanco fondo-figura-rosa' id='equipo'>
+				<section className='fondo-amarillo fondo-figura-blanca' id='equipo'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
 						<div className='flex flex-wrap justify-center gap-y-20 text-center pb-10'>
@@ -87,23 +106,8 @@ export default function Home() {
 							</article>
 						</div>
 						</div>
-						<div className='fondo-rosado'>
+						<div className='fondo-blanco'>
 							<div className='container'>
-								<div className='grid lg:grid-cols-3 gap-8 my-10 text-center'>
-									<article>
-										<h3 className='font-hbold mb-4 text-xl'>PRENSA</h3>
-										<p className='font-semibold'>Agencia Minka</p>
-									</article>
-									<article>
-										<h3 className='font-hbold mb-4 text-xl'>COMUNICACIONES</h3>
-										<p className='font-semibold'>Macarena Ovalle</p>
-									</article>
-									<article>
-										<h3 className='font-hbold mb-4 text-xl'>REDES SOCIALES</h3>
-										<p className='font-semibold'>Teresita Quezada</p>
-									</article>
-								</div>
-
 								<h2 className='font-hbold text-xl mt-20 mb-4 text-center'>DISEÑO</h2>
 								<div className='grid lg:grid-cols-3 gap-8 text-center font-semibold'>
 									<p>Sergio Ramírez</p>
@@ -119,22 +123,22 @@ export default function Home() {
 						</div>
 				</section>
 
-				<section className='pt-52 pb-16 lg:pb-40 fondo-rosado fondo-figura-blanca' id='redes'>
+				<section className='pt-52 pb-16 lg:pb-40 fondo-blanco fondo-figura-blanca' id='redes'>
 					<div className='max-w-screen-sm mx-auto'>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-naranja'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
 						<div className='lg:hidden flex justify-center gap-8 my-8'>
 							<a href="https://www.instagram.com/locusfest/" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-ig-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
 							<a href="#" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-youtube-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
 						</div>
-						<div className='hidden lg:block'>
-							<h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
+						<div className='hidden lg:block my-8'>
+							{/* <h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
 								<div className='relative w-16 h-16'><Image src="/img/logos-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 								FESTIVAL LOCUS
-							</h3>
-							<h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
+							</h3> */}
+							<a href="https://www.instagram.com/locusfest/"><h3 className='font-hbold text-2xl lg:text-3xl mt-20 mb-20 flex items-center gap-12'>
 								<div className='relative w-16 h-16'><Image src="/img/logos-ig.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-								@festival.locus
-							</h3>
+								@locusfest
+							</h3></a>
 						</div>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-azul color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
 					</div>

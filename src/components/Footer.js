@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-const Footer = ({ ...props }) => (
-	<footer className='fondo-blanco fondo-figura-azul color-blanco pt-28'>
+const Footer = (props) => (
+	<footer className={((props.bgClass)? props.bgClass : 'fondo-blanco') + ' fondo-figura-azul color-blanco pt-28'}>
 		<section className='container flex justify-start gap-16'>
 			<div>
 				<h2 className='text-lg mb-8'>ORGANIZA</h2>
@@ -33,9 +33,9 @@ const Footer = ({ ...props }) => (
 				<a href="https://www.instagram.com/locusfest/" className='font-bold uppercase flex gap-4 items-center'>
 					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-instagram.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</a>
-				<a href="#" className='font-bold uppercase flex gap-4 items-center'>
+				{/* <a href="#" className='font-bold uppercase flex gap-4 items-center'>
 					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-youtube.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				</a>
+				</a> */}
 				<a href="https://www.linkedin.com/company/locus-fest" className='font-bold uppercase flex gap-4 items-center'>
 					<div className='relative w-10 h-10'><Image src="/img/logos/web-logo-linkedin.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</a>

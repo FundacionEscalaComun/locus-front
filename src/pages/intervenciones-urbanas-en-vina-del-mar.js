@@ -1,13 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useAuth } from '@/hooks/auth'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-export default function Home() {
-    const { user } = useAuth({ middleware: 'guest' })
-
+export default function Intervenciones() {
     return (
         <>
             <Head>
@@ -42,10 +39,10 @@ diseñadas para que toda la ciudadanía pueda conocerlas y disfrutarlas.</p>
 					</div>
 				</section>
 
-				<section className='pt-56 lg:pt-72 pb-16 lg:pb-40 fondo-amarillo fondo-figura-blanca' id='redes'>
+				<section className='pt-56 pb-16 fondo-amarillo fondo-figura-blanca' id='redes'>
 					<div className='max-w-screen-md mx-auto'>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN<br />CONCURSO GENIUS LOCI</h2>
-						<p className='pl-24 mt-8'><a href="#" className='text-2xl uppercase'>Descargar</a></p>
+						<p className='pl-24 mt-8'><span className='text-2xl uppercase'>Próximamente</span></p>
 					</div>
 				</section>
 			</main>

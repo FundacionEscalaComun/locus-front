@@ -1,13 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useAuth } from '@/hooks/auth'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-export default function Home() {
-    const { user } = useAuth({ middleware: 'guest' })
-
+export default function Congreso() {
     return (
         <>
             <Head>
@@ -36,13 +33,7 @@ que han realizado en torno a las siguientes temáticas:</p>
 							<li>Juego y diseño urbano</li>
 							<li>Educación y formación ciudadana</li>
 						</ul>
-						<p className='my-8'>El congreso se plantea como una plataforma colaborativa de recursos
-abiertos a todos, para que el amplio abanico de experiencias con enfoque
-en la pertinencia infantil en la ciudad, puedan darse a conocer. Para que
-tejamos en conjunto una red que fortalezca iniciativas y proyectos a lo largo
-de Chile y el mundo. Y podamos descifrar los beneficios que trae el vínculo
-con la ciudad, los espacios públicos y la naturaleza, en el desarrollo de la
-niñez.</p>
+						<p className='my-8'>El congreso se plantea como una plataforma colaborativa de recursos abiertos a todos para que el amplio abanico de experiencias con enfoque en la pertinencia infantil en la ciudad puedan <strong>darse a conocer y que tejemos en conjunto</strong> una red que fortalezca iniciativas y proyectos a lo largo de Chile y el mundo. Y podamos descifrar los beneficios que trae el vínculo con la ciudad, los espacios públicos y la naturaleza, en el desarrollo de la niñez.</p>
 						<p className='my-8'>Anímate a participar, ¡la ciudad también es tuya!</p>
 
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN CONGRESO<br />DIGITAL CIUDAD E INFANCIA</h2>
@@ -62,7 +53,7 @@ niñez.</p>
 
 			</main>
 
-			<Footer />
+			<Footer bgClass="fondo-amarillo" />
         </>
     )
 }
