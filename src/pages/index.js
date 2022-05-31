@@ -56,47 +56,6 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className='fondo-amarillo fondo-figura-blanca'>
-					<div className='container pt-48 pb-12'>
-						<h2 className='font-hbold text-3xl lg:text-4xl text-center'>NOTICIAS</h2>
-						<Swiper
-						modules={[Navigation]}
-						spaceBetween={50}
-						slidesPerView={(typeof window !== "undefined" && window.innerWidth <= 768)? 1 : 3}
-						navigation={{ 
-							clickable: true, 
-						}}
-						>
-							<SwiperSlide>
-								<article className='w-72 mx-auto'>
-									<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
-									<p><Link href="/"><a className='link'>UNO LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
-								</article>
-
-							</SwiperSlide>
-							<SwiperSlide>
-								<article className='w-72 mx-auto'>
-									<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
-									<p><Link href="/"><a className='link'>DOS LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
-								</article>
-
-							</SwiperSlide>
-							<SwiperSlide>
-								<article className='w-72 mx-auto'>
-									<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
-									<p><Link href="/"><a className='link'>TRES LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
-								</article>
-							</SwiperSlide>
-							<SwiperSlide>
-								<article className='w-72 mx-auto'>
-									<div className='relative h-64'><Image src="/img/20220317_193439.jpg" layout='fill' objectFit='contain' alt='foto noticia' /></div>
-									<p><Link href="/"><a className='link'>CUATRO LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING</a></Link></p>
-								</article>
-							</SwiperSlide>
-						</Swiper>
-					</div>
-				</section>
-
 				<section className='fondo-blanco fondo-figura-rosa' id='equipo'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
