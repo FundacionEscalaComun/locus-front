@@ -30,7 +30,7 @@ const Header = () => {
 	return (
 		<header className='header fondo-azul lg:flex'>
 			<div className='container flex justify-between items-center lg:grid grid-cols-3 gap-8'>
-				<h1 className='w-16 h-16 mt-4 relative'><Link href='/'><a><Image src="/img/logos/web-locus-logo-header.svg" layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
+				<h1 className='w-16 h-16 mt-4 lg:mt-0 relative'><Link href='/'><a><Image src="/img/logos/web-locus-logo-header.svg" layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
 				<div className='block lg:hidden w-8 h-8 relative' onClick={toggleMenu}><Image src="/img/menu.svg" layout='fill' objectFit='contain' alt='LOCUS' /></div>
 				{/* menu lg */}
 				<nav className='hidden lg:flex col-span-2'>
