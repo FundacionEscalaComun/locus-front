@@ -30,7 +30,7 @@ export default function Home() {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-						<video autoPlay playsInline muted loop className="banner" width="640" height="360">
+						<video playsInline controls className="banner" width="640" height="360">
 							<source src="/videos/LOCUS Workshop 1 Tesoreando 1minuto + logo La Reconquista.mp4" type="video/mp4"/>
 							Your browser does not support the video tag. I suggest you upgrade your browser.
 						</video>
