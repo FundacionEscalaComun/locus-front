@@ -62,7 +62,7 @@ export default function Home() {
 						<div>
 							<Link href="/congreso-ciudad-e-infancia"><a>
 								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
-								<p className='pl-24 text-2xl uppercase'>Postular</p>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
 							</a></Link>
 						<div>
 						</div>
@@ -70,7 +70,7 @@ export default function Home() {
 								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
 								URBANAS EN VIÑA DEL MAR:<br />
 								CONCURSO GENIUS LOCI</h2>
-								<p className='pl-24 text-2xl uppercase'>Próximamente</p>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Próximamente</p>
 							</a></Link>
 						</div>
 					</div>
@@ -79,7 +79,7 @@ export default function Home() {
 				<section className='fondo-amarillo fondo-figura-blanca' id='equipo'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
-						<div className='flex flex-wrap justify-center gap-y-20 text-center pb-10'>
+						<div className='flex flex-wrap justify-center gap-y-20 text-center'>
 							<article className='w-full lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-piera-medina.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Piera Medina</h3>
@@ -124,12 +124,13 @@ export default function Home() {
 						</div>
 				</section>
 
-				<section className='pt-52 pb-16 lg:pb-40 fondo-blanco fondo-figura-blanca' id='redes'>
-					<div className='max-w-screen-sm mx-auto'>
-						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-naranja'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
+				<section className='pt-28 pb-16 lg:pb-40 fondo-blanco fondo-figura-blanca' id='redes'>
+					<div className='max-w-screen-sm mx-8 lg:mx-auto'>
+						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-naranja'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
 						<div className='lg:hidden flex justify-center gap-8 my-8'>
-							<a href="https://www.instagram.com/locusfest/" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-ig-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
-							<a href="#" className='circulo-redes relative p-6'><div className='relative w-12 h-12'><Image src="/img/logos-youtube-blanco.svg" layout='fill' objectFit='contain' alt='logo' /></div></a>
+							<a href="https://www.instagram.com/locusfest/" className='relative'><div className='relative w-12 h-12'><Image src="/img/logos/logos-celu-16.svg" layout='fill' objectFit='contain' alt='logo Instagram' /></div></a>
+							{/* <a href="#" className='relative'><div className='relative w-12 h-12'><Image src="/img/logos/logos-celu-17.svg" layout='fill' objectFit='contain' alt='logo Youtube' /></div></a> */}
+							<a href="https://www.linkedin.com/company/locus-fest" className='relative'><div className='relative w-12 h-12'><Image src="/img/logos/logos-celu-18.svg" layout='fill' objectFit='contain' alt='logo Linkedin' /></div></a>
 						</div>
 						<div className='hidden lg:block my-8'>
 							{/* <h3 className='font-hbold text-3xl lg:text-5xl mt-20 mb-10 flex items-center gap-12'>
@@ -141,7 +142,7 @@ export default function Home() {
 								@locusfest
 							</h3></a>
 						</div>
-						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left bullet flor-azul color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
+						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
 					</div>
 				</section>
 			</main>

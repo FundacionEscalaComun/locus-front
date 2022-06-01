@@ -19,18 +19,25 @@
 
 .bullet {
 	position: relative;
-	padding-left: 6rem;
+	padding-left: 4rem;
+	@media (min-width: 1024px) { 
+		padding-left: 6rem;
+	}
 	&::before {
 		content: '';
 		display: block;
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 4rem;
-		height: 4rem;
+		width: 2.5rem;
+		height: 2.5rem;
 		background-image: url('../../img/figuras-azul-pequena.svg');
 		background-size: contain;
 		background-repeat: no-repeat;
+		@media (min-width: 1024px) { 
+			width: 4rem;
+			height: 4rem;
+		}
 	}
 	&.flor-naranja::before {
 		background-image: url('../../img/flor-naranja.svg');
