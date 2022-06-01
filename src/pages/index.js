@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Mailchimp from '@/components/Mailchimp';
 
 export default function Home() {
     return (
@@ -143,6 +144,7 @@ export default function Home() {
 							</h3></a>
 						</div>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
+						<Mailchimp />
 					</div>
 				</section>
 			</main>
