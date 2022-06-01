@@ -119,6 +119,13 @@ main {
 	text-transform: uppercase;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -108px;
+    visibility: hidden;
+}
+
 .font-hbold {
 	font-family: 'HalyardMicroBold';
 }

@@ -46,7 +46,7 @@ const Header = () => {
 						</li>
 						<li className='flex items-stretch'><Link href='/#equipo'><a>EQUIPO</a></Link></li>
 						<li className='flex items-stretch'><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
-						<li className='flex items-stretch'><Link href='/#redes'><a>NEWSLETTER</a></Link></li>
+						<li className='flex items-stretch'><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
 					</ul>
 				</nav>
 			</div>
@@ -64,7 +64,7 @@ const Header = () => {
 					</li>
 					<li className=''><Link href='/#equipo'><a>EQUIPO</a></Link></li>
 					<li className=''><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
-					<li className=''><Link href='/#redes'><a>NEWSLETTER</a></Link></li>
+					<li className=''><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
 				</ul>
 			</nav>
 		</header>

@@ -39,8 +39,9 @@ export default function Home() {
 					</Swiper>
 				</section>
 
-				<section className='color-azul fondo-amarillo' id='sobre'>
+				<section className='color-azul fondo-amarillo'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto pt-16 pb-8 lg:pt-20 lg:text-xl'>
+						<a class="anchor" id="sobre"></a>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left'>SOBRE LOCUS</h2>
 						<p className='my-8'><strong>LOCUS</strong> es un festival internacional dedicado a la inclusión de las ideas y
 						participación de la infancia y adolescencia en la creación de su ciudad.
@@ -56,7 +57,8 @@ export default function Home() {
 						participar de nuestras convocatorias y actividades. No te pierdas el festival <strong>LOCUS.</strong></p>
 						<p className='my-8'>¡La ciudad también es tuya!</p>
 					</div>
-					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8' id="convocatorias">
+					<a class="anchor" id="convocatorias"></a>
+					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8'>
 						<div className='convocatorias-abiertas flex items-center justify-center text-center mb-10 mx-auto py-32'>
 							<h3 className='font-hbold text-lg lg:text-xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
 						</div>
@@ -143,6 +145,7 @@ export default function Home() {
 								@locusfest
 							</h3></a>
 						</div>
+						<a class="anchor" id="newsletter"></a>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul color-naranja'>¡SUSCRÍBETE A<br />NUESTRO NEWSLETTER!</h2>
 						<Mailchimp />
 					</div>
