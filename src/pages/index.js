@@ -125,7 +125,7 @@ export default function Home() {
 						</div>
 				</section>
 
-				<section className='pt-28 pb-16 lg:pb-40 fondo-blanco fondo-figura-blanca' id='redes'>
+				<section className='pt-28 pb-16 lg:pb-20 fondo-blanco fondo-figura-blanca' id='redes'>
 					<div className='max-w-screen-sm mx-8 lg:mx-auto'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-naranja'>¡SÍGUENOS EN<br />NUESTRAS REDES!</h2>
 						<div className='lg:hidden flex justify-center gap-8 my-8'>

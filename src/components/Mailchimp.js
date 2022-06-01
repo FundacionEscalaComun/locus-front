@@ -6,11 +6,10 @@ export default function Mailchimp() {
 		<form action="https://locusfest.us10.list-manage.com/subscribe/post?u=068684a7396de5c823ecf353a&amp;id=c06fcbf8e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
 			<div id="mc_embed_signup_scroll">
 			
-		<div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
-		<div className="mc-field-group">
-			<label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span>
+		<div className="mc-field-group text-center">
+			<label htmlFor="mce-EMAIL" className='block my-4'>Email  <span className="asterisk">*</span>
 		</label>
-			<input type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
+			<input type="email" name="EMAIL" className="required email rounded-full  mb-4" id="mce-EMAIL" />
 		</div>
 			<div id="mce-responses" className="clear foot">
 				<div className="response" id="mce-error-response" style={{"display":"none"}}></div>
@@ -18,9 +17,9 @@ export default function Mailchimp() {
 			</div>    
 			<div style={{"position": "absolute","left": "-5000px"}} aria-hidden="true"><input type="text" name="b_068684a7396de5c823ecf353a_c06fcbf8e3" tabindex="-1" value="" /></div>
 				<div className="optionalParent">
-					<div className="clear foot">
-						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
-						<p className="brandingLogo"><a href="http://eepurl.com/h3rBSz" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" /></a></p>
+					<div className="clear foot text-center">
+						<input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" className="button" />
+						<p className="brandingLogo"><a href="http://eepurl.com/h3rBSz" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" className='inline-block mt-2' /></a></p>
 					</div>
 				</div>
 			</div>

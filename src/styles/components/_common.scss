@@ -110,6 +110,15 @@ main {
 	}
 }
 
+.button {
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	background-color: $azul;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 .font-hbold {
 	font-family: 'HalyardMicroBold';
 }
