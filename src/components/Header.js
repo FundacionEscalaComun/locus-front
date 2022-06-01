@@ -51,20 +51,20 @@ const Header = () => {
 				</nav>
 			</div>
 			{/* menu móvil */}
-			<nav id="menu" className='hidden pl-8 pt-12 pb-12'>
-				<ul className='flex flex-col gap-4 font-bold w-full'>
-					<li className=''><Link href='/#convocatorias'><a>¡CONVOCATORIAS ABIERTAS!</a></Link></li>
-					<li className=''><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
-					<li className=''>
+			<nav id="menu" className='hidden pl-8 pt-8 pb-8'>
+				<ul className='font-bold w-full'>
+					<li className='my-4'><Link href='/#convocatorias'><a>¡CONVOCATORIAS ABIERTAS!</a></Link></li>
+					<li className='my-4'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
+					<li className='my-4'>
 						<Link href='/#programa'><a>PROGRAMA</a></Link>
 						<ul className='pl-4'>
 							<li className='my-4'><Link href='/congreso-ciudad-e-infancia'><a>CONGRESO CIUDAD E INFANCIA</a></Link></li>
 							<li className='mt-4'><Link href='/intervenciones-urbanas-en-vina-del-mar'><a>INTERVENCIONES URBANAS</a></Link></li>
 						</ul>
 					</li>
-					<li className=''><Link href='/#equipo'><a>EQUIPO</a></Link></li>
-					<li className=''><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
-					<li className=''><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
+					<li className='my-4'><Link href='/#equipo'><a>EQUIPO</a></Link></li>
+					<li className='my-4'><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
+					<li className='my-4'><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
 				</ul>
 			</nav>
 		</header>

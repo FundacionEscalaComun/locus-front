@@ -82,28 +82,28 @@ export default function Home() {
 				<section className='fondo-amarillo fondo-figura-blanca' id='equipo'>
 					<div className='container pt-40'>
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
-						<div className='flex flex-wrap justify-center gap-y-20 text-center'>
-							<article className='w-full lg:w-1/3'>
+						<div className='lg:flex flex-wrap justify-center gap-y-20 text-center'>
+							<article className='my-16 lg:my-0 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-piera-medina.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Piera Medina</h3>
 								<p className='text-sm font-medium'>DIRECTORA GENERAL</p>
 							</article>
-							<article className='w-full lg:w-1/3'>
+							<article className='my-16 lg:my-0 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-danitza-vymazal.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Danitza Vymazal</h3>
 								<p className='text-sm font-medium'>DIRECTORA DE PRODUCCIÓN</p>
 							</article>
-							<article className='w-full lg:w-1/3'>
+							<article className='my-16 lg:my-0 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-carole-gurdon.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Carole Gurdon</h3>
 								<p className='text-sm font-medium'>DIRECTORA DE CONTENIDOS</p>
 							</article>
-							<article className='w-full lg:w-1/3'>
+							<article className='my-16 lg:my-0 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-macarena-cima.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Macarena Cima</h3>
 								<p className='text-sm font-medium'>ASISTENTE DE PRODUCCIÓN</p>
 							</article>
-							<article className='w-full lg:w-1/3'>
+							<article className='my-16 lg:my-0 lg:w-1/3'>
 								<div className='relative h-48'><Image src="/img/fotos/fotos-fernanda-chesta.svg" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Fernanda Chesta</h3>
 								<p className='text-sm font-medium'>ASISTENTE DE CONTENIDOS</p>
