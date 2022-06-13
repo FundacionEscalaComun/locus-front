@@ -33,25 +33,29 @@ que han realizado en torno a las siguientes temáticas:</p>
 							<li>Juego y diseño urbano</li>
 							<li>Educación y formación ciudadana</li>
 						</ul>
-						<p className='my-8'>El congreso se plantea como una plataforma colaborativa de recursos abiertos a todos para que el amplio abanico de experiencias con enfoque en la pertinencia infantil en la ciudad puedan darse a conocer y que tejemos en conjunto una red que fortalezca iniciativas y proyectos a lo largo de Chile y el mundo. Y podamos descifrar los beneficios que trae el vínculo con la ciudad, los espacios públicos y la naturaleza, en el desarrollo de la niñez.</p>
+						<p className='my-8'>El congreso se plantea como una plataforma colaborativa de recursos abiertos a todos para que el amplio abanico de experiencias con enfoque en la pertinencia infantil en la ciudad puedan darse a conocer y que tejemos en conjunto una red que fortalezca iniciativas y proyectos a lo largo de Chile y el mundo, y así poder descifrar los beneficios que trae el vínculo con la ciudad, los espacios públicos y la naturaleza, en el desarrollo de la niñez.</p>
 						<p className='my-8'>Anímate a participar, ¡la ciudad también es tuya!</p>
 
-						<h2 className='font-hbold text-xl lg:text-4xl bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN CONGRESO<br />DIGITAL CIUDAD E INFANCIA</h2>
-						<div className='flex flex-col lg:flex-row gap-4 lg:gap-12 mt-6 mb-12'>
-							<p className='pl-16 lg:pl-24'><a href="/descargas/Bases Congreso Locus.zip" className='text-lg lg:text-2xl uppercase'>Descargar bases</a></p>
-							<p className='pl-16 lg:pl-24'><a href="https://forms.gle/febU4qjGHoMpAdJHA" className='text-lg lg:text-2xl uppercase'>Postular aquí</a></p>
+						<h2 className='font-hbold text-xl lg:text-4xl mb-6 bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN CONGRESO<br />DIGITAL CIUDAD E INFANCIA</h2>
+						<div className='lg:grid grid-cols-2'>
+							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Bases convocatoria_Congreso LOCUS.pdf" className='text-lg lg:text-2xl uppercase' target="_blank">Bases</a></p>
+							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Instrucciones postulación_Congreso LOCUS.pdf" className='text-lg lg:text-2xl uppercase' target="_blank">Instrucciones</a></p>
+						</div>
+						<div className='lg:grid grid-cols-2'>
+							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Formulario de postulación _Congreso LOCUS.docx" className='text-lg lg:text-2xl uppercase' target="_blank">Formulario de postulación</a></p>
+							<p className='pl-16 lg:pl-24 my-6'><a href="https://forms.gle/febU4qjGHoMpAdJHA" className='text-lg lg:text-2xl uppercase' target="_blank"><strong>Postular aquí</strong></a></p>
 						</div>
 
-						<h2 className='font-hbold text-3xl lg:text-4xl bullet'>PLANIFICA AQUÍ TU PARTICIPACIÓN</h2>
-						<p className='pl-24 mt-10 text-center text-3xl'>20 DE JUNIO</p>
-						<p className='pl-24 mt-2 text-center font-hbold'>PLAZO PARA ENVIAR PREGUNTAS AL MAIL</p>
-						<p className='pl-24 mt-2 text-center font-hbold'>congreso@locusfest.cl</p>
+						<h2 className='font-hbold text-xl lg:text-4xl mt-12 bullet'>PLANIFICA AQUÍ TU PARTICIPACIÓN</h2>
+						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>20 DE JUNIO</p>
+						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>PLAZO PARA ENVIAR PREGUNTAS AL MAIL</p>
+						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>congreso@locusfest.cl</p>
 
-						<p className='pl-24 mt-10 text-center text-3xl'>30 DE JUNIO</p>
-						<p className='pl-24 mt-2 text-center font-hbold'>CIERRE DE LA CONVOCATORIA</p>
+						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>30 DE JUNIO</p>
+						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>CIERRE DE LA CONVOCATORIA</p>
 
-						<p className='pl-24 mt-10 text-center text-3xl'>15 DE JULIO</p>
-						<p className='pl-24 mt-2 text-center font-hbold'>SELECCIÓN DE LOS PARTICIPANTES</p>
+						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>15 DE JULIO</p>
+						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>SELECCIÓN DE LOS PARTICIPANTES</p>
 					</div>
 				</section>
 
