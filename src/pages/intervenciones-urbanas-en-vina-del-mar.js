@@ -109,7 +109,11 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 					</div>
 				</section>
 
-				<section className='pt-64 pb-16 bg-white fondo-figura-amarilla' id='bases'>
+				<section id='mapa' className='mapa'>
+					<div className='overlay'></div>
+				</section>
+
+				<section className='pt-32 lg:pt-64 pb-16 fondo-figura-amarilla' id='bases'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN<br />CONCURSO GENIUS LOCI</h2>
 						<p className='lg:pl-24 my-8'><a href="#" className='button inline-block'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>FORMULACIÓN DE POSTULACIÓN AL CONCURSO</span></a></p>

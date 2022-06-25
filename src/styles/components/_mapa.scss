@@ -1,0 +1,15 @@
+.mapa {
+	background-image: url('../../img/fondos/mapa.jpg');
+	height: 117.7vw;
+	background-size: cover;
+	margin-bottom: -250px;
+	margin-bottom: -25vw;
+	@media (min-width: 1024px) { 
+		margin-bottom: -17vw;
+	}
+	.overlay {
+		background-image: url('../../img/fondos/mapa-overlay.svg');
+		height: 117.7vw;
+		background-size: cover;
+	}
+}
