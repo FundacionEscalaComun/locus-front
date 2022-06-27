@@ -124,7 +124,7 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 						<div className='uppercase text-center'>
 							<article className='lugar lugar-1 flex items-start'>
 								<a className='numero font-hbold' onClick={() => setLugar(1)}>1</a>
-								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6lg: lg:ml-4 z-10 ' + (lugar != 1 && 'hidden')}>
+								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 1 && 'hidden')}>
 									<p className='font-hbold text-sm lg:text-base'>Plaza Parroquia</p>
 									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Plaza Parroquia.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
 								</div>
