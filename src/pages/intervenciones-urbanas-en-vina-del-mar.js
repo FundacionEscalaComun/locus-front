@@ -3,8 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { useState } from 'react'
 
 export default function Intervenciones() {
+	const [info, setInfo] = useState(false);
+	const [lugar, setLugar] = useState(null);
+
+	function handleClickOutside(e) {
+		if(!e.target.classList.contains('numero')) {
+			setLugar(null);
+		}
+	}
     return (
         <>
             <Head>
@@ -36,11 +45,11 @@ export default function Intervenciones() {
 						<p className='my-8'>Durante la semana del Festival LOCUS, se activarán las intervenciones
 						diseñadas para que toda la ciudadanía pueda conocerlas y disfrutarlas.</p>
 						<p className='my-8 text-center'>Anímate a participar, ¡la ciudad también es tuya!</p>
-						<p className='my-8 text-center'><a href="#info" className='button'>Más información</a></p>
+						<p className='my-8 text-center'><a href="#info" className='button' onClick={() => setInfo(true)}>Más información</a></p>
 					</div>
 				</section>
 
-				<section className='pt-56 fondo-amarillo fondo-figura-blanca color-verde font-medium' id='info'>
+				<section className={'pt-56 fondo-amarillo fondo-figura-blanca color-verde font-medium ' + (!info && 'hidden')} id='info'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>SOBRE GENIUS LOCI</h2>
 						<p className='my-8'>Los romanos creían que todos los lugares estaban custodiados por un
@@ -109,11 +118,50 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 					</div>
 				</section>
 
-				<section id='mapa' className='mapa'>
-					<div className='overlay'></div>
+				<section id='mapa' className={'mapa ' + (!info && 'hidden')} onClick={handleClickOutside}>
+					<div className='overlay'>
+						<div className='titulo'><span className='font-hbold'>LUGARES DE<br />INTERVENCIÓN</span><br /><small>LOCUS EN VIÑA DEL MAR</small></div>
+						<div className='uppercase text-center'>
+							<article className='lugar lugar-1 flex items-start'>
+								<a className='numero font-hbold' onClick={() => setLugar(1)}>1</a>
+								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6lg: lg:ml-4 z-10 ' + (lugar != 1 && 'hidden')}>
+									<p className='font-hbold text-sm lg:text-base'>Plaza Parroquia</p>
+									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Plaza Parroquia.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
+								</div>
+							</article>
+							<article className='lugar lugar-2 flex items-start'>
+								<a className='numero font-hbold' onClick={() => setLugar(2)}>2</a>
+								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 2 && 'hidden')}>
+									<p className='font-hbold text-sm lg:text-base'>Terreno EFE</p>
+									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Terreno EFE.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
+								</div>
+							</article>
+							<article className='lugar lugar-3 flex items-start'>
+								<a className='numero font-hbold' onClick={() => setLugar(3)}>3</a>
+								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 3 && 'hidden')}>
+									<p className='font-hbold text-sm lg:text-base'>Plaza Poblacion Riesco</p>
+									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Población Riesco.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
+								</div>
+							</article>
+							<article className='lugar lugar-4 flex items-start flex-row-reverse'>
+								<a className='numero font-hbold' onClick={() => setLugar(4)}>4</a>
+								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:mr-4 z-10 ' + (lugar != 4 && 'hidden')}>
+									<p className='font-hbold text-sm lg:text-base'>Borde Laguna Skatepark Sausalito</p>
+									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Skatepark.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
+								</div>
+							</article>
+							<article className='lugar lugar-5 flex items-start'>
+								<a className='numero font-hbold' onClick={() => setLugar(5)}>5</a>
+								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 5 && 'hidden')}>
+									<p className='font-hbold text-sm lg:text-base'>Jardines Palacio Carrasco</p>
+									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Palacio Carrasco.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
+								</div>
+							</article>
+						</div>
+					</div>
 				</section>
 
-				<section className='pt-32 lg:pt-64 pb-16 fondo-figura-amarilla' id='bases'>
+				<section className={'pt-32 lg:pt-64 pb-16 fondo-figura-amarilla relative ' + (!info && 'fondo-amarillo')} id='bases'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN<br />CONCURSO GENIUS LOCI</h2>
 						<p className='lg:pl-24 my-8'><a href="#" className='button inline-block'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>FORMULACIÓN DE POSTULACIÓN AL CONCURSO</span></a></p>

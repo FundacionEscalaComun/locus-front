@@ -1,4 +1,5 @@
 .mapa {
+	position: relative;
 	background-image: url('../../img/fondos/mapa.jpg');
 	height: 117.7vw;
 	background-size: cover;
@@ -8,8 +9,62 @@
 		margin-bottom: -17vw;
 	}
 	.overlay {
-		background-image: url('../../img/fondos/mapa-overlay.svg');
 		height: 117.7vw;
 		background-size: cover;
+	}
+	.titulo {
+		width: 23vw;
+		height: 7vw;
+		position: absolute;
+		top: 17vw;
+		right: 5vw;
+		background-image: url('../../img/ico-mapa-locus-3.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+		color: white;
+		padding-left: 8vw;
+		font-size: 1.6vw;
+		small {
+			font-size: 1.1vw;
+		}
+	}
+	.lugar{
+		position: absolute;
+		color: white;
+		.numero {
+			background-image: url('../../img/ico-mapa-locus-1.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			color: white;
+			width: 7vw;
+			min-width: 7vw;
+			height: 7vw;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 3.5vw;
+			cursor: pointer;
+		}
+		&.lugar-1 {
+			top: 36vw;
+			left: 16vw;
+		}
+		&.lugar-2 {
+			top: 41vw;
+			left: 21vw;
+		}
+		&.lugar-3 {
+			top: 71vw;
+			left: 19vw;
+		}
+		&.lugar-4 {
+			top: 83vw;
+			right: 17vw;
+		}
+		&.lugar-5 {
+			top: 43vw;
+			left: 44vw;
+		}
 	}
 }

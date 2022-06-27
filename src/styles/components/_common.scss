@@ -3,6 +3,7 @@ $amarillo: #ffbe00;
 $rosado: #f5b5cd;
 $naranja: #ff6c11;
 $verde: #209477;
+$fucsia: #e72276;
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -40,6 +41,10 @@ main {
 
 .fondo-rosado {
 	background-color: $rosado;
+}
+
+.fondo-fucsia {
+	background-color: $fucsia;
 }
 
 .fondo-figura-blanca {
