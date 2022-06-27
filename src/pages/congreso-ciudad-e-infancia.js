@@ -47,14 +47,14 @@ que han realizado en torno a las siguientes temáticas:</p>
 						</div>
 
 						<h2 className='font-hbold text-xl lg:text-4xl mt-12 bullet'>PLANIFICA AQUÍ TU PARTICIPACIÓN</h2>
-						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>20 DE JUNIO</p>
+						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>30 DE JUNIO</p>
 						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>PLAZO PARA ENVIAR PREGUNTAS AL MAIL</p>
 						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>congreso@locusfest.cl</p>
 
-						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>30 DE JUNIO</p>
+						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>15 DE JULIO</p>
 						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>CIERRE DE LA CONVOCATORIA</p>
 
-						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>15 DE JULIO</p>
+						<p className='pl-16 lg:pl-24 mt-10 text-center text-3xl'>1 DE AGOSTO</p>
 						<p className='pl-16 lg:pl-24 mt-2 text-center font-hbold'>SELECCIÓN DE LOS PARTICIPANTES</p>
 					</div>
 				</section>
