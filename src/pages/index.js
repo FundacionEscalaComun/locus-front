@@ -69,11 +69,11 @@ export default function Home() {
 							</a></Link>
 						<div>
 						</div>
-							<Link href='/intervenciones-urbanas-en-vina-del-mar'><a>
+							<Link href='/intervenciones-urbanas-en-vina-del-mar#bases'><a>
 								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
 								URBANAS EN VIÑA DEL MAR:<br />
 								CONCURSO GENIUS LOCI</h2>
-								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Próximamente</p>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
 							</a></Link>
 						</div>
 					</div>
