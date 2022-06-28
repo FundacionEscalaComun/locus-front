@@ -2,6 +2,8 @@ $azul: #033ad3;
 $amarillo: #ffbe00;
 $rosado: #f5b5cd;
 $naranja: #ff6c11;
+$verde: #209477;
+$fucsia: #e72276;
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -25,6 +27,10 @@ main {
 	color: $naranja;
 }
 
+.color-verde {
+	color: $verde;
+}
+
 .fondo-azul {
 	background-color: $azul;
 }
@@ -35,6 +41,10 @@ main {
 
 .fondo-rosado {
 	background-color: $rosado;
+}
+
+.fondo-fucsia {
+	background-color: $fucsia;
 }
 
 .fondo-figura-blanca {
@@ -50,7 +60,7 @@ main {
 }
 
 .fondo-figura-amarilla {
-	background-image: url('../../img/fondos/web-fondos-amarillo.svg');
+	background-image: url('../../img/fondos/web-fondos-amarillo2.svg');
 }
 
 .link {
@@ -110,13 +120,35 @@ main {
 	}
 }
 
+.fondo-figura-amarilla {
+	background-repeat: no-repeat;
+	background-size: 2760px;
+	background-position-x: calc(-792px + (100vw - 768px)/2);
+	@media (min-width: 1024px) { 
+		background-size: 3680px;
+	    background-position-x: calc(-1057px + (100vw - 1024px)/2);
+	}
+	@media (min-width: 1280px) { 
+		background-size: 4600px;
+	    background-position-x: calc(-1240px + (100vw - 1280px)/2);
+	}
+	@media (min-width: 1536px) { 
+		background-size: 5520px;
+	    background-position-x: calc(-1585px + (100vw - 1536px)/2);
+	}
+}
+
 .button {
-	padding: 1rem 3rem;
+	display: inline-block;
+	padding: 1rem 2rem;
 	border-radius: 2rem;
 	background-color: $azul;
 	color: white;
 	font-weight: bold;
 	text-transform: uppercase;
+	&.fondo-verde {
+		background-color: $verde;
+	}
 }
 
 a.anchor {
