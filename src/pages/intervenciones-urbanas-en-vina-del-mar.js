@@ -124,35 +124,35 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 						<div className='uppercase text-center'>
 							<article className='lugar lugar-1 flex items-start'>
 								<a className='numero font-hbold' onClick={() => setLugar(1)}>1</a>
-								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 1 && 'hidden')}>
+								<div className={'fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 1 && 'hidden')}>
 									<p className='font-hbold text-sm lg:text-base'>Plaza Parroquia</p>
 									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Plaza Parroquia.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
 								</div>
 							</article>
 							<article className='lugar lugar-2 flex items-start'>
 								<a className='numero font-hbold' onClick={() => setLugar(2)}>2</a>
-								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 2 && 'hidden')}>
+								<div className={'fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 2 && 'hidden')}>
 									<p className='font-hbold text-sm lg:text-base'>Terreno EFE</p>
 									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Terreno EFE.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
 								</div>
 							</article>
 							<article className='lugar lugar-3 flex items-start'>
 								<a className='numero font-hbold' onClick={() => setLugar(3)}>3</a>
-								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 3 && 'hidden')}>
+								<div className={'fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 3 && 'hidden')}>
 									<p className='font-hbold text-sm lg:text-base'>Plaza Poblacion Riesco</p>
 									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Población Riesco.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
 								</div>
 							</article>
 							<article className='lugar lugar-4 flex items-start flex-row-reverse'>
 								<a className='numero font-hbold' onClick={() => setLugar(4)}>4</a>
-								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:mr-4 z-10 ' + (lugar != 4 && 'hidden')}>
+								<div className={'fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:mr-4 z-10 ' + (lugar != 4 && 'hidden')}>
 									<p className='font-hbold text-sm lg:text-base'>Borde Laguna Skatepark Sausalito</p>
 									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Skatepark.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
 								</div>
 							</article>
 							<article className='lugar lugar-5 flex items-start'>
 								<a className='numero font-hbold' onClick={() => setLugar(5)}>5</a>
-								<div className={'nombre fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 5 && 'hidden')}>
+								<div className={'fondo-fucsia rounded lg:rounded-3xl px-2 lg:px-10 lg:py-6 lg:ml-4 z-10 ' + (lugar != 5 && 'hidden')}>
 									<p className='font-hbold text-sm lg:text-base'>Jardines Palacio Carrasco</p>
 									<p className='mt-2 text-sm font-semibold'><a href="/descargas/intervenciones/Locus Fichas Lugares- Palacio Carrasco.pdf" className='inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>DESCARGAR FICHA</span></a></p>
 								</div>
@@ -164,13 +164,13 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 				<section className={'pt-32 lg:pt-64 pb-16 fondo-figura-amarilla relative ' + (!info && 'fondo-amarillo')} id='bases'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN<br />CONCURSO GENIUS LOCI</h2>
-						<p className='lg:pl-24 my-8'><a href="#" className='button inline-block'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>FORMULACIÓN DE POSTULACIÓN AL CONCURSO</span></a></p>
-						<p className='lg:pl-24 my-8'><a href="#" className='button inline-block'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>BASES DEL CONCURSO</span></a></p>
-						<p className='lg:pl-24 my-8'><a href="#" className='button inline-block'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>CONOCE LOS LUGARES</span></a></p>
+						<p className='lg:pl-24 my-8'><a href="https://docs.google.com/document/d/1PK-muzBGgDR9TuMOrj7lpIFM2n10MUUV/edit" className='button inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>FORMULACIÓN DE POSTULACIÓN AL CONCURSO</span></a></p>
+						<p className='lg:pl-24 my-8'><a href="/descargas/intervenciones/BASES CONCURSO LUGARES.pdf" className='button inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>BASES DEL CONCURSO</span></a></p>
+						<p className='lg:pl-24 my-8'><a href="#mapa" className='button inline-block' onClick={() => setInfo(true)}><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>CONOCE LOS LUGARES</span></a></p>
 					</div>
 					<div className='max-w-screen-md mx-8 lg:mx-auto mt-28'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul'>¡POSTULA AQUÍ!</h2>
-						<p className='lg:pl-24 my-8'><a href="#" className='button inline-block'>POSTULAR</a></p>
+						<p className='lg:pl-24 my-8'><a href="https://docs.google.com/forms/d/1BdWbazlYZaC2uig2TvW61FaBDBe5BFpe1ddEUIquyc8/edit" className='button inline-block' target='_blank'>POSTULAR</a></p>
 					</div>
 				</section>
 			</main>
