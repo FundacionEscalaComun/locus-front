@@ -38,7 +38,7 @@ que han realizado en torno a las siguientes temáticas:</p>
 
 						<h2 className='font-hbold text-xl lg:text-4xl mb-6 bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN CONGRESO<br />DIGITAL CIUDAD E INFANCIA</h2>
 						<div className='lg:grid grid-cols-2'>
-							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Bases convocatoria_Congreso LOCUS.pdf" className='text-lg lg:text-2xl uppercase' target="_blank">Bases</a></p>
+							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Bases convocatoria_Congreso LOCUS_plazos ampliados.pdf" className='text-lg lg:text-2xl uppercase' target="_blank">Bases</a></p>
 							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Instrucciones postulación_Congreso LOCUS.pdf" className='text-lg lg:text-2xl uppercase' target="_blank">Instrucciones</a></p>
 						</div>
 						<div className='lg:grid grid-cols-2'>
