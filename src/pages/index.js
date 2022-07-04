@@ -8,6 +8,8 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Mailchimp from '@/components/Mailchimp';
+import Marquee from "react-fast-marquee";
+import MarqueeContent from '@/components/MarqueeContent';
 
 export default function Home() {
     return (
@@ -19,6 +21,14 @@ export default function Home() {
             <Header />
 			<main>
 				<section className='relative'>
+					<div className='fondo-rosado'>
+						<Marquee gradient={false}>
+							<MarqueeContent />						
+							<MarqueeContent />						
+							<MarqueeContent />						
+							<MarqueeContent />						
+						</Marquee>
+					</div>
 					<Swiper
 						modules={[Pagination]}
 						pagination={{ 
@@ -28,6 +38,17 @@ export default function Home() {
 						<SwiperSlide>
 							<div className='banner'>
 								<Image src="/img/banner-img.png" layout='fill' objectFit='cover' alt='banner' />
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+						<video playsInline controls className="banner" width="640" height="360">
+							<source src="/videos/Lugar Locus 15.06.2022.mp4" type="video/mp4"/>
+							Your browser does not support the video tag. I suggest you upgrade your browser.
+						</video>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='banner'>
+								<Image src="/img/_MG_6999-CR2_DxO_PRIME.jpg" layout='fill' objectFit='cover' alt='banner' />
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
