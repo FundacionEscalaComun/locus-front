@@ -49,7 +49,7 @@ export default function Home() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='banner'>
-								<Image src="/img/_MG_6999-CR2_DxO_PRIME.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/foto-slider.jpg" layout='fill' objectFit='cover' alt='banner' />
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
