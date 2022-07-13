@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { congresoCerrado } from '@/lib/congreso';
 
 export default function Congreso() {
     return (
@@ -43,7 +42,14 @@ que han realizado en torno a las siguientes temáticas:</p>
 						</div>
 						<div className='lg:grid grid-cols-2'>
 							<p className='pl-16 lg:pl-24 my-6'><a href="/descargas/congreso/Formulario de postulación _Congreso LOCUS.docx" className='text-lg lg:text-2xl uppercase' target="_blank">Formulario de postulación</a></p>
-							<p className='pl-16 lg:pl-24 my-6'><a href="https://forms.gle/febU4qjGHoMpAdJHA" className='text-lg lg:text-2xl uppercase' target="_blank"><strong>Postular aquí</strong></a></p>
+							<p className='pl-16 lg:pl-24 my-6'>
+								{
+								(congresoCerrado)?
+									<span className='text-lg lg:text-2xl uppercase'><strong>Convocatoria cerrada</strong></span>
+								:
+									<a href="https://forms.gle/febU4qjGHoMpAdJHA" className='text-lg lg:text-2xl uppercase' target="_blank"><strong>Postular aquí</strong></a>
+								}
+							</p>
 						</div>
 
 						<h2 className='font-hbold text-xl lg:text-4xl mt-12 bullet'>PLANIFICA AQUÍ TU PARTICIPACIÓN</h2>

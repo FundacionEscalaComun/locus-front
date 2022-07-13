@@ -1,0 +1,1 @@
+export const congresoCerrado = new Date() >= new Date('2022-07-16T00:00:00');

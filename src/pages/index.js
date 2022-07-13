@@ -10,6 +10,7 @@ import Footer from '@/components/Footer'
 import Mailchimp from '@/components/Mailchimp';
 import Marquee from "react-fast-marquee";
 import MarqueeContent from '@/components/MarqueeContent';
+import { congresoCerrado } from '@/lib/congreso';
 
 export default function Home() {
     return (
@@ -84,10 +85,18 @@ export default function Home() {
 							<h3 className='font-hbold text-lg lg:text-xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
 						</div>
 						<div>
+						{
+							(congresoCerrado)?
+							<>
+								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Convocatoria cerrada</p>
+							</>
+							:
 							<Link href="/congreso-ciudad-e-infancia"><a>
 								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
 							</a></Link>
+						}
 						<div>
 						</div>
 							<Link href='/intervenciones-urbanas-en-vina-del-mar#bases'><a>
