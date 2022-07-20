@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
@@ -160,8 +161,9 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 					</div>
 				</section>
 
-				<section className={'pt-32 lg:pt-64 pb-16 fondo-figura-amarilla relative ' + (!info && 'fondo-amarillo')} id='bases'>
+				<section className={'pb-16 relative ' + (info? 'fondo-figura-amarilla pt-32 lg:pt-64' : 'fondo-amarillo')} id='bases'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto'>
+						<p className='lg:pl-24 mb-20 lg:text-xl'>Revisa <Link href="/intervenciones-preguntas-frecuentes"><a className='underline'>AQUÍ</a></Link> las preguntas frecuentes al concurso (FAQ)</p>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet'>BASES Y FORMULARIO<br />DE POSTULACIÓN<br />CONCURSO GENIUS LOCI</h2>
 						<p className='lg:pl-24 my-8'><a href="https://docs.google.com/document/d/1PK-muzBGgDR9TuMOrj7lpIFM2n10MUUV/edit" className='button inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>FORMULACIÓN DE POSTULACIÓN AL CONCURSO</span></a></p>
 						<p className='lg:pl-24 my-8'><a href="/descargas/intervenciones/BASES CONCURSO LUGARES.pdf" className='button inline-block' target='_blank'><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>BASES DEL CONCURSO</span></a></p>
