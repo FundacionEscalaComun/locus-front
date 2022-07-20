@@ -9,7 +9,10 @@ const Footer = (props) => (
 			</div>
 			<div>
 				<h2 className='text-lg mb-8'>FINANCIA</h2>
-				<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/web-logo-ministerio-cultura.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='lg:flex justify-between gap-16'>
+					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/web-logo-ministerio-cultura.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/Olivo-logo-blanco.png" layout='fill' objectFit='contain' alt='logo' /></div>
+				</div>
 			</div>
 		</section>
 
