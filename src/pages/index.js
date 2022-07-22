@@ -38,7 +38,7 @@ export default function Home() {
 						>
 						<SwiperSlide>
 							<div className='banner'>
-								<Image src="/img/banner-img.png" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/banner-inicio.png" layout='fill' objectFit='cover' alt='banner' />
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
@@ -114,12 +114,12 @@ export default function Home() {
 						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
 						<div className='lg:flex flex-wrap justify-center gap-y-20 text-center'>
 							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/fotos-piera-medina.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<div className='relative h-48'><Image src="/img/fotos/foto-perfil-Piera.png" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Piera Medina</h3>
 								<p className='text-sm font-medium'>DIRECTORA GENERAL</p>
 							</article>
 							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/fotos-danitza-vymazal.svg" layout='fill' objectFit='contain' alt='foto' /></div>
+								<div className='relative h-48'><Image src="/img/fotos/foto-perfil-Danitza.png" layout='fill' objectFit='contain' alt='foto' /></div>
 								<h3 className='font-bold mt-6 mb-2 text-xl'>Danitza Vymazal</h3>
 								<p className='text-sm font-medium'>DIRECTORA DE PRODUCCIÓN</p>
 							</article>
