@@ -49,7 +49,7 @@ export default function Home() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='banner'>
-								<Image src="/img/foto-slider2.jpg" width='1620' height='1080' layout='responsive' objectFit='cover' className='w-full' alt='banner' />
+								<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
