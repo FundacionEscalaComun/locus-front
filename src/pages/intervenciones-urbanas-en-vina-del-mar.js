@@ -171,7 +171,7 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 					</div>
 					<div className='max-w-screen-md mx-8 lg:mx-auto mt-28'>
 						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul'>¡POSTULA AQUÍ!</h2>
-						<p className='lg:pl-24 my-8'><a href="https://docs.google.com/forms/d/1BdWbazlYZaC2uig2TvW61FaBDBe5BFpe1ddEUIquyc8/edit" className='button inline-block' target='_blank'>POSTULAR</a></p>
+						<p className='lg:pl-24 my-8'><a href="https://forms.gle/skPPQcjHCXHvivAc6" className='button inline-block' target='_blank'>POSTULAR</a></p>
 					</div>
 				</section>
 			</main>
