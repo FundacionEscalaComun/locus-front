@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
+import { concursoCerrado } from '@/lib/concurso';
 
 const Header = () => {
 	let menuIsOpen = false;
@@ -35,7 +36,7 @@ const Header = () => {
 				{/* menu lg */}
 				<nav className='hidden lg:flex col-span-2'>
 					<ul className='flex items-stretch justify-between gap-4 font-bold w-full'>
-						<li className='flex items-stretch'><Link href='/#convocatorias'><a>¡CONVOCATORIAS<br />ABIERTAS!</a></Link></li>
+						<li className='flex items-stretch'><Link href='/#convocatorias'><a>{concursoCerrado? <>CONVOCATORIAS<br />CERRADAS</> : <>¡CONVOCATORIAS<br />ABIERTAS!</>}</a></Link></li>
 						<li className='relative flex items-stretch'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
 						<li className='relative flex items-stretch'>
 							<Link href='/#programa'><a>PROGRAMA</a></Link>
@@ -53,7 +54,7 @@ const Header = () => {
 			{/* menu móvil */}
 			<nav id="menu" className='hidden pl-8 pt-8 pb-8'>
 				<ul className='font-bold w-full'>
-					<li className='my-4'><Link href='/#convocatorias'><a>¡CONVOCATORIAS ABIERTAS!</a></Link></li>
+					<li className='my-4'><Link href='/#convocatorias'><a>{concursoCerrado? 'CONVOCATORIAS CERRADAS' : '¡CONVOCATORIAS ABIERTAS!'}</a></Link></li>
 					<li className='my-4'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
 					<li className='my-4'>
 						<Link href='/#programa'><a>PROGRAMA</a></Link>

@@ -11,6 +11,7 @@ import Mailchimp from '@/components/Mailchimp';
 import Marquee from "react-fast-marquee";
 import MarqueeContent from '@/components/MarqueeContent';
 import { congresoCerrado } from '@/lib/congreso';
+import { concursoCerrado } from '@/lib/concurso';
 
 export default function Home() {
     return (
@@ -82,7 +83,7 @@ export default function Home() {
 					<a className="anchor" id="convocatorias"></a>
 					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8'>
 						<div className='convocatorias-abiertas flex items-center justify-center text-center mb-10 mx-auto py-32'>
-							<h3 className='font-hbold text-lg lg:text-xl'>¡CONVOCATORIAS<br /> ABIERTAS!</h3>
+							<h3 className='font-hbold text-lg lg:text-xl'>{concursoCerrado? <>CONVOCATORIAS<br />CERRADAS</> : <>¡CONVOCATORIAS<br />ABIERTAS!</>}</h3>
 						</div>
 						<div>
 						{
@@ -97,14 +98,23 @@ export default function Home() {
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
 							</a></Link>
 						}
-						<div>
 						</div>
+						<div>
+						{(concursoCerrado)?
+							<>
+							<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
+								URBANAS EN VIÑA DEL MAR:<br />
+								CONCURSO GENIUS LOCI</h2>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Convocatoria cerrada</p>
+							</>
+							:
 							<Link href='/intervenciones-urbanas-en-vina-del-mar#bases'><a>
 								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
 								URBANAS EN VIÑA DEL MAR:<br />
 								CONCURSO GENIUS LOCI</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
 							</a></Link>
+						}
 						</div>
 					</div>
 				</section>

@@ -1,0 +1,1 @@
+export const concursoCerrado = new Date() >= new Date('2022-07-30T00:00:00');

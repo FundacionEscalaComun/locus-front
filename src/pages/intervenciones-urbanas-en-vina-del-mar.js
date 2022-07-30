@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
+import { concursoCerrado } from '@/lib/concurso'
 
 export default function Intervenciones() {
 	const [info, setInfo] = useState(false);
@@ -170,8 +171,8 @@ plataformas de difusión, y en el documento final de síntesis del evento.</p>
 						<p className='lg:pl-24 my-8'><a href="#mapa" className='button inline-block' onClick={() => setInfo(true)}><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /> <span className='ml-4'>CONOCE LOS LUGARES</span></a></p>
 					</div>
 					<div className='max-w-screen-md mx-8 lg:mx-auto mt-28'>
-						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul'>¡POSTULA AQUÍ!</h2>
-						<p className='lg:pl-24 my-8'><a href="https://forms.gle/skPPQcjHCXHvivAc6" className='button inline-block' target='_blank'>POSTULAR</a></p>
+						<h2 className='font-hbold text-xl lg:text-4xl bullet flor-azul'>{concursoCerrado? 'CONVOCATORIA CERRADA': '¡POSTULA AQUÍ!'}</h2>
+						{!concursoCerrado && <p className='lg:pl-24 my-8'><a href="https://forms.gle/skPPQcjHCXHvivAc6" className='button inline-block' target='_blank'>POSTULAR</a></p>}
 					</div>
 				</section>
 			</main>
