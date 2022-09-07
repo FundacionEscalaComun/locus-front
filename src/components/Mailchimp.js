@@ -17,7 +17,7 @@ export default function Mailchimp() {
 				<div style={{"position": "absolute","left": "-5000px"}} aria-hidden="true"><input type="text" name="b_068684a7396de5c823ecf353a_c06fcbf8e3" tabIndex="-1" value="" readOnly /></div>
 				<div className="optionalParent">
 					<div className="clear foot text-center">
-						<input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" className="button" />
+						<input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" className="button small font-semibold" />
 						{/* <p className="brandingLogo"><a href="http://eepurl.com/h3rBSz" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" className='inline-block mt-2' /></a></p> */}
 					</div>
 				</div>

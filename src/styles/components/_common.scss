@@ -47,6 +47,10 @@ main {
 	background-color: $fucsia;
 }
 
+.fondo-blanco {
+	background-color: white;
+}
+
 .fondo-figura-blanca {
 	background-image: url('../../img/fondos/web-fondo-blanco-1.svg');
 }
@@ -140,12 +144,14 @@ main {
 
 .button {
 	display: inline-block;
-	padding: 1rem 2rem;
-	border-radius: 2rem;
+	padding: 1.5rem 2.5rem;
+	border-radius: 3rem;
 	background-color: $azul;
 	color: white;
-	font-weight: bold;
 	text-transform: uppercase;
+	&.small {
+		padding: 1rem 2rem;
+	}
 	&.fondo-verde {
 		background-color: $verde;
 	}

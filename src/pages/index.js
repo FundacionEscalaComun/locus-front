@@ -10,6 +10,7 @@ import Footer from '@/components/Footer'
 import Mailchimp from '@/components/Mailchimp';
 import Marquee from "react-fast-marquee";
 import MarqueeContent from '@/components/MarqueeContent';
+import MarqueeContentSub from '@/components/MarqueeContentSub';
 import { congresoCerrado } from '@/lib/congreso';
 import { concursoCerrado } from '@/lib/concurso';
 
@@ -23,12 +24,19 @@ export default function Home() {
             <Header />
 			<main>
 				<section className='relative'>
-					<div className='fondo-rosado'>
+					<div className='fondo-fucsia'>
+						<Marquee gradient={false} className='fondo-fucsia'>
+							<MarqueeContent />						
+							<MarqueeContent />						
+							<MarqueeContent />						
+							<MarqueeContent />						
+						</Marquee>
+					</div>
+					<div className='fondo-blanco'>
 						<Marquee gradient={false}>
-							<MarqueeContent />						
-							<MarqueeContent />						
-							<MarqueeContent />						
-							<MarqueeContent />						
+							<MarqueeContentSub />						
+							<MarqueeContentSub />						
+							<MarqueeContentSub />						
 						</Marquee>
 					</div>
 					<Swiper
@@ -82,39 +90,15 @@ export default function Home() {
 					</div>
 					<a className="anchor" id="convocatorias"></a>
 					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8'>
-						<div className='convocatorias-abiertas flex items-center justify-center text-center mb-10 mx-auto py-32'>
-							<h3 className='font-hbold text-lg lg:text-xl'>{concursoCerrado? <>CONVOCATORIAS<br />CERRADAS</> : <>¡CONVOCATORIAS<br />ABIERTAS!</>}</h3>
-						</div>
 						<div>
-						{
-							(congresoCerrado)?
-							<>
-								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
-								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Convocatoria cerrada</p>
-							</>
-							:
-							<Link href="/congreso-ciudad-e-infancia"><a>
-								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mb-4 bullet'>CONGRESO CIUDAD E INFANCIA<br /> EN LÍNEA</h2>
-								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
-							</a></Link>
-						}
+							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>CONGRESO</p>
+							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>CIUDAD E INFANCIA EN LÍNEA</h2>
+							<p className='pl-16 lg:pl-24'><Link href='congreso-ciudad-e-infancia'><a className='button text-sm font-semibold'>CONOCE EL PROGRAMA</a></Link></p>
 						</div>
-						<div>
-						{(concursoCerrado)?
-							<>
-							<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
-								URBANAS EN VIÑA DEL MAR:<br />
-								CONCURSO GENIUS LOCI</h2>
-								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Convocatoria cerrada</p>
-							</>
-							:
-							<Link href='/intervenciones-urbanas-en-vina-del-mar#bases'><a>
-								<h2 className='font-hbold text-xl lg:text-4xl leading-tight mt-12 mb-4 bullet'>INTERVENCIONES<br />
-								URBANAS EN VIÑA DEL MAR:<br />
-								CONCURSO GENIUS LOCI</h2>
-								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase'>Postular</p>
-							</a></Link>
-						}
+						<div className='mt-14'>
+							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>INTERVENCIONES URBANAS</p>
+							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
+							<p className='pl-16 lg:pl-24'><Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold'>CONOCE LOS LUGARES</a></Link></p>
 						</div>
 					</div>
 				</section>
