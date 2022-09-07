@@ -86,7 +86,7 @@ export default function Intervenciones() {
 						</p>
 						<p className='my-8'>
 							<h3 className='font-bold mt-6 text-xl'>Instagram</h3>
-							@TRANSVERSAL_ARQ
+							<a href='https://www.instagram.com/transversal_arq/'>@TRANSVERSAL_ARQ</a>
 						</p>
 						<p className='my-8'>
 						En la plaza aparece el Genius Loci a través de una invitación a tod@s a jugar
