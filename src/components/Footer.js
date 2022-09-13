@@ -12,19 +12,29 @@ const Footer = (props) => (
 				<div className='lg:flex justify-between gap-16'>
 					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/web-logo-ministerio-cultura.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/Olivo-logo-blanco.png" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/femsa.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</div>
 			</div>
 		</section>
 
 		<section className='container'>
 			<h2 className='text-lg mt-12 mb-8'>PATROCINAN</h2>
-			<div className='lg:flex justify-between gap-16'>
+			<div className='lg:flex lg:flex-wrap justify-between gap-x-16 gap-y-4'>
 				<div className='relative h-28 w-28'><Image src="/img/logos/web-logo-viña-del-mar.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-escuela-arq-diseño-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-20'><Image src="/img/logos/web-logo-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-unicef.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-32'><Image src="/img/logos/web-logo-catolica-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-36'><Image src="/img/logos/web-logo-federico-santa-maria.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-36'><Image src="/img/logos/pichintun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+			</div>
+		</section>
+
+		<section className='container'>
+			<h2 className='text-lg mt-12 mb-8'>AUSPICIO</h2>
+			<div className='lg:flex lg:flex-wrap gap-x-16 gap-y-4'>
+				<div className='relative h-16 w-28'><Image src="/img/logos/ambrosoli.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-16 w-40'><Image src="/img/logos/mustakis.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
 		</section>
 
