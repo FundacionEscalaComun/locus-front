@@ -1,0 +1,28 @@
+.invitados-slider {
+  .slide {
+    width: 100%;
+    height: 53vw;
+  }
+
+  .swiper-button-prev {
+		left: 4vw;
+    top: 19vw;
+		&::after {
+			content: 'prev';
+			width: 20px;
+			height: 25px;
+			background-image: url('../../img/flecha-izq2.svg');
+		}
+	}
+	
+	.swiper-button-next {
+		left: 27vw;
+    top: 19vw;
+		&::after {
+			content: 'next';
+			width: 20px;
+			height: 25px;
+			background-image: url('../../img/flecha-der2.svg');
+		}
+	}
+}

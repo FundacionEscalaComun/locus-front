@@ -152,8 +152,19 @@ main {
 	&.small {
 		padding: 1rem 2rem;
 	}
+	&.xsmall {
+		padding: 0.75rem 2rem;
+	}
 	&.fondo-verde {
 		background-color: $verde;
+	}
+	&.fondo-rosa {
+		background-color: $rosado;
+		color: $azul;
+	}
+	&.fondo-blanco {
+		background-color: white;
+		color: $azul;
 	}
 }
 
