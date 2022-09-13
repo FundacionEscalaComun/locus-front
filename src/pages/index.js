@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Pagination } from 'swiper';
+import { useState } from 'react';
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -11,10 +12,9 @@ import Mailchimp from '@/components/Mailchimp';
 import Marquee from "react-fast-marquee";
 import MarqueeContent from '@/components/MarqueeContent';
 import MarqueeContentSub from '@/components/MarqueeContentSub';
-import { congresoCerrado } from '@/lib/congreso';
-import { concursoCerrado } from '@/lib/concurso';
 
 export default function Home() {
+	const [swiperRef, setSwiperRef] = useState(null);
     return (
         <>
             <Head>
@@ -104,51 +104,49 @@ export default function Home() {
 				</section>
 
 				<section className='fondo-amarillo fondo-figura-blanca' id='equipo'>
-					<div className='container pt-40'>
-						<h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>EQUIPO</h2>
-						<div className='lg:flex flex-wrap justify-center gap-y-20 text-center'>
-							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/foto-perfil-Piera.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-2 text-xl'>Piera Medina</h3>
-								<p className='text-sm font-medium'>DIRECTORA GENERAL</p>
-							</article>
-							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/foto-perfil-Danitza.png" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-2 text-xl'>Danitza Vymazal</h3>
-								<p className='text-sm font-medium'>DIRECTORA DE PRODUCCIÓN</p>
-							</article>
-							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/fotos-carole-gurdon.svg" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-2 text-xl'>Carole Gurdon</h3>
-								<p className='text-sm font-medium'>DIRECTORA DE CONTENIDOS</p>
-							</article>
-							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/fotos-macarena-cima.svg" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-2 text-xl'>Macarena Cima</h3>
-								<p className='text-sm font-medium'>ASISTENTE DE PRODUCCIÓN</p>
-							</article>
-							<article className='my-16 lg:my-0 lg:w-1/3'>
-								<div className='relative h-48'><Image src="/img/fotos/fotos-fernanda-chesta.svg" layout='fill' objectFit='contain' alt='foto' /></div>
-								<h3 className='font-bold mt-6 mb-2 text-xl'>Fernanda Chesta</h3>
-								<p className='text-sm font-medium'>ASISTENTE DE CONTENIDOS</p>
-							</article>
+					<div className='container pt-40 pb-12'>
+						<h2 className='text-3xl lg:text-4xl mb-12 ml-16'>LOCUS <span className='font-hbold'>NOTICIAS</span></h2>
+						<div className='swiper-container font-bold mx-16 relative'>
+							<Swiper
+							onSwiper={setSwiperRef}
+							navigation={{
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							}}
+							modules={[Navigation]}
+							slidesPerView={3}
+							spaceBetween={30}
+							>
+								<SwiperSlide>
+										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
+										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
+								</SwiperSlide>
+								<SwiperSlide>
+										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
+										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
+								</SwiperSlide>
+								<SwiperSlide>
+										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
+										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
+								</SwiperSlide>
+								<SwiperSlide>
+										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
+										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
+								</SwiperSlide>
+								<SwiperSlide>
+										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
+										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
+								</SwiperSlide>
+							</Swiper>
+							<div className="swiper-button-prev" onClick={() => swiperRef.slidePrev()}></div>
+							<div className="swiper-button-next" onClick={() => swiperRef.slideNext()}></div>
 						</div>
-						</div>
-						<div className='fondo-blanco'>
-							<div className='container'>
-								<h2 className='font-hbold text-xl mt-20 mb-4 text-center'>DISEÑO</h2>
-								<div className='grid lg:grid-cols-3 gap-8 text-center font-semibold'>
-									<p>Sergio Ramírez</p>
-									<p>Valentina Alcántara</p>
-									<p>Martín Pastenes</p>
-								</div>
-
-								<h2 className='font-hbold text-xl mt-20 mb-4 text-center'>AUDIOVISUAL</h2>
-								<div className='grid gap-8 text-center'>
-									<p className='font-semibold'>Los Navegantes Films</p>
-								</div>
-							</div>
-						</div>
+					</div>
 				</section>
 
 				<section className='pt-28 pb-16 lg:pb-20 fondo-blanco fondo-figura-blanca' id='redes'>

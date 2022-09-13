@@ -1,21 +1,21 @@
-.swiper {
+.swiper, .swiper-container {
 	.swiper-button-prev {
-		left: 0;
+		left: -64px;
 		&::after {
 			content: '';
 			width: 20px;
-			height: 35px;
-			background-image: url('../../img/flecha-izq.svg');
+			height: 25px;
+			background-image: url('../../img/flecha-izq2.svg');
 		}
 	}
 	
 	.swiper-button-next {
-		right: 0;
+		right: -54px;
 		&::after {
 			content: '';
 			width: 20px;
-			height: 35px;
-			background-image: url('../../img/flecha-der.svg');
+			height: 25px;
+			background-image: url('../../img/flecha-der2.svg');
 		}
 	}
 

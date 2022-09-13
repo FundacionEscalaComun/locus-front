@@ -75,18 +75,18 @@ main {
 .fondo-figura-blanca {
 	background-repeat: no-repeat;
 	background-size: 2760px;
-	background-position-x: calc(-1218px + (100vw - 768px)/2);
+	background-position-x: calc(-1074px + (100vw - 768px)/2);
 	@media (min-width: 1024px) { 
 		background-size: 3680px;
-	    background-position-x: calc(-1624px + (100vw - 1024px)/2);
+		background-position-x: calc(-1432px + (100vw - 1024px)/2);
 	}
 	@media (min-width: 1280px) { 
 		background-size: 4600px;
-	    background-position-x: calc(-2030px + (100vw - 1280px)/2);
+		background-position-x: calc(-1790px + (100vw - 1280px)/2);
 	}
 	@media (min-width: 1536px) { 
 		background-size: 5520px;
-	    background-position-x: calc(-2436px + (100vw - 1536px)/2);
+		background-position-x: calc(-2148px + (100vw - 1536px)/2);
 	}
 }
 
