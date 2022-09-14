@@ -32,7 +32,7 @@ export default function Congreso(props) {
 			<main>
 
 				<section className='color-azul fondo-amarillo' id='sobre'>
-					<div className='max-w-screen-md mx-8 lg:mx-auto pt-16 pb-8 lg:pt-32 lg:text-xl'>
+					<div className='max-w-screen-md mx-8 lg:mx-auto pt-16 lg:pt-32 lg:text-xl'>
 						<h2 className='font-hbold text-3xl lg:text-4xl text-center lg:text-left lg:mb-16 bullet'>CONGRESO CIUDAD E INFANCIA</h2>
 						<p className='my-8'>El Congreso digital se plantea como un espacio de encuentro, discusión,
 aprendizaje y divulgación en torno al tema de las infancias en la ciudad y el
@@ -42,12 +42,13 @@ organizaciones, académicos, instituciones y expert@s en el tema de Chile y
 el mundo, a compartir sus experiencias, iniciativas y proyectos en torno al
 estudio y desarrollo de ciudades amigables con la infancia.</p>
 						<p className='my-8'>El congreso se plantea como una plataforma colaborativa de recursos abiertos a todos para que el amplio abanico de experiencias con enfoque en la pertinencia infantil en la ciudad puedan darse a conocer y que tejemos en conjunto una red que fortalezca iniciativas y proyectos a lo largo de Chile y el mundo, y así poder descifrar los beneficios que trae el vínculo con la ciudad, los espacios públicos y la naturaleza, en el desarrollo de la niñez.</p>
-						<p className='my-8 text-center'>Anímate a participar, ¡la ciudad también es tuya!</p>
+						<p className='mt-8 text-center'>Anímate a participar, ¡la ciudad también es tuya!</p>
 
 					</div>
 				</section>
 
-				<section className='invitados-slider'>
+				<section className='invitados-slider overflow-hidden w-full'>
+					<div className="triangulo-amarillo"></div>
 					<Swiper
 						modules={[Navigation]}
 						navigation={true}
@@ -57,7 +58,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
-									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2'>NIÑOS, NIÑAS<br />Y ADOLESCENTES</h3>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
 									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
 								</div>
