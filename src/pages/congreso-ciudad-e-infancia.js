@@ -252,7 +252,7 @@ infancia” y “Volver a Mirar”.</p>
 						{videos.map(video => 
 							<article key={video.id}>
 									<img src={video._embedded['wp:featuredmedia']['0'].source_url} width={374} height={211} alt='foto' />
-									<h3 className='font-hbold text-xl uppercase mt-3 mb-1'>{video.title.rendered}</h3>
+									<h3 className='font-hbold text-xl uppercase mt-3 mb-1' dangerouslySetInnerHTML={{__html: video.title.rendered }}></h3>
 									<p className='text-xs mb-1 uppercase'>{video.acf.cargo}</p>
 									<p className='text-sm mb-6'>{video.acf.descripcion}</p>
 									<a href={'/video/' + video.id} className='button xsmall text-sm font-semibold cursor-pointer'>VER VIDEO</a>
