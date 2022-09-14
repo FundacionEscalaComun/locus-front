@@ -5,6 +5,7 @@ import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -24,8 +25,8 @@ export default function Home() {
             <Header />
 			<main>
 				<section className='relative'>
-					<div className='fondo-fucsia'>
-						<Marquee gradient={false} className='fondo-fucsia'>
+					<div className='fondo-verde'>
+						<Marquee gradient={false} className='fondo-verde'>
 							<MarqueeContent />						
 							<MarqueeContent />						
 							<MarqueeContent />						
@@ -33,7 +34,7 @@ export default function Home() {
 						</Marquee>
 					</div>
 					<div className='fondo-blanco'>
-						<Marquee gradient={false}>
+						<Marquee gradient={false} direction='right'>
 							<MarqueeContentSub />						
 							<MarqueeContentSub />						
 							<MarqueeContentSub />						
@@ -96,9 +97,12 @@ export default function Home() {
 							<p className='pl-16 lg:pl-24'><Link href='congreso-ciudad-e-infancia'><a className='button text-sm font-semibold'>CONOCE EL PROGRAMA</a></Link></p>
 						</div>
 						<div className='mt-14'>
-							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>INTERVENCIONES URBANAS</p>
+							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet asterisco-azul'>INTERVENCIONES URBANAS</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
-							<p className='pl-16 lg:pl-24'><Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold'>CONOCE LOS LUGARES</a></Link></p>
+							<p className='pl-16 lg:pl-24'>
+								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold'>CONOCE LOS LUGARES</a></Link>
+								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold ml-4'>CONOCE LAS ACTIVIDADES</a></Link>
+							</p>
 						</div>
 					</div>
 				</section>
