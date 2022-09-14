@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Navigation, Pagination } from 'swiper';
@@ -12,6 +12,13 @@ import "swiper/css/navigation";
 export default function Congreso(props) {
 	const [videos, setVideos] = useState(props.videos);
 	const [activeTag, setActiveTag] = useState(null);
+	const [swiperRef, setSwiperRef] = useState(null);
+	const sliderContainerRef = useRef(null);
+
+	function goToSlider(slide) {
+		swiperRef.slideTo(slide);
+		window.scrollTo(0, sliderContainerRef.current.offsetTop);
+	}
 
 	function filterVideos(tag) {
 		setActiveTag(tag);
@@ -47,14 +54,15 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 					</div>
 				</section>
 
-				<section className='invitados-slider overflow-hidden w-full'>
+				<section ref={sliderContainerRef} className='invitados-slider overflow-hidden w-full color-blanco'>
 					<div className="triangulo-amarillo"></div>
 					<Swiper
+						onSwiper={setSwiperRef}
 						modules={[Navigation]}
 						navigation={true}
 						>
 						<SwiperSlide>
-							<div className='slide color-blanco'>
+							<div className='slide'>
 								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
@@ -66,7 +74,121 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MARTA ROMÁN</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>ESPAÑA</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Marta Román es geógrafa de la infancia. Su trabajo va dirigido a que niñas y niños puedan recuperar las calles y plazas donde jugar, encontrarse con sus iguales, formar parte de la sociedad y crecer con autonomía. Es socia consultora de Gea21 y ha escrito varios libros sobre esta temática, entre los que destaca: "¡Hagan sitio, por favor! La reintroducción de la infancia en la ciudad"</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='slide'>
+								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>TIM GILL</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>INGLATERRA</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Tim Gill es académico, escritor y consultor
+independiente, vive en Londres y es defensor
+mundial del juego al aire libre y la movilidad
+infantil. Es autor de "Urban Playground: How
+child-friendly planning and design can save
+cities" y "No Fear: Growing up in a risk-averse
+society".</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='slide'>
+								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>RODRIGO MAYORGA</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Rodrigo Mayorga es historiador, profesor y
+antropólogo educacional. Es académico UC,
+investigador postdoctoral del Centro de
+Justicia Educacional, y Director General de la
+Fundación “Momento Constituyente”, cuyo
+objetivo es entregar educación constituyente,
+contribuyendo al debate público y a los
+procesos de construcción colectiva que Chile
+vive hoy.</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='slide'>
+								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>CECILIA VACA JONES</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>ECUADOR</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Cecilia Vaca-Jones es consultora en materia de
+políticas sociales, ex-Directora Ejecutiva de la
+Fundación Bernard van Leer. Ex Ministra
+Coordinadora de Desarrollo Social en Ecuador.
+Posee amplia experiencia en la gestión de
+políticas y programas de desarrollo social. En
+su trayectoria profesional el principal enfoque
+de Cecilia ha sido mejorar las condiciones de
+vida de la niñez, las mujeres y las poblaciones
+indígenas. Máster en Ciudades de London
+School of Economics. Máster en Políticas
+Sociales para el Desarrollo Sostenible de la
+Universidad de Bolonia. Licenciada en
+Relaciones Internacionales de la Pontificia
+Universidad Católica de Ecuador.</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='slide'>
+								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MATÍAS KUNST</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Matias Knust es sociólogo de las infancias y
+director de la Fundación CIFREP. Sociólogo por
+la Universidad Alberto Hurtado y Magíster en
+estudios de la infancia por la Universidad de
+Ciencias y Tecnología de Noruega (NTNU). Hoy
+es miembro del Núcleo de Investigación en
+Primera Infancia y Política Pública de la
+Universidad de Chile.</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='slide'>
+								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>FELIPE LECANNELIER</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Felipe es psicólogo clínico de formación,
+magíster en Epistemología y Filosofía de las
+Ciencias de la Universidad de Chile, y doctor en
+Psicología de la Universidad Autónoma de
+Madrid. Se ha especializado en temas relativos
+al apego infantil, el trauma, infancia y salud
+mental. Actualmente se desempeña como
+académico de la Facultad de Medicina de la
+Universidad de Chile, asesor nacional e
+internacional, y es autor de libros como
+“A.M.A.R Hacia un cuidado respetuoso de
+apego en la infancia”, “El trauma oculto en la
+infancia” y “Volver a Mirar”.</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
 							</div>
 						</SwiperSlide>
 					</Swiper>
@@ -78,37 +200,37 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-1.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>MARTA ROMÁN</h3>
 								<p className='text-sm mb-6'>ESPAÑA</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer'>MÁS INFO</button>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(1)}>MÁS INFO</button>
 						</article>
 						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-2.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>TIM GILL</h3>
 								<p className='text-sm mb-6'>INGLATERRA</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer'>MÁS INFO</button>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(2)}>MÁS INFO</button>
 						</article>
 						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-3.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>RODRIGO MAYORGA</h3>
 								<p className='text-sm mb-6'>CHILE</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer'>MÁS INFO</button>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(3)}>MÁS INFO</button>
 						</article>
 						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-4.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>CECILIA VACA-JONES</h3>
 								<p className='text-sm mb-6'>ECUADOR</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer'>MÁS INFO</button>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(4)}>MÁS INFO</button>
 						</article>
 						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-5.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>MATIAS KNUST</h3>
-								<p className='text-sm mb-6'>INGLATERRA</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer'>MÁS INFO</button>
+								<p className='text-sm mb-6'>CHILE</p>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(5)}>MÁS INFO</button>
 						</article>
 						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-6.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>FELIPE LECANNELIER</h3>
 								<p className='text-sm mb-6'>CHILE</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer'>MÁS INFO</button>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(6)}>MÁS INFO</button>
 						</article>
 					</div>
 				</section>
