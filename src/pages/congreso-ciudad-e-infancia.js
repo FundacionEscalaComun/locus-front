@@ -279,7 +279,7 @@ infancia” y “Volver a Mirar”.</p>
 }
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed')
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=100&order=asc')
   const videos = await res.json()
 
   return {
