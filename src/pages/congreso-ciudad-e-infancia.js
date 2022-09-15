@@ -54,18 +54,21 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 					</div>
 				</section>
 
-				<section ref={sliderContainerRef} className='invitados-slider overflow-hidden w-full color-blanco'>
+				<section ref={sliderContainerRef} className='invitados-slider overflow-hidden w-full color-blanco relative'>
 					<div className="triangulo-amarillo"></div>
 					<Swiper
 						onSwiper={setSwiperRef}
 						modules={[Navigation]}
-						navigation={true}
+						navigation={{
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+						}}
 						>
 						<SwiperSlide>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-1.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
 									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
@@ -76,7 +79,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-2.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MARTA ROMÁN</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>ESPAÑA</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Marta Román es geógrafa de la infancia. Su trabajo va dirigido a que niñas y niños puedan recuperar las calles y plazas donde jugar, encontrarse con sus iguales, formar parte de la sociedad y crecer con autonomía. Es socia consultora de Gea21 y ha escrito varios libros sobre esta temática, entre los que destaca: "¡Hagan sitio, por favor! La reintroducción de la infancia en la ciudad"</p>
@@ -88,7 +91,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-3.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>TIM GILL</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>INGLATERRA</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Tim Gill es académico, escritor y consultor
@@ -106,7 +109,7 @@ society".</p>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-7.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>RODRIGO MAYORGA</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Rodrigo Mayorga es historiador, profesor y
@@ -126,7 +129,7 @@ vive hoy.</p>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-4.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>CECILIA VACA JONES</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>ECUADOR</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Cecilia Vaca-Jones es consultora en materia de
@@ -152,7 +155,7 @@ Universidad Católica de Ecuador.</p>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-5.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MATÍAS KNUST</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Matias Knust es sociólogo de las infancias y
@@ -171,7 +174,7 @@ Universidad de Chile.</p>
 							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-6.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>FELIPE LECANNELIER</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Felipe es psicólogo clínico de formación,
@@ -192,6 +195,12 @@ infancia” y “Volver a Mirar”.</p>
 							</div>
 						</SwiperSlide>
 					</Swiper>
+					<div className="arrows">
+						<div className="container relative">
+							<div className="swiper-button-prev"></div>
+							<div className="swiper-button-next"></div>
+						</div>
+					</div>
 				</section>
 
 				<section>

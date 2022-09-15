@@ -8,25 +8,31 @@
   }
 
   .swiper-button-prev {
-		left: 4vw;
-    top: 19vw;
+		left: 2em;
+    top: calc(16em + 5vw);
 		&::after {
-			content: 'prev';
+			content: '';
 			width: 20px;
-			height: 25px;
-			background-image: url('../../img/flecha-izq2.svg');
+			height: 23px;
+			background-image: url('../../img/flecha-blanca-izq.svg');
 		}
 	}
 	
 	.swiper-button-next {
-		left: 27vw;
-    top: 19vw;
+		left: 25em;
+    top: calc(16em + 5vw);
 		&::after {
-			content: 'next';
+			content: '';
 			width: 20px;
-			height: 25px;
-			background-image: url('../../img/flecha-der2.svg');
+			height: 23px;
+			background-image: url('../../img/flecha-blanca-der.svg');
 		}
+	}
+
+	.arrows {
+		position: absolute;
+		top: 0;
+		width: 100%;
 	}
 }
 
