@@ -164,7 +164,7 @@ export default function Intervenciones() {
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>SKATEPARK SAUSALITO</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>RIVERA NORPONIENTE Y DE LA LAGUNA SAUSALITO</p>
 								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
-									<Participant src='/img/flor-rosada.svg'>Club Skate<br /> Viña del Mar</Participant>
+									<Participant src='/img/fotos/intervenciones/logo-skate-park-46.svg'>Club Skate<br /> Viña del Mar</Participant>
 								</div>
 								<p className='my-8'>
 									<h3 className='font-bold mt-6 text-xl'>Lugar</h3>
