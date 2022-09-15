@@ -266,7 +266,7 @@ infancia” y “Volver a Mirar”.</p>
 						<div>
 							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>CONGRESO</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>CIUDAD E INFANCIA EN LÍNEA</h2>
-							<p className='pl-16 lg:pl-24'><Link href='congreso-ciudad-e-infancia'><a className='button small text-sm font-semibold'><span className="align-middle"><Image src="/img/ico-descarga.svg" width={24} height={24} alt='descarga' /></span> <span className='ml-4'>DESCARGAR</span></a></Link></p>
+							<p className='pl-16 lg:pl-24'><Link href='congreso-ciudad-e-infancia'><a className='button text-sm font-semibold'>CONOCE EL PROGRAMA</a></Link></p>
 						</div>
 					</div>
 				</section>
