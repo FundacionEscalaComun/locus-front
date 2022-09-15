@@ -63,7 +63,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 						>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-1.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS</h3>
@@ -74,7 +74,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-2.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MARTA ROMÁN</h3>
@@ -86,7 +86,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-3.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>TIM GILL</h3>
@@ -104,7 +104,7 @@ society".</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-7.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>RODRIGO MAYORGA</h3>
@@ -124,7 +124,7 @@ vive hoy.</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-4.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>CECILIA VACA JONES</h3>
@@ -150,10 +150,10 @@ Universidad Católica de Ecuador.</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-5.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
-									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MATÍAS KUNST</h3>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>MATÍAS KNUST</h3>
 									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
 									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Matias Knust es sociólogo de las infancias y
 director de la Fundación CIFREP. Sociólogo por
@@ -169,7 +169,7 @@ Universidad de Chile.</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/invitados-slide-ejemplo.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-6.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet mb-12'>¡invitados<br />especiales!</h2>
 									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>FELIPE LECANNELIER</h3>
@@ -279,9 +279,8 @@ infancia” y “Volver a Mirar”.</p>
 }
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=100&order=asc')
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=90&order=asc')
   const videos = await res.json()
-
   return {
     props: {
 			videos,
