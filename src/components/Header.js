@@ -45,7 +45,7 @@ const Header = () => {
 								<li><Link href='/intervenciones-urbanas-en-vina-del-mar'><a>INTERVENCIONES URBANAS</a></Link></li>
 							</ul>
 						</li>
-						<li className='flex items-stretch'><Link href='/#equipo'><a>EQUIPO</a></Link></li>
+						<li className='flex items-stretch'><Link href='/equipo'><a>EQUIPO</a></Link></li>
 						<li className='flex items-stretch'><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
 						<li className='flex items-stretch'><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
 					</ul>
@@ -63,7 +63,7 @@ const Header = () => {
 							<li className='mt-4'><Link href='/intervenciones-urbanas-en-vina-del-mar'><a>INTERVENCIONES URBANAS</a></Link></li>
 						</ul>
 					</li>
-					<li className='my-4'><Link href='/#equipo'><a>EQUIPO</a></Link></li>
+					<li className='my-4'><Link href='/equipo'><a>EQUIPO</a></Link></li>
 					<li className='my-4'><Link href='/#redes'><a>REDES SOCIALES</a></Link></li>
 					<li className='my-4'><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
 				</ul>
