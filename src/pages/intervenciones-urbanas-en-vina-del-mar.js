@@ -60,7 +60,7 @@ export default function Intervenciones() {
 							<div>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>PLAZA PARROQUIA</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>EDUARDO GROVE ENTRE MONTAÑA Y ALVAREZ</p>
-								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/1pia-schauder.png'>Pia<br /> Schauder</Participant>
 									<Participant src='/img/fotos/intervenciones/1oscar-andrade.png'>Oscar<br /> Andrade</Participant>
 								</div>
@@ -99,7 +99,7 @@ export default function Intervenciones() {
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>SALIDA ESTACIÓN METRO VIÑA</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>ÁLVAREZ CON EDUARDO GROVE</p>
-								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/2simoneta-ferrada.png'>Simonetta<br /> Ferrada</Participant>
 									<Participant src='/img/fotos/intervenciones/2sofia-berthelon.png'>Sofía<br /> Berthelon</Participant>
 								</div>
@@ -136,7 +136,7 @@ export default function Intervenciones() {
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>TERRENO EFE</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>TERRENO ENTRE ALVAREZ Y VIANA CON CALLE DE ACCESO A ESTACIÓN</p>
-								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/3alejandra-saldias.png'>Alejandro<br /> Saldias</Participant>
 									<Participant src='/img/fotos/intervenciones/3catalina-noguera.png'>Catalina<br /> Noguera</Participant>
 									<Participant src='/img/fotos/intervenciones/3felipe-aranda.png'>Felipe<br /> Aranda</Participant>
@@ -172,7 +172,7 @@ export default function Intervenciones() {
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>SKATEPARK SAUSALITO</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>RIVERA NORPONIENTE Y DE LA LAGUNA SAUSALITO</p>
-								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/logo-skate-park-46.svg'>Club Skate<br /> Viña del Mar</Participant>
 								</div>
 								<h3 className='font-bold mt-8 text-xl'>Lugar</h3>
@@ -213,7 +213,7 @@ export default function Intervenciones() {
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>PLAZA PALACIO CARRASCO</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>4 NORTE CON LIBERTAD</p>
-								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/4daniela-baeza.png'>Daniela<br /> Baeza</Participant>
 									<Participant src='/img/fotos/intervenciones/4franco-marrese.png'>Franco<br /> Marrese</Participant>
 									<Participant src='/img/fotos/intervenciones/4isidro-cuadra.png'>Isidro<br /> Cuadra</Participant>

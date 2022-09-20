@@ -204,7 +204,7 @@ infancia” y “Volver a Mirar”.</p>
 				</section>
 
 				<section>
-					<div className="container grid lg:grid-cols-3 gap-8 gap-y-16 my-12">
+					<div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 my-12">
 						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-1.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>MARTA ROMÁN</h3>
@@ -257,7 +257,7 @@ infancia” y “Volver a Mirar”.</p>
 						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 7 && ' fondo-rosa')} onClick={() => filterVideos(7)}>JUEGO Y DISEÑO URBANO</button>
 						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 8 && ' fondo-rosa')} onClick={() => filterVideos(8)}>EDUCACIÓN Y FORMACIÓN CIUDADANA</button>
 					</div>
-					<div className="container grid lg:grid-cols-3 gap-8 gap-y-16 my-12">
+					<div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 my-12">
 						{videos.map(video => 
 							<article key={video.id}>
 									<img src={video._embedded['wp:featuredmedia']['0'].source_url} width={374} height={211} alt='foto' />
@@ -271,7 +271,7 @@ infancia” y “Volver a Mirar”.</p>
 				</section>
 
 				<section className='fondo-blanco fondo-figura-rosa pt-48 pb-12'>
-					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8'>
+					<div className='sm:max-w-md lg:max-w-screen-md mx-8 sm:mx-auto flex flex-col justify-between pb-8'>
 						<div>
 							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>CONGRESO</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>CIUDAD E INFANCIA EN LÍNEA</h2>
