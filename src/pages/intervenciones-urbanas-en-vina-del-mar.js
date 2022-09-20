@@ -91,6 +91,9 @@ export default function Intervenciones() {
 								<p className='my-8'>
 								3. Un juego de pasarelas rojas de madera para saltar entre las jardineras.
 								</p>
+								<p className='my-8'>
+									<Image src="/img/fotos/intervenciones/01-plaza-parroquia.jpg" layout='responsive' width={806} height={571} alt='banner' />
+								</p>
 							</div>
 
 							<div className='mt-32'>
@@ -125,6 +128,9 @@ export default function Intervenciones() {
 	de agua o un cubículo de colores, que harán de este espacio, un espacio
 	diferente en estos 5 días.
 								</p>
+								<p className='my-8'>
+									<Image src="/img/fotos/intervenciones/02-metro-viña.jpg" layout='responsive' width={807} height={570} alt='banner' />
+								</p>
 							</div>
 
 							<div className='mt-32'>
@@ -157,6 +163,9 @@ export default function Intervenciones() {
 	para pasar, nuevas sombras para descubrir, estructuras perforadas que
 	permiten ser traspasadas o escaladas, y algunos elementos que permitirán
 	ver otro movimiento y sonido en este espacio.
+								</p>
+								<p className='my-8'>
+									<Image src="/img/fotos/intervenciones/03-terreno-efe.jpg" layout='responsive' width={807} height={807} alt='banner' />
 								</p>
 							</div>
 
@@ -195,6 +204,9 @@ export default function Intervenciones() {
 								<p className='my-8'>
 								El equipo trabajará la intervención en talleres con niñas y niños y con el
 	apoyo de la Fundación Deporte libre.
+								</p>
+								<p className='my-8'>
+									<Image src="/img/fotos/intervenciones/04-skatepark-sausalito.jpg" layout='responsive' width={806} height={363} alt='banner' />
 								</p>
 							</div>
 
@@ -239,6 +251,9 @@ export default function Intervenciones() {
 	desde la inocencia del juego, además encontrarán lápices de colores para
 	dejar su sello plasmado en todos los recorridos del juego y así, día a día irá
 	recobrando un nuevo color y vida creado por sus pequeños habitantes.
+								</p>
+								<p className='my-8'>
+									<Image src="/img/fotos/intervenciones/05-plaza-palacio-carrasco.jpg" layout='responsive' width={806} height={452} alt='banner' />
 								</p>
 							</div>
 
