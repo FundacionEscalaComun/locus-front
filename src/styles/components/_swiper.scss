@@ -20,23 +20,40 @@
 	}
 
 	.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-		margin: 14px;
+		margin: 7px;
+		@media (min-width: 1024px) {
+			margin: 14px;
+		}
 	}
 	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-		bottom: 25px;
-		width: 40%;
-		left: 30%;
+		bottom: 0;
+		width: 60%;
+		left: 20%;
+		@media (min-width: 1024px) {
+			bottom: 25px;
+			width: 40%;
+			left: 30%;
+		}
 	}
 	.swiper-pagination-bullet {
-		width: 1rem;
-		height: 1rem;
+		width: 0.5rem;
+		height: 0.5rem;
 		background-color: white;
 		opacity: 1;
+		@media (min-width: 1024px) {
+			width: 1rem;
+			height: 1rem;
+		}
 	}
 	.swiper-pagination-bullet-active {
-		width: 2rem;
-		height: 2rem;
+		width: 1rem;
+		height: 1rem;
 		position: relative;
-		top: 0.5rem;
+		top: 0.25rem;
+		@media (min-width: 1024px) {
+			width: 2rem;
+			height: 2rem;
+			top: 0.5rem;
+		}
 	}
 }

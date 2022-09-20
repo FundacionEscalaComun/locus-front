@@ -148,16 +148,16 @@ main {
 
 .button {
 	display: inline-block;
-	padding: 1.5rem 2.5rem;
+	padding: 1rem 2rem;
 	border-radius: 3rem;
 	background-color: $azul;
 	color: white;
 	text-transform: uppercase;
 	&.small {
-		padding: 1rem 2rem;
+		padding: 0.75rem 1.5rem;
 	}
 	&.xsmall {
-		padding: 0.75rem 2rem;
+		padding: 0.5rem 1.5rem;
 	}
 	&.fondo-verde {
 		background-color: $verde;
@@ -169,6 +169,15 @@ main {
 	&.fondo-blanco {
 		background-color: white;
 		color: $azul;
+	}
+	@media (min-width: 1024px) { 
+		padding: 1.5rem 2.5rem;
+		&.small {
+			padding: 1rem 2rem;
+		}
+		&.xsmall {
+			padding: 0.75rem 2rem;
+		}
 	}
 }
 

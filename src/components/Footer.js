@@ -2,45 +2,45 @@ import Image from 'next/image'
 
 const Footer = (props) => (
 	<footer className={((props.bgClass)? props.bgClass : 'fondo-blanco') + ' fondo-figura-azul color-blanco pt-28'}>
-		<section className='container flex justify-start gap-16'>
+		<section className='container lg:flex justify-start gap-16'>
 			<div>
 				<h2 className='text-lg mb-8'>ORGANIZA</h2>
 				<div className='relative w-28 h-28'><Image src="/img/logos/web-logo-escala-comun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
-			<div>
+			<div className='mt-8 lg:mt-0'>
 				<h2 className='text-lg mb-8'>FINANCIA</h2>
-				<div className='lg:flex justify-between gap-16'>
+				<div className='flex justify-between lg:gap-16'>
 					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/web-logo-ministerio-cultura.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/Olivo-logo-blanco.png" layout='fill' objectFit='contain' alt='logo' /></div>
-					<div className='col-span-2 relative w-28 h-28'><Image src="/img/logos/femsa.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='col-span-2 relative w-28 h-28 ml-8 lg:ml-0'><Image src="/img/logos/Olivo-logo-blanco.png" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='col-span-2 relative w-28 h-28 ml-8 lg:ml-0'><Image src="/img/logos/femsa.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				</div>
 			</div>
 		</section>
 
 		<section className='container'>
 			<h2 className='text-lg mt-12 mb-8'>PATROCINAN</h2>
-			<div className='lg:flex lg:flex-wrap justify-between gap-x-16 gap-y-4'>
-				<div className='relative h-28 w-28'><Image src="/img/logos/web-logo-viña-del-mar.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-escuela-arq-diseño-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-28 w-20'><Image src="/img/logos/web-logo-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-28 w-40'><Image src="/img/logos/web-logo-unicef.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-28 w-32'><Image src="/img/logos/web-logo-catolica-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-28 w-36'><Image src="/img/logos/web-logo-federico-santa-maria.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-28 w-36'><Image src="/img/logos/pichintun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+			<div className='grid grid-cols-2 lg:flex lg:flex-wrap justify-between gap-x-16 gap-y-4'>
+				<div className='relative h-28 w-20 lg:w-28'><Image src="/img/logos/web-logo-viña-del-mar.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-32 lg:w-40'><Image src="/img/logos/web-logo-escuela-arq-diseño-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-16 lg:w-20'><Image src="/img/logos/web-logo-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-32 lg:w-40'><Image src="/img/logos/web-logo-unicef.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-28 lg:w-32'><Image src="/img/logos/web-logo-catolica-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-28 lg:w-36'><Image src="/img/logos/web-logo-federico-santa-maria.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-28 lg:w-36'><Image src="/img/logos/pichintun.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
 		</section>
 
 		<section className='container'>
 			<h2 className='text-lg mt-12 mb-8'>AUSPICIO</h2>
-			<div className='lg:flex lg:flex-wrap gap-x-16 gap-y-4'>
-				<div className='relative h-16 w-28'><Image src="/img/logos/ambrosoli.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-16 w-40'><Image src="/img/logos/mustakis.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+			<div className='flex flex-wrap gap-x-16'>
+				<div className='relative h-16 w-20 lg:w-28'><Image src="/img/logos/ambrosoli.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-16 w-32 lg:w-40'><Image src="/img/logos/mustakis.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 			</div>
 		</section>
 
 		<div className='container flex flex-col lg:flex-row justify-between items-center lg:items-start gap-y-16 lg:lap-y-0 mt-16 lg:mt-36'>
 			<section>
-				<p className='w-80 h-32 relative'><Image src="/img/logos/web-logo-locus-frase.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
+				<p className='w-64 lg:w-80 h-32 relative'><Image src="/img/logos/web-logo-locus-frase.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
 			</section>
 			<section className='flex gap-10'>
 				<a href="https://www.instagram.com/locusfest/" className='font-bold uppercase flex gap-4 items-center'>

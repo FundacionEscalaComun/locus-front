@@ -64,16 +64,16 @@ export default function Intervenciones() {
 									<Participant src='/img/fotos/intervenciones/1pia-schauder.png'>Pia<br /> Schauder</Participant>
 									<Participant src='/img/fotos/intervenciones/1oscar-andrade.png'>Oscar<br /> Andrade</Participant>
 								</div>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Proyecto</h3>
+								<h3 className='font-bold mt-8 text-xl'>Proyecto</h3>
+								<p className='mb-8'>
 									Ludo a la Quinta
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Equipo</h3>
+								<h3 className='font-bold mt-8 text-xl'>Equipo</h3>
+								<p className='mb-8'>
 									Transversal
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Instagram</h3>
+								<h3 className='font-bold mt-8 text-xl'>Instagram</h3>
+								<p className='mb-8'>
 									<a href='https://www.instagram.com/transversal_arq/'>@TRANSVERSAL_ARQ</a>
 								</p>
 								<p className='my-8'>
@@ -103,16 +103,16 @@ export default function Intervenciones() {
 									<Participant src='/img/fotos/intervenciones/2simoneta-ferrada.png'>Simonetta<br /> Ferrada</Participant>
 									<Participant src='/img/fotos/intervenciones/2sofia-berthelon.png'>Sofía<br /> Berthelon</Participant>
 								</div>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Proyecto</h3>
+								<h3 className='font-bold mt-8 text-xl'>Proyecto</h3>
+								<p className='mb-8'>
 									Paseo de los Colores
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Equipo</h3>
+								<h3 className='font-bold mt-8 text-xl'>Equipo</h3>
+								<p className='mb-8'>
 									Cromáticas
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Instagram</h3>
+								<h3 className='font-bold mt-8 text-xl'>Instagram</h3>
+								<p className='mb-8'>
 									<a href='https://www.instagram.com/simonetta.fd/'>@SIMONETTA.FD</a>
 									<a href='https://www.instagram.com/a.noram/' className='ml-4'>@A.NORAM</a>
 								</p>
@@ -141,16 +141,16 @@ export default function Intervenciones() {
 									<Participant src='/img/fotos/intervenciones/3catalina-noguera.png'>Catalina<br /> Noguera</Participant>
 									<Participant src='/img/fotos/intervenciones/3felipe-aranda.png'>Felipe<br /> Aranda</Participant>
 								</div>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Proyecto</h3>
+								<h3 className='font-bold mt-8 text-xl'>Proyecto</h3>
+								<p className='mb-8'>
 									Escaleno
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Equipo</h3>
+								<h3 className='font-bold mt-8 text-xl'>Equipo</h3>
+								<p className='mb-8'>
 									SIT.URB
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Instagram</h3>
+								<h3 className='font-bold mt-8 text-xl'>Instagram</h3>
+								<p className='mb-8'>
 									<a href='https://www.instagram.com/sit.urb/'>@SIT.URB</a>
 								</p>
 								<p className='my-8'>
@@ -175,20 +175,20 @@ export default function Intervenciones() {
 								<div className='lg:flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/logo-skate-park-46.svg'>Club Skate<br /> Viña del Mar</Participant>
 								</div>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Lugar</h3>
+								<h3 className='font-bold mt-8 text-xl'>Lugar</h3>
+								<p className='mb-8'>
 									Skatepark Sausalito<br />(Rivera NorPoniente de la Laguna Sausalito)
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Proyecto</h3>
+								<h3 className='font-bold mt-8 text-xl'>Proyecto</h3>
+								<p className='mb-8'>
 									Dona tu plaza y aprende
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Equipo</h3>
+								<h3 className='font-bold mt-8 text-xl'>Equipo</h3>
+								<p className='mb-8'>
 									Club de Skate Viña del Mar
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Instagram</h3>
+								<h3 className='font-bold mt-8 text-xl'>Instagram</h3>
+								<p className='mb-8'>
 									<a href='https://www.instagram.com/clubskatevinadelmar/'>@CLUBSKATEVINADELMAR</a>
 								</p>
 								<p className='my-8'>
@@ -221,16 +221,16 @@ export default function Intervenciones() {
 									<Participant src='/img/fotos/intervenciones/4soledad-diaz.png'>Soledad<br /> Diaz</Participant>
 									<Participant src='/img/fotos/intervenciones/4vale-diaz.png'>Vale<br /> Diaz</Participant>
 								</div>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Proyecto</h3>
+								<h3 className='font-bold mt-8 text-xl'>Proyecto</h3>
+								<p className='mb-8'>
 									El fantástico Mundo Marino
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Equipo</h3>
+								<h3 className='font-bold mt-8 text-xl'>Equipo</h3>
+								<p className='mb-8'>
 									ARQ GREEN DBP - Fundación Aldea
 								</p>
-								<p className='my-8'>
-									<h3 className='font-bold mt-6 text-xl'>Instagram</h3>
+								<h3 className='font-bold mt-8 text-xl'>Instagram</h3>
+								<p className='mb-8'>
 									<a href='https://www.instagram.com/arqgreen_dbp/'>@ARQGREEN_DBP</a>
 									<a href='https://www.instagram.com/somos_aldea/' className='ml-4'>@SOMOS_ALDEA</a>
 								</p>

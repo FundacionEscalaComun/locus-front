@@ -248,14 +248,14 @@ infancia” y “Volver a Mirar”.</p>
 					<div className='max-w-screen-md mx-8 lg:mx-auto mt-28'>
 						<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet'>EXPLORA POR ÁREAS TEMÁTICAS</h2>
 					</div>
-					<div className='container flex flex-wrap justify-center gap-4 mt-12'>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === null && ' fondo-rosa')} onClick={() => filterVideos(null)}>VER TODO</button>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === 3 && ' fondo-rosa')} onClick={() => filterVideos(3)}>ESPACIOS PÚBLICOS Y MOVILIDAD</button>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === 4 && ' fondo-rosa')} onClick={() => filterVideos(4)}>MEDIOAMBIENTE Y PLANIFICACIÓN URBANA SUSTENTABLE</button>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === 5 && ' fondo-rosa')} onClick={() => filterVideos(5)}>GÉNEROS Y CUIDADOS</button>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === 6 && ' fondo-rosa')} onClick={() => filterVideos(6)}>SALUD Y BIENESTAR</button>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === 7 && ' fondo-rosa')} onClick={() => filterVideos(7)}>JUEGO Y DISEÑO URBANO</button>
-						<button className={'button xsmall text-sm font-semibold cursor-pointer' + (activeTag === 8 && ' fondo-rosa')} onClick={() => filterVideos(8)}>EDUCACIÓN Y FORMACIÓN CIUDADANA</button>
+					<div className='container flex flex-wrap justify-center mt-12'>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === null && ' fondo-rosa')} onClick={() => filterVideos(null)}>VER TODO</button>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 3 && ' fondo-rosa')} onClick={() => filterVideos(3)}>ESPACIOS PÚBLICOS Y MOVILIDAD</button>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 4 && ' fondo-rosa')} onClick={() => filterVideos(4)}>MEDIOAMBIENTE Y PLANIFICACIÓN URBANA SUSTENTABLE</button>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 5 && ' fondo-rosa')} onClick={() => filterVideos(5)}>GÉNEROS Y CUIDADOS</button>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 6 && ' fondo-rosa')} onClick={() => filterVideos(6)}>SALUD Y BIENESTAR</button>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 7 && ' fondo-rosa')} onClick={() => filterVideos(7)}>JUEGO Y DISEÑO URBANO</button>
+						<button className={'button xsmall m-2 text-sm font-semibold cursor-pointer' + (activeTag === 8 && ' fondo-rosa')} onClick={() => filterVideos(8)}>EDUCACIÓN Y FORMACIÓN CIUDADANA</button>
 					</div>
 					<div className="container grid lg:grid-cols-3 gap-8 gap-y-16 my-12">
 						{videos.map(video => 
