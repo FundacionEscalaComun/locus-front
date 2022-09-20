@@ -107,26 +107,6 @@ society".</p>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className='slide'>
-								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-7.jpg" layout='fill' objectFit='cover' alt='banner' />
-								<div className='container pt-28 relative'>
-									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
-									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>RODRIGO MAYORGA</h3>
-									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
-									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Rodrigo Mayorga es historiador, profesor y
-antropólogo educacional. Es académico UC,
-investigador postdoctoral del Centro de
-Justicia Educacional, y Director General de la
-Fundación “Momento Constituyente”, cuyo
-objetivo es entregar educación constituyente,
-contribuyendo al debate público y a los
-procesos de construcción colectiva que Chile
-vive hoy.</p>
-									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
-								</div>
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className='slide'>
 								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-4.jpg" layout='fill' objectFit='cover' alt='banner' />
 								<div className='container pt-28 relative'>
 									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
@@ -147,6 +127,26 @@ Sociales para el Desarrollo Sostenible de la
 Universidad de Bolonia. Licenciada en
 Relaciones Internacionales de la Pontificia
 Universidad Católica de Ecuador.</p>
+									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='slide'>
+								<Image src="/img/fotos/congreso/5-invitados-especiales-banner-7.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<div className='container pt-28 relative'>
+									<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
+									<h3 className='pl-8 lg:pl-12 font-hbold text-xl mb-2 w-72'>RODRIGO MAYORGA</h3>
+									<p className='pl-8 lg:pl-12 text-sm mb-6'>CHILE</p>
+									<p className='pl-8 lg:pl-12 text-sm mb-6 w-96'>Rodrigo Mayorga es historiador, profesor y
+antropólogo educacional. Es académico UC,
+investigador postdoctoral del Centro de
+Justicia Educacional, y Director General de la
+Fundación “Momento Constituyente”, cuyo
+objetivo es entregar educación constituyente,
+contribuyendo al debate público y a los
+procesos de construcción colectiva que Chile
+vive hoy.</p>
 									<button className='ml-8 lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
 								</div>
 							</div>
@@ -218,15 +218,15 @@ infancia” y “Volver a Mirar”.</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(2)}>MÁS INFO</button>
 						</article>
 						<article>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-3.png" width={374} height={211} alt='banner' />
-								<h3 className='font-hbold text-xl'>RODRIGO MAYORGA</h3>
-								<p className='text-sm mb-6'>CHILE</p>
-								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(3)}>MÁS INFO</button>
-						</article>
-						<article>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-4.png" width={374} height={211} alt='banner' />
 								<h3 className='font-hbold text-xl'>CECILIA VACA-JONES</h3>
 								<p className='text-sm mb-6'>ECUADOR</p>
+								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(3)}>MÁS INFO</button>
+						</article>
+						<article>
+								<Image src="/img/fotos/congreso/1-invitados-especiales-3.png" width={374} height={211} alt='banner' />
+								<h3 className='font-hbold text-xl'>RODRIGO MAYORGA</h3>
+								<p className='text-sm mb-6'>CHILE</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(4)}>MÁS INFO</button>
 						</article>
 						<article>
