@@ -261,9 +261,22 @@ export default function Intervenciones() {
 					</div>
 				</section>
 
+				<section className='fondo-blanco fondo-figura-rosa pt-48 pb-12'>
+					<div className='sm:max-w-md lg:max-w-screen-md mx-8 sm:mx-auto flex flex-col justify-between pb-8'>
+						<div>
+							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>INTERVENCIONES URBANAS</p>
+							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
+							<p className='pl-16 lg:pl-24'>
+								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
+								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold lg:ml-4 text-center'>CONOCE LAS ACTIVIDADES</a></Link>
+							</p>
+						</div>
+					</div>
+				</section>
+
 			</main>
 
-			<Footer bgClass="fondo-blanco" />
+			<Footer bgClass="fondo-rosado" />
         </>
     )
 }
