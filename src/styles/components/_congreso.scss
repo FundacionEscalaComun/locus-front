@@ -4,28 +4,38 @@
 	background-color: $azul;
   .slide {
     width: 100%;
-    height: 53vw;
+		@media (min-width: 1024px) { 
+    	height: 53vw;
+		}
   }
 
   .swiper-button-prev {
-		left: 2em;
-    top: calc(16em + 5vw);
+		left: 8vw;
+    top: 26rem;
 		&::after {
 			content: '';
 			width: 20px;
 			height: 23px;
 			background-image: url('../../img/flecha-blanca-izq.svg');
 		}
+		@media (min-width: 1024px) { 
+			left: 2em;
+			top: calc(16em + 5vw);
+		}
 	}
 	
 	.swiper-button-next {
-		left: 25em;
-    top: calc(16em + 5vw);
+		right: 8vw;
+    top: 26rem;
 		&::after {
 			content: '';
 			width: 20px;
 			height: 23px;
 			background-image: url('../../img/flecha-blanca-der.svg');
+		}
+		@media (min-width: 1024px) { 
+			left: 25em;
+			top: calc(16em + 5vw);
 		}
 	}
 
