@@ -259,12 +259,14 @@ infancia” y “Volver a Mirar”.</p>
 					</div>
 					<div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 my-12">
 						{videos.map(video => 
-							<article key={video.id}>
+							<article key={video.id} className='relative'>
 									<img src={video._embedded['wp:featuredmedia']['0'].source_url} width={374} height={211} alt='foto' />
+									{video.acf.etiqueta === 'Nuevo' && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
+									{video.acf.etiqueta === 'Pronto' && <span className='tag-soon'><Image src="/img/web-E1 activaciones-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;PRONTO</span>}
 									<h3 className='font-hbold text-xl uppercase mt-3 mb-1' dangerouslySetInnerHTML={{__html: video.title.rendered }}></h3>
 									<p className='text-xs mb-1 uppercase'>{video.acf.cargo}</p>
 									<p className='text-sm mb-6'>{video.acf.descripcion}</p>
-									<a href={'/video/' + video.id} className='button xsmall text-sm font-semibold cursor-pointer'>VER VIDEO</a>
+									<span className='button xsmall text-sm font-semibold'>PRONTO DISPONIBLE</span>
 							</article>
 						)}
 					</div>
@@ -288,7 +290,7 @@ infancia” y “Volver a Mirar”.</p>
 }
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=90&order=asc')
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=91&order=asc')
   const videos = await res.json()
   return {
     props: {
