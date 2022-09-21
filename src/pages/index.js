@@ -14,7 +14,7 @@ import Marquee from "react-fast-marquee";
 import MarqueeContent from '@/components/MarqueeContent';
 import MarqueeContentSub from '@/components/MarqueeContentSub';
 
-export default function Home() {
+export default function Home({noticias}) {
 	const [swiperRef, setSwiperRef] = useState(null);
     return (
         <>
@@ -121,31 +121,13 @@ export default function Home() {
 							slidesPerView={(typeof window !== 'undefined' && window.innerWidth < 1024)? 1 : 3}
 							spaceBetween={30}
 							>
-								<SwiperSlide>
+							{noticias.map(noticia => 
+								<SwiperSlide key={noticia.id}>
 										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
-										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
-										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
+										<h3 className='my-6 lg:pr-20' dangerouslySetInnerHTML={{__html: noticia.title.rendered }}></h3>
+										<a href={noticia.acf.link} className='button small font-normal text-sm'>Ver más</a>
 								</SwiperSlide>
-								<SwiperSlide>
-										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
-										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
-										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
-								</SwiperSlide>
-								<SwiperSlide>
-										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
-										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
-										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
-								</SwiperSlide>
-								<SwiperSlide>
-										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
-										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
-										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
-								</SwiperSlide>
-								<SwiperSlide>
-										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
-										<h3 className='my-6 lg:pr-20'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h3>
-										<Link href="/"><a className='button small font-normal text-sm'>Ver más</a></Link>
-								</SwiperSlide>
+							)}
 							</Swiper>
 							<div className="swiper-button-prev" onClick={() => swiperRef.slidePrev()}></div>
 							<div className="swiper-button-next" onClick={() => swiperRef.slideNext()}></div>
@@ -181,4 +163,15 @@ export default function Home() {
 			<Footer />
         </>
     )
+}
+
+export async function getStaticProps(context) {
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/posts?_embed&per_page=90&order=asc')
+	console.log(res)
+  const noticias = await res.json()
+  return {
+    props: {
+			noticias,
+		},
+  }
 }
