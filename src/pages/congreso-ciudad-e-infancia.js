@@ -237,7 +237,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 }
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=91&order=asc')
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=92&order=asc')
   const videos = await res.json()
   return {
     props: {
