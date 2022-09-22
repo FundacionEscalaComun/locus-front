@@ -165,7 +165,7 @@ export default function Intervenciones() {
 	ver otro movimiento y sonido en este espacio.
 								</p>
 								<p className='my-8'>
-									<Image src="/img/fotos/intervenciones/03-terreno-efe.jpg" layout='responsive' width={807} height={807} alt='banner' />
+									<Image src="/img/fotos/intervenciones/03-escaleno.jpg" layout='responsive' width={807} height={429} alt='banner' />
 								</p>
 							</div>
 
@@ -268,7 +268,7 @@ export default function Intervenciones() {
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
 								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
-								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold lg:ml-4 text-center'>CONOCE LAS ACTIVIDADES</a></Link>
+								<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold lg:ml-4 text-center' target='_blank'>CONOCE LAS ACTIVIDADES</a>
 							</p>
 						</div>
 					</div>

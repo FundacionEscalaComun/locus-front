@@ -136,7 +136,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 										<h3 className='lg:pl-12 font-hbold text-xl mb-2 lg:w-72'>{slide.name}</h3>
 										<p className='lg:pl-12 text-sm mb-6'>{slide.country}</p>
 										<p className='lg:pl-12 text-sm mb-6 lg:w-96 text-left'>{slide.desc}</p>
-										<button className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold cursor-pointer'>VER VIDEO</button>
+										<span className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>PRONTO DISPONIBLE</span>
 									</div>
 								</div>
 							</SwiperSlide>

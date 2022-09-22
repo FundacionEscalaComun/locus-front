@@ -101,7 +101,7 @@ export default function Home({noticias}) {
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
 								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
-								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold lg:ml-4'>CONOCE LAS ACTIVIDADES</a></Link>
+								<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold lg:ml-4 text-center' target='_blank'>CONOCE LAS ACTIVIDADES</a>
 							</p>
 						</div>
 					</div>
