@@ -80,7 +80,7 @@ export default function Home({noticias}) {
 						Ellos también son ciudadanos activos. Hoy necesitamos de sus experiencias
 						y miradas para el diseño y proyección de un futuro más amable, inclusivo,
 						creativo y sustentable.</p>
-						<p className='my-8'>Durante este 2022, invitaremos a jóvenes y profesionales a intervenir una
+						<p className='my-8'>Durante la primera semana de octubre de 2022, invitaremos a jóvenes y profesionales a intervenir una
 						selección de espacios públicos en la ciudad de Viña del Mar (Chile). Con un
 						programa de workshops, concurso de arquitectura y encuentros con
 						expertos, <strong>LOCUS</strong> será una rápida y masiva inmersión de la participación
@@ -92,12 +92,12 @@ export default function Home({noticias}) {
 					<a className="anchor" id="convocatorias"></a>
 					<div className='max-w-screen-md mx-8 lg:mx-auto flex flex-col justify-between pb-8'>
 						<div>
-							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>CONGRESO</p>
+							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>CONGRESO: 4 AL 7 DE OCTUBRE</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>CIUDAD E INFANCIA EN LÍNEA</h2>
 							<p className='pl-16 lg:pl-24'><a href='/descargas/congreso/parrilla-congreso.pdf' className='button text-sm font-semibold' target='_blank'>CONOCE EL PROGRAMA</a></p>
 						</div>
 						<div className='mt-14'>
-							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet asterisco-azul'>INTERVENCIONES URBANAS</p>
+							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet asterisco-azul'>INTERVENCIONES URBANAS: 4 AL 8 DE OCTUBRE</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
 								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
