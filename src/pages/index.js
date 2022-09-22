@@ -110,7 +110,7 @@ export default function Home({noticias}) {
 				<section className='fondo-amarillo fondo-figura-blanca' id='equipo'>
 					<div className='container pt-40 pb-12'>
 						<h2 className='text-3xl lg:text-4xl mb-12 ml-16'>LOCUS <span className='font-hbold'>NOTICIAS</span></h2>
-						<div className='swiper-container font-bold mx-16 relative'>
+						<div className='swiper-container mx-16 relative'>
 							<Swiper
 							onSwiper={setSwiperRef}
 							navigation={{
