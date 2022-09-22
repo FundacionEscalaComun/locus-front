@@ -15,6 +15,7 @@ export default function Congreso(props) {
 	const [swiperRef, setSwiperRef] = useState(null);
 	const [isMobile, setIsMobile] = useState(false);
 	const sliderContainerRef = useRef(null);
+	const slides = props.slides;
 
 	function goToSlider(slide) {
 		swiperRef.slideTo(slide);
@@ -33,58 +34,6 @@ export default function Congreso(props) {
 	useEffect(() => {
 		setIsMobile(typeof window !== 'undefined' && window.innerWidth < 1024);
 	}, [])
-	
-	const slides = [
-		{
-			name: 'ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS',
-			country: 'CHILE',
-			desc: '',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-1.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-7.png',
-		},
-		{
-			name: 'MARTA ROMÁN',
-			country: 'ESPAÑA',
-			desc: 'Marta Román es geógrafa de la infancia. Su trabajo va dirigido a que niñas y niños puedan recuperar las calles y plazas donde jugar, encontrarse con sus iguales, formar parte de la sociedad y crecer con autonomía. Es socia consultora de Gea21 y ha escrito varios libros sobre esta temática, entre los que destaca: "¡Hagan sitio, por favor! La reintroducción de la infancia en la ciudad"',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-2.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-1.png',
-		},
-		{
-			name: 'TIM GILL',
-			country: 'INGLATERRA',
-			desc: 'Tim Gill es académico, escritor y consultor independiente, vive en Londres y es defensor mundial del juego al aire libre y la movilidad infantil. Es autor de "Urban Playground: How child-friendly planning and design can save cities" y "No Fear: Growing up in a risk-averse society".',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-3.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-5.png',
-		},
-		{
-			name: 'CECILIA VACA JONES',
-			country: 'ECUADOR',
-			desc: 'Cecilia Vaca-Jones es consultora en materia de políticas sociales, ex-Directora Ejecutiva de la Fundación Bernard van Leer. Ex Ministra Coordinadora de Desarrollo Social en Ecuador. Posee amplia experiencia en la gestión de políticas y programas de desarrollo social. En su trayectoria profesional el principal enfoque de Cecilia ha sido mejorar las condiciones de vida de la niñez, las mujeres y las poblaciones indígenas. Máster en Ciudades de London School of Economics. Máster en Políticas Sociales para el Desarrollo Sostenible de la Universidad de Bolonia. Licenciada en Relaciones Internacionales de la Pontificia Universidad Católica de Ecuador.', 
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-4.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-4.png',
-		},
-		{
-			name: 'RODRIGO MAYORGA',
-			country: 'CHILE',
-			desc: 'Rodrigo Mayorga es historiador, profesor y antropólogo educacional. Es académico UC, investigador postdoctoral del Centro de Justicia Educacional, y Director General de la Fundación “Momento Constituyente”, cuyo objetivo es entregar educación constituyente, contribuyendo al debate público y a los procesos de construcción colectiva que Chile vive hoy',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-7.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-3.png',
-		},
-		{
-			name: 'MATÍAS KNUST',
-			country: 'CHILE',
-			desc: 'Matias Knust es sociólogo de las infancias y director de la Fundación CIFREP. Sociólogo por la Universidad Alberto Hurtado y Magíster en estudios de la infancia por la Universidad de Ciencias y Tecnología de Noruega (NTNU). Hoy es miembro del Núcleo de Investigación en Primera Infancia y Política Pública de la Universidad de Chile.',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-5.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-2.png',
-		},
-		{
-			name: 'FELIPE LECANNELIER',
-			country: 'CHILE',
-			desc: 'Felipe es psicólogo clínico de formación, magíster en Epistemología y Filosofía de las Ciencias de la Universidad de Chile, y doctor en Psicología de la Universidad Autónoma de Madrid. Se ha especializado en temas relativos al apego infantil, el trauma, infancia y salud mental. Actualmente se desempeña como académico de la Facultad de Medicina de la Universidad de Chile, asesor nacional e internacional, y es autor de libros como “A.M.A.R Hacia un cuidado respetuoso de apego en la infancia”, “El trauma oculto en la infancia” y “Volver a Mirar”.',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-6.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-6.png',
-		},
-	]
 
   return (
         <>
@@ -121,8 +70,8 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 								prevEl: '.swiper-button-prev',
 						}}
 						>
-						{slides.map(slide => 
-							<SwiperSlide>
+						{slides.map((slide, index) => 
+							<SwiperSlide key={slide.name}>
 								<div className='slide'>
 									<div className='w-56 mx-auto lg:hidden'>
 										<h2 className='pl-16 font-hbold text-xl leading-tight bullet estrella-blanca mb-6 mt-8'>¡invitados<br />especiales!</h2>
@@ -136,7 +85,10 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 										<h3 className='lg:pl-12 font-hbold text-xl mb-2 lg:w-72'>{slide.name}</h3>
 										<p className='lg:pl-12 text-sm mb-6'>{slide.country}</p>
 										<p className='lg:pl-12 text-sm mb-6 lg:w-96 text-left'>{slide.desc}</p>
-										<span className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>PRONTO DISPONIBLE</span>
+										{slide.published
+										? <Link href={'/invitado/' + index}><a className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>VER VIDEO</a></Link>
+										: <span className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>PRONTO DISPONIBLE</span>
+										}
 									</div>
 								</div>
 							</SwiperSlide>
@@ -152,38 +104,44 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 
 				<section>
 					<div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 my-12">
-						<article>
+						<article className='relative'>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-1.png" width={374} height={211} alt='banner' />
+								{slides[1].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>MARTA ROMÁN</h3>
 								<p className='text-sm mb-6'>ESPAÑA</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(1)}>MÁS INFO</button>
 						</article>
-						<article>
+						<article className='relative'>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-2.png" width={374} height={211} alt='banner' />
+								{slides[2].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>TIM GILL</h3>
 								<p className='text-sm mb-6'>INGLATERRA</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(2)}>MÁS INFO</button>
 						</article>
-						<article>
+						<article className='relative'>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-4.png" width={374} height={211} alt='banner' />
+								{slides[3].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>CECILIA VACA-JONES</h3>
 								<p className='text-sm mb-6'>ECUADOR</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(3)}>MÁS INFO</button>
 						</article>
-						<article>
+						<article className='relative'>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-3.png" width={374} height={211} alt='banner' />
+								{slides[4].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>RODRIGO MAYORGA</h3>
 								<p className='text-sm mb-6'>CHILE</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(4)}>MÁS INFO</button>
 						</article>
-						<article>
+						<article className='relative'>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-5.png" width={374} height={211} alt='banner' />
+								{slides[5].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>MATIAS KNUST</h3>
 								<p className='text-sm mb-6'>CHILE</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(5)}>MÁS INFO</button>
 						</article>
-						<article>
+						<article className='relative'>
 								<Image src="/img/fotos/congreso/1-invitados-especiales-6.png" width={374} height={211} alt='banner' />
+								{slides[6].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>FELIPE LECANNELIER</h3>
 								<p className='text-sm mb-6'>CHILE</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(6)}>MÁS INFO</button>
@@ -208,12 +166,14 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 						{videos.map(video => 
 							<article key={video.id} className='relative'>
 									<img src={video._embedded['wp:featuredmedia']['0'].source_url} width={374} height={211} alt='foto' />
-									{video.acf.etiqueta === 'Nuevo' && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
-									{video.acf.etiqueta === 'Pronto' && <span className='tag-soon'><Image src="/img/web-E1 activaciones-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;PRONTO</span>}
+									{video.new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 									<h3 className='font-hbold text-xl uppercase mt-3 mb-1' dangerouslySetInnerHTML={{__html: video.title.rendered }}></h3>
 									<p className='text-xs mb-1 uppercase'>{video.acf.cargo}</p>
 									<p className='text-sm mb-6'>{video.acf.descripcion}</p>
-									<span className='button xsmall text-sm font-semibold'>PRONTO DISPONIBLE</span>
+									{video.published
+										? <Link href={'/video/' + video.id}><a className='button xsmall text-sm font-semibold'>VER VIDEO</a></Link>
+										: <span className='button xsmall text-sm font-semibold'>PRONTO DISPONIBLE</span>
+									}
 							</article>
 						)}
 					</div>
@@ -237,11 +197,85 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 }
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=92&order=asc')
-  const videos = await res.json()
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?_embed&per_page=96&order=asc')
+  let videos = await res.json()
+	videos.forEach((video, index) => {
+		videos[index].published = new Date() >= new Date(video.acf.fecha_publicacion);
+		var nextDay = new Date(video.acf.fecha_publicacion);
+		nextDay.setDate(nextDay.getDate() + 1);
+		videos[index].new = new Date() >= new Date(video.acf.fecha_publicacion) && new Date() < nextDay;
+	})
+
+	const slides = [
+		{
+			name: 'ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS',
+			country: 'CHILE',
+			desc: '',
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-1.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-7.png',
+			published: false,
+			new: false,
+		},
+		{
+			name: 'MARTA ROMÁN',
+			country: 'ESPAÑA',
+			desc: 'Marta Román es geógrafa de la infancia. Su trabajo va dirigido a que niñas y niños puedan recuperar las calles y plazas donde jugar, encontrarse con sus iguales, formar parte de la sociedad y crecer con autonomía. Es socia consultora de Gea21 y ha escrito varios libros sobre esta temática, entre los que destaca: "¡Hagan sitio, por favor! La reintroducción de la infancia en la ciudad"',
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-2.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-1.png',
+			published: false,
+			new: false,
+		},
+		{
+			name: 'TIM GILL',
+			country: 'INGLATERRA',
+			desc: 'Tim Gill es académico, escritor y consultor independiente, vive en Londres y es defensor mundial del juego al aire libre y la movilidad infantil. Es autor de "Urban Playground: How child-friendly planning and design can save cities" y "No Fear: Growing up in a risk-averse society".',
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-3.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-5.png',
+			published: false,
+			new: false,
+		},
+		{
+			name: 'CECILIA VACA JONES',
+			country: 'ECUADOR',
+			desc: 'Cecilia Vaca-Jones es consultora en materia de políticas sociales, ex-Directora Ejecutiva de la Fundación Bernard van Leer. Ex Ministra Coordinadora de Desarrollo Social en Ecuador. Posee amplia experiencia en la gestión de políticas y programas de desarrollo social. En su trayectoria profesional el principal enfoque de Cecilia ha sido mejorar las condiciones de vida de la niñez, las mujeres y las poblaciones indígenas. Máster en Ciudades de London School of Economics. Máster en Políticas Sociales para el Desarrollo Sostenible de la Universidad de Bolonia. Licenciada en Relaciones Internacionales de la Pontificia Universidad Católica de Ecuador.', 
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-4.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-4.png',
+			published: false,
+			new: false,
+		},
+		{
+			name: 'RODRIGO MAYORGA',
+			country: 'CHILE',
+			desc: 'Rodrigo Mayorga es historiador, profesor y antropólogo educacional. Es académico UC, investigador postdoctoral del Centro de Justicia Educacional, y Director General de la Fundación “Momento Constituyente”, cuyo objetivo es entregar educación constituyente, contribuyendo al debate público y a los procesos de construcción colectiva que Chile vive hoy',
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-7.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-3.png',
+			published: false,
+			new: false,
+		},
+		{
+			name: 'MATÍAS KNUST',
+			country: 'CHILE',
+			desc: 'Matias Knust es sociólogo de las infancias y director de la Fundación CIFREP. Sociólogo por la Universidad Alberto Hurtado y Magíster en estudios de la infancia por la Universidad de Ciencias y Tecnología de Noruega (NTNU). Hoy es miembro del Núcleo de Investigación en Primera Infancia y Política Pública de la Universidad de Chile.',
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-5.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-2.png',
+			published: false,
+			new: false,
+		},
+		{
+			name: 'FELIPE LECANNELIER',
+			country: 'CHILE',
+			desc: 'Felipe es psicólogo clínico de formación, magíster en Epistemología y Filosofía de las Ciencias de la Universidad de Chile, y doctor en Psicología de la Universidad Autónoma de Madrid. Se ha especializado en temas relativos al apego infantil, el trauma, infancia y salud mental. Actualmente se desempeña como académico de la Facultad de Medicina de la Universidad de Chile, asesor nacional e internacional, y es autor de libros como “A.M.A.R Hacia un cuidado respetuoso de apego en la infancia”, “El trauma oculto en la infancia” y “Volver a Mirar”.',
+			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-6.jpg',
+			imgm: '/img/fotos/congreso/invitados-especiales-6.png',
+			published: false,
+			new: false,
+		},
+	]
+
   return {
     props: {
 			videos,
+			slides,
 		},
   }
 }
