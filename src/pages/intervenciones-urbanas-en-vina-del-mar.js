@@ -3,19 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useState } from 'react'
-import { concursoCerrado } from '@/lib/concurso'
 import Participant from '@/components/Participant'
 
 export default function Intervenciones() {
-	const [info, setInfo] = useState(false);
-	const [lugar, setLugar] = useState(null);
-
-	function handleClickOutside(e) {
-		if(!e.target.classList.contains('numero')) {
-			setLugar(null);
-		}
-	}
     return (
         <>
             <Head>
@@ -27,7 +17,12 @@ export default function Intervenciones() {
 
 				<section className='color-azul fondo-amarillo' id='sobre'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto pt-16 pb-8 lg:pt-32 lg:text-xl'>
-						<h2 className='font-hbold text-xl lg:text-4xl lg:mb-16 bullet'>INTERVENCIONES<br />URBANAS EN VIÑA DEL MAR</h2>
+						<h2 className='font-hbold text-xl lg:text-4xl lg:mb-8 bullet'>INTERVENCIONES<br />URBANAS EN VIÑA DEL MAR</h2>
+
+						<p className='pl-16 lg:pl-24'>
+							<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'>CONOCE LAS ACTIVIDADES</a>
+						</p>
+
 						<p className='my-8'>Durante 5 días en octubre, el Festival Locus transformará la ciudad de Viña
 						del Mar en un experimento creativo y colaborativo a través de intervenciones
 						de urbanismo táctico seleccionadas en el concurso de arquitectura Genius
