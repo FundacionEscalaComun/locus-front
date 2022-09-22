@@ -166,7 +166,7 @@ export default function Home({noticias}) {
 }
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/posts?_embed&per_page=91&order=asc')
+	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/posts?_embed&per_page=91&order=asc&t=' + Math.round(new Date().getTime()/1000))
   const noticias = await res.json()
   return {
     props: {
