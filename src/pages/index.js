@@ -123,7 +123,7 @@ export default function Home({noticias}) {
 							>
 							{noticias.map(noticia => 
 								<SwiperSlide key={noticia.id}>
-										<img src="/img/foto-slider.jpg" className='w-full' alt='banner' />
+										<img src={noticia._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} className='w-full' alt='banner' />
 										<h3 className='my-6 lg:pr-20' dangerouslySetInnerHTML={{__html: noticia.title.rendered }}></h3>
 										<a href={noticia.acf.link} className='button small font-normal text-sm'>Ver más</a>
 								</SwiperSlide>
@@ -167,7 +167,6 @@ export default function Home({noticias}) {
 
 export async function getStaticProps(context) {
 	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/posts?_embed&per_page=91&order=asc')
-	console.log(res)
   const noticias = await res.json()
   return {
     props: {
