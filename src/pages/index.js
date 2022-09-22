@@ -125,7 +125,7 @@ export default function Home({noticias}) {
 								<SwiperSlide key={noticia.id}>
 										<img src={noticia._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} className='w-full' alt='banner' />
 										<h3 className='my-6 lg:pr-20' dangerouslySetInnerHTML={{__html: noticia.title.rendered }}></h3>
-										<a href={noticia.acf.link} className='button small font-normal text-sm'>Ver más</a>
+										{noticia.acf.link !== '' && <a href={noticia.acf.link} className='button small font-normal text-sm'>Ver más</a>}
 								</SwiperSlide>
 							)}
 							</Swiper>
