@@ -20,7 +20,7 @@ export default function Intervenciones() {
 						<h2 className='font-hbold text-xl lg:text-4xl lg:mb-8 bullet'>INTERVENCIONES<br />URBANAS EN VIÑA DEL MAR</h2>
 
 						<p className='pl-16 lg:pl-24'>
-							<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold lg:ml-4 text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+							<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 						</p>
 
 						<p className='my-8'>Durante 5 días en octubre, el Festival Locus transformará la ciudad de Viña
@@ -187,18 +187,10 @@ export default function Intervenciones() {
 									<a href='https://www.instagram.com/clubskatevinadelmar/'>@CLUBSKATEVINADELMAR</a>
 								</p>
 								<p className='my-8'>
-								En el skatepark aparece el Genius Loci mejorando los espacios con material
-	reciclado (tablas usadas o nuevas de skate), para generar insumos como
-	sillas, bancas, columpios, estantes, percheros para poder organizar mejor el
-	espacio deportivo y de convivencia en donde se generarían algunas reglas
-	de convivencia y señalética, donde demarcar mejor las áreas nuevas y acerar
-	el espacio Sausalito, no solo a los skaters, sino a toda sus familias. Aquí
-	podrás disfrutar de zona de descanso para mirar la laguna, zona de lectura,
-	guardarropía y lockers para los deportistas.
+								En el skatepark aparece el Genius Loci mejorando los espacios con material reciclado (tablas usadas de skate), para generar columpios y otros juegos entre los árboles, para generar un espacio no solo para los skaters, sino para todas sus familias. Aquí podrás disfrutar de zona de descanso y juego para mirar la laguna. Además se renovarán las pinturas de los bowls, para demarcar zonas según dificultad.
 								</p>
 								<p className='my-8'>
-								El equipo trabajará la intervención en talleres con niñas y niños y con el
-	apoyo de la Fundación Deporte libre.
+								El equipo trabajará la intervención en talleres con niñas y niños para pintar un mural con Payo y trabajará con el apoyo de la Fundación Deporte libre.
 								</p>
 								<p className='my-8'>
 									<Image src="/img/fotos/intervenciones/04-skatepark-sausalito.jpg" layout='responsive' width={806} height={363} alt='banner' />
@@ -263,7 +255,7 @@ export default function Intervenciones() {
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
 								{/* <Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link> */}
-								<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold lg:ml-4 text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+								<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 							</p>
 						</div>
 					</div>
