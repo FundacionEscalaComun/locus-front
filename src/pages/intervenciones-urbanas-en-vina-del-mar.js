@@ -17,7 +17,7 @@ export default function Intervenciones() {
 
 				<section className='color-azul fondo-amarillo' id='sobre'>
 					<div className='max-w-screen-md mx-8 lg:mx-auto pt-16 pb-8 lg:pt-32 lg:text-xl'>
-						<h2 className='font-hbold text-xl lg:text-4xl lg:mb-8 bullet'>INTERVENCIONES<br />URBANAS EN VIÑA DEL MAR</h2>
+						<h2 className='font-hbold text-xl lg:text-4xl mb-4 lg:mb-8 bullet'>INTERVENCIONES<br />URBANAS EN VIÑA DEL MAR</h2>
 
 						<p className='pl-16 lg:pl-24'>
 							<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
@@ -55,7 +55,7 @@ export default function Intervenciones() {
 							<div>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>PLAZA PARROQUIA</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>EDUARDO GROVE ENTRE MONTAÑA Y ALVAREZ</p>
-								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/1pia-schauder.png'>Pia<br /> Schauder</Participant>
 									<Participant src='/img/fotos/intervenciones/1oscar-andrade.png'>Oscar<br /> Andrade</Participant>
 								</div>
@@ -94,7 +94,7 @@ export default function Intervenciones() {
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>SALIDA ESTACIÓN METRO VIÑA</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>ÁLVAREZ CON EDUARDO GROVE</p>
-								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/2simoneta-ferrada.png'>Simonetta<br /> Ferrada</Participant>
 									<Participant src='/img/fotos/intervenciones/2sofia-berthelon.png'>Sofía<br /> Berthelon</Participant>
 								</div>
@@ -131,7 +131,7 @@ export default function Intervenciones() {
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>TERRENO EFE</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>TERRENO ENTRE ALVAREZ Y VIANA CON CALLE DE ACCESO A ESTACIÓN</p>
-								<div className='sm:flex flex-wrap gap-y-8 text-center mt-8'>
+								<div className='flex flex-wrap gap-y-8 text-center mt-8'>
 									<Participant src='/img/fotos/intervenciones/3alejandra-saldias.png'>Alejandro<br /> Saldias</Participant>
 									<Participant src='/img/fotos/intervenciones/3catalina-noguera.png'>Catalina<br /> Noguera</Participant>
 									<Participant src='/img/fotos/intervenciones/3felipe-aranda.png'>Felipe<br /> Aranda</Participant>
