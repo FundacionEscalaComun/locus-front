@@ -184,7 +184,9 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 						<div>
 							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet'>CONGRESO</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>CIUDAD E INFANCIA EN LÍNEA</h2>
-							<p className='pl-16 lg:pl-24'><a href='/descargas/congreso/parrilla-congreso.pdf' className='button text-sm font-semibold' target='_blank'>CONOCE EL PROGRAMA</a></p>
+							<p className='pl-16 lg:pl-24'>
+								<a href='/descargas/congreso/parrilla-congreso.pdf' className='button text-sm font-semibold' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+							</p>
 						</div>
 					</div>
 				</section>
