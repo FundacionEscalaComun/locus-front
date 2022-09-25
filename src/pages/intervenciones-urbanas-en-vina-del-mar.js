@@ -20,7 +20,7 @@ export default function Intervenciones() {
 						<h2 className='font-hbold text-xl lg:text-4xl mb-4 lg:mb-8 bullet'>INTERVENCIONES<br />URBANAS EN VIÑA DEL MAR</h2>
 
 						<p className='pl-16 lg:pl-24'>
-							<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+							<a href='/descargas/intervenciones/Actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 						</p>
 
 						<p className='my-8'>Durante 5 días en octubre, el Festival Locus transformará la ciudad de Viña
@@ -255,7 +255,7 @@ export default function Intervenciones() {
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
 								{/* <Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link> */}
-								<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+								<a href='/descargas/intervenciones/Actividades.pdf' className='button text-sm font-semibold text-center' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 							</p>
 						</div>
 					</div>

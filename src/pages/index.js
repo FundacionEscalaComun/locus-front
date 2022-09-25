@@ -96,7 +96,7 @@ export default function Home({noticias}) {
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>CIUDAD E INFANCIA EN LÍNEA</h2>
 							<p className='pl-16 lg:pl-24'>
 								<Link href='/congreso-ciudad-e-infancia'><a className='button text-sm font-semibold mb-4'>CONOCE EL PROGRAMA</a></Link>
-								<a href='/descargas/congreso/parrilla-congreso.pdf' className='button text-sm font-semibold lg:ml-4' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+								<a href='/descargas/congreso/Actividades.pdf' className='button text-sm font-semibold lg:ml-4' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 							</p>
 						</div>
 						<div className='mt-14'>
@@ -104,7 +104,7 @@ export default function Home({noticias}) {
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
 								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
-								<a href='/descargas/intervenciones/cronograma-actividades.pdf' className='button text-sm font-semibold lg:ml-4' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
+								<a href='/descargas/intervenciones/Actividades.pdf' className='button text-sm font-semibold lg:ml-4' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 							</p>
 						</div>
 					</div>
