@@ -15,11 +15,10 @@ export default function Video() {
 			  <main>
           <section>
             <div className='container pt-20'>
-              <h2 className='font-hbold text-3xl lg:text-4xl mb-12 text-center'>VIDEO</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iFJbOunLwWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </section>
 			  </main>
-			  <Footer bgClass="fondo-blanco" />
       </>
     )
 }
