@@ -4,15 +4,21 @@ $rosado: #f5b5cd;
 $naranja: #ff6c11;
 $verde: #209477;
 $fucsia: #e72276;
+$negro: #202124;
+
+html {
+	height: 100%;
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
 	color: $azul;
+	min-height: 100%;
 }
 
 main {
-	margin-top: 88px;
+	padding-top: 88px;
 }
 
 .color-azul {
