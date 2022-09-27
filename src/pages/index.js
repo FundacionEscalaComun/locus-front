@@ -53,7 +53,10 @@ export default function Home({noticias}) {
 						</SwiperSlide>
 						<SwiperSlide>
 							<a href='https://escalacomun.cl/' target='_blank'>
-								<div className='banner'>
+								<div className='banner lg:hidden'>
+									<Image src="/img/inicio/home-carrusel-02-movil.jpg" layout='fill' objectFit='cover' alt='banner' />
+								</div>
+								<div className='banner hidden lg:block'>
 									<Image src="/img/inicio/home-carrusel-02.jpg" layout='fill' objectFit='cover' alt='banner' />
 								</div>
 							</a>
