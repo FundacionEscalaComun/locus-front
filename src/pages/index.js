@@ -52,9 +52,11 @@ export default function Home({noticias}) {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className='banner'>
-								<Image src="/img/inicio/home-carrusel-02.jpg" layout='fill' objectFit='cover' alt='banner' />
-							</div>
+							<a href='https://escalacomun.cl/' target='_blank'>
+								<div className='banner'>
+									<Image src="/img/inicio/home-carrusel-02.jpg" layout='fill' objectFit='cover' alt='banner' />
+								</div>
+							</a>
 						</SwiperSlide>
 						<SwiperSlide>
 						<video playsInline controls className="banner" width="640" height="360">
