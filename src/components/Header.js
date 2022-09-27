@@ -31,7 +31,7 @@ const Header = () => {
 	return (
 		<header className={'header fondo-azul lg:flex' + (enVivo? ' header-envivo' : '')}>
 			<div className='container flex justify-between items-center lg:grid grid-cols-4 lg:items-stretch gap-8'>
-				<h1 className='w-16 h-16 mt-3 relative hidden lg:block'><Link href='/'><a><Image src={enVivo? "/img/logos/en vivo-22.svg" : "/img/logos/web-locus-logo-header.svg"} layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
+				<h1 className='w-16 h-16 mt-3 relative hidden lg:block'><Link href='/'><a><Image src={enVivo? "/img/logos/en-vivo-22.svg" : "/img/logos/web-locus-logo-header.svg"} layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
 				<h1 className='w-16 h-16 mt-3 relative lg:hidden'><Link href='/'><a><Image src="/img/logos/web-locus-logo-header.svg" layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
 				<div className='block lg:hidden w-8 h-8 relative' onClick={toggleMenu}><Image src="/img/menu.svg" layout='fill' objectFit='contain' alt='LOCUS' /></div>
 				{/* menu lg */}
