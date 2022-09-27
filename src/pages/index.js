@@ -48,7 +48,12 @@ export default function Home({noticias}) {
 						>
 						<SwiperSlide>
 							<div className='banner'>
-								<Image src="/img/banner.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/inicio/home-carrusel-01.jpg" layout='fill' objectFit='cover' alt='banner' />
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className='banner'>
+								<Image src="/img/inicio/home-carrusel-02.jpg" layout='fill' objectFit='cover' alt='banner' />
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
