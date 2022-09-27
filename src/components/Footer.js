@@ -38,7 +38,15 @@ const Footer = (props) => (
 			</div>
 		</section>
 
-		<div className='container flex flex-col lg:flex-row justify-between items-center lg:items-start gap-y-16 lg:lap-y-0 mt-16 lg:mt-36'>
+		<section className='container'>
+			<h2 className='text-lg mt-12 mb-8'>MEDIA PARTNERS</h2>
+			<div className='flex flex-wrap gap-x-16'>
+				<div className='relative h-16 w-24 lg:w-32'><Image src="/img/logos/radio-valparaiso-logo.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-16 w-28 lg:w-36'><Image src="/img/logos/el-martutino-logo.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+			</div>
+		</section>
+
+		<div className='container flex flex-col lg:flex-row justify-between items-center lg:items-start gap-y-16 lg:lap-y-0 mt-16 lg:mt-28'>
 			<section>
 				<p className='w-64 lg:w-80 h-32 relative'><Image src="/img/logos/web-logo-locus-frase.svg" layout='fill' objectFit='contain' alt='LOCUS' /></p>
 			</section>
