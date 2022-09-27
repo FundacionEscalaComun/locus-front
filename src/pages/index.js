@@ -110,7 +110,7 @@ export default function Home({noticias}) {
 							<p className='pl-16 lg:pl-24 text-lg lg:text-2xl uppercase bullet asterisco-azul'>INTERVENCIONES URBANAS: 4 AL 8 DE OCTUBRE</p>
 							<h2 className='pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight mb-6'>¡CONOCELAS Y PARTICIPA DE LAS ACTIVIDADES EN VIÑA!</h2>
 							<p className='pl-16 lg:pl-24'>
-								<Link href='intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
+								<Link href='/intervenciones-urbanas-en-vina-del-mar'><a className='button text-sm font-semibold mb-4'>CONOCE LOS LUGARES</a></Link>
 								<a href='/descargas/intervenciones/Actividades.pdf' className='button text-sm font-semibold lg:ml-4' target='_blank'><span className='descarga'>DESCARGA EL PROGRAMA</span></a>
 							</p>
 						</div>
