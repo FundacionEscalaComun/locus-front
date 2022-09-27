@@ -37,5 +37,39 @@
 	li:hover .submenu {
 		display: block;
 	}
-	
+	.envivo {
+		background-color: white;
+		a {
+			color: $azul;
+			font-size: 15px;
+			font-weight: 900;
+			justify-content: center;
+		}
+	} 
+	@media (min-width: 1024px) { 
+		&.header-envivo {
+			background: linear-gradient(90deg, white 48%, $azul 52%);
+		}
+		.envivo {
+			a {
+				position: relative;
+				font-size: 17px;
+				font-weight: 900;
+				background-color: white;
+				padding-right: 2rem;
+				color: $azul;
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: -20px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 88px 20px 0 0;
+					border-color: #ffffff transparent transparent transparent;
+				}
+			}
+		}
+	}
 }

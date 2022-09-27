@@ -13,6 +13,7 @@ import Mailchimp from '@/components/Mailchimp';
 import Marquee from "react-fast-marquee";
 import MarqueeContent from '@/components/MarqueeContent';
 import MarqueeContentSub from '@/components/MarqueeContentSub';
+import { enVivo } from '@/lib/envivo';
 
 export default function Home({noticias}) {
 	const [swiperRef, setSwiperRef] = useState(null);
@@ -23,7 +24,7 @@ export default function Home({noticias}) {
             </Head>
 
             <Header />
-			<main>
+			<main className={enVivo? 'main-envivo' : ''}>
 				<section className='relative'>
 					<div className='fondo-verde'>
 						<Marquee gradient={false} className='fondo-verde'>

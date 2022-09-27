@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-import { concursoCerrado } from '@/lib/concurso';
+import { enVivo } from '@/lib/envivo';
 
 const Header = () => {
 	let menuIsOpen = false;
@@ -29,14 +29,19 @@ const Header = () => {
 	}
 
 	return (
-		<header className='header fondo-azul lg:flex'>
-			<div className='container flex justify-between items-center lg:grid grid-cols-3 lg:items-stretch gap-8'>
-				<h1 className='w-16 h-16 mt-3 relative'><Link href='/'><a><Image src="/img/logos/web-locus-logo-header.svg" layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
+		<header className={'header fondo-azul lg:flex' + (enVivo? ' header-envivo' : '')}>
+			<div className='container flex justify-between items-center lg:grid grid-cols-4 lg:items-stretch gap-8'>
+				<h1 className='w-16 h-16 mt-3 relative hidden lg:block'><Link href='/'><a><Image src={enVivo? "/img/logos/en vivo-22.svg" : "/img/logos/web-locus-logo-header.svg"} layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
+				<h1 className='w-16 h-16 mt-3 relative lg:hidden'><Link href='/'><a><Image src="/img/logos/web-locus-logo-header.svg" layout='fill' objectFit='contain' alt='LOCUS' /></a></Link></h1>
 				<div className='block lg:hidden w-8 h-8 relative' onClick={toggleMenu}><Image src="/img/menu.svg" layout='fill' objectFit='contain' alt='LOCUS' /></div>
 				{/* menu lg */}
-				<nav className='hidden lg:flex col-span-2'>
+				<nav className='hidden lg:flex col-span-3 fondo-azul'>
 					<ul className='flex items-stretch justify-between gap-4 font-bold w-full'>
-						<li className='flex items-stretch'><Link href='/#convocatorias'><a>{concursoCerrado? <>CONVOCATORIAS<br />CERRADAS</> : <>¡CONVOCATORIAS<br />ABIERTAS!</>}</a></Link></li>
+						{enVivo? 
+							<li className='envivo flex items-stretch'><a href='https://www.youtube.com/channel/UCRmTw_smpU6YTDwr2ISIAVg'>· ¡AHORA EN VIVO!</a></li>
+						: 
+							<li className='flex items-stretch'><a href='#'>CONVOCATORIAS<br />CERRADAS</a></li>
+						}
 						<li className='relative flex items-stretch'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
 						<li className='relative flex items-stretch'>
 							<Link href='/#programa'><a>PROGRAMA</a></Link>
@@ -54,7 +59,7 @@ const Header = () => {
 			{/* menu móvil */}
 			<nav id="menu" className='hidden pl-8 pt-8 pb-8'>
 				<ul className='font-bold w-full'>
-					<li className='my-4'><Link href='/#convocatorias'><a>{concursoCerrado? 'CONVOCATORIAS CERRADAS' : '¡CONVOCATORIAS ABIERTAS!'}</a></Link></li>
+					<li className='my-4'><Link href='/#convocatorias'><a>{enVivo? '· ¡AHORA EN VIVO!' : 'CONVOCATORIAS CERRADAS'}</a></Link></li>
 					<li className='my-4'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
 					<li className='my-4'>
 						<Link href='/#programa'><a>PROGRAMA</a></Link>
@@ -68,6 +73,10 @@ const Header = () => {
 					<li className='my-4'><Link href='/#newsletter'><a>NEWSLETTER</a></Link></li>
 				</ul>
 			</nav>
+			{/* vivo móvil */}
+			<div className={'lg:hidden envivo justify-center py-3 mt-3' + (enVivo? '' : ' hidden')}>
+				<a href='https://www.youtube.com/channel/UCRmTw_smpU6YTDwr2ISIAVg'>· ¡AHORA EN VIVO!</a>
+			</div>
 		</header>
 	)
 }

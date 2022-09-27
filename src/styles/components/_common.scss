@@ -18,7 +18,13 @@ body {
 }
 
 main {
-	padding-top: 88px;
+	margin-top: 88px;
+	&.main-envivo {
+		margin-top: 134px;
+		@media (min-width: 1024px) {
+			margin-top: 88px;
+		}
+	}
 }
 
 .color-azul {
