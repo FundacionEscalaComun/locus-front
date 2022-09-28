@@ -1,0 +1,22 @@
+.tabla-actividades {
+  font-size: 12px;
+  th {
+    color: $fucsia;
+  	font-family: 'HalyardMicroBold';
+    padding: 0.25rem 1rem;
+    padding-top: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  td {
+    font-size: 11px;
+    padding: 0.5rem 1rem;
+    vertical-align: top;
+  }
+  .borde {
+    border-bottom: 1px solid $azul;
+  }
+  .borde-fucsia {
+    border-bottom: 1px solid $fucsia;
+  }
+}

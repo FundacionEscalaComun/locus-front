@@ -43,6 +43,10 @@ main {
 	color: $verde;
 }
 
+.color-fucsia {
+	color: $fucsia;
+}
+
 .fondo-azul {
 	background-color: $azul;
 }
@@ -177,6 +181,10 @@ main {
 	&.fondo-rosa {
 		background-color: $rosado;
 		color: $azul;
+	}
+	&.fondo-fucsia {
+		background-color: $fucsia;
+		color: white;
 	}
 	&.fondo-blanco {
 		background-color: white;
