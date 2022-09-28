@@ -1,18 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Participant from '@/components/Participant'
+import { useState } from 'react'
 
 export default function Intervenciones() {
-    return (
-        <>
-            <Head>
-                <title>Locus Festival Internacional Infancia y Adolescencia en la Ciudad</title>
-            </Head>
+	const [actParroquia, setActParroquia] = useState(false);
+	const [actEstacion, setActEstacion] = useState(false);
+	const [actSkatepark, setActSkatepark] = useState(false);
+	const [actPalacio, setActPalacio] = useState(false);
 
-            <Header />
+	return (
+		<>
+			<Head>
+					<title>Locus Festival Internacional Infancia y Adolescencia en la Ciudad</title>
+			</Head>
+
+			<Header />
 			<main>
 
 				<section className='color-azul fondo-amarillo' id='sobre'>
@@ -91,6 +96,119 @@ export default function Intervenciones() {
 								</p>
 							</div>
 
+							<div className="mt-16 color-azul hidden lg:block">
+								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>ACTIVIDADES</h2>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>PLAZA PARROQUIA</p>
+								<table className='tabla-actividades mt-12'>
+									<thead>
+										<tr>
+											<th></th>
+											<th className='borde'>MARTES 4</th>
+											<th className='borde'>MIÉRCOLES 5</th>
+											<th className='borde'>JUEVES 6</th>
+											<th className='borde'>VIERNES 7</th>
+											<th className='borde'>SÁBADO 8</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>AM<br />10:00<br />13:00</th>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'>TALLER DE ARTE</td>
+											<td className='borde'></td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'></td>
+											<td className='borde'>BIBLIO MÓVIL</td>
+										</tr>
+										<tr>
+											<th className='borde'></th>
+											<td className='borde'>TALLER DE ARTE SUSURRO Y CUENTO LANZAMIENTO</td>
+											<td className='borde'></td>
+											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th>PM<br />15:00<br />18:00</th>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'>TALLER DE MEDIO AMBIENTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+										</tr>
+									</tbody>
+								</table>
+								<div className='text-center mt-12'>
+									<button className='button small fondo-fucsia text-sm font-semibold text-center' onClick={() => setActParroquia(!actParroquia)}>INFO ACTIVIDADES</button>
+								</div>
+								<table className={'tabla-actividades mt-12' + (actParroquia? '' : ' hidden')}>
+									<thead>
+										<tr>
+											<th className='borde-fucsia'>ACTIVIDAD</th>
+											<th className='borde-fucsia'>DESCRIPCIÓN</th>
+											<th className='borde-fucsia'>EDADES</th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde-fucsia'>Taller de burbujas gigantes para niños desde los 3 años.</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE ARTE</td>
+											<td className='borde-fucsia'>Taller de ceramica o grabado dictado por Bellas Artes de Viña del Mar</td>
+											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>SUSURROS Y CUENTOS EN LA CIUDAD</td>
+											<td className='borde-fucsia'>Susurraremos por la ciudad y terminaresmos con un gran cuento.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER MEDIO AMBIENTE / DEPTO MEDIO AMBIENTE VIÑA DEL MAR</td>
+											<td className='borde-fucsia'>Ven a conocer la flora de la Comuna. Taller de la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños desde los 3 años.</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / MUJERES EN EL ARTE</td>
+											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSICA DEL CONSERVATORIO</td>
+											<td className='borde-fucsia'>Ven a disfrutar de un presentación del conservatorio izidor handler. Presentado por la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>SALIDA ESTACIÓN METRO VIÑA</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>ÁLVAREZ CON EDUARDO GROVE</p>
@@ -126,6 +244,109 @@ export default function Intervenciones() {
 								<p className='my-8'>
 									<Image src="/img/fotos/intervenciones/02-metro-viña.jpg" layout='responsive' width={807} height={570} alt='banner' />
 								</p>
+							</div>
+
+							<div className="mt-16 color-azul hidden lg:block">
+								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>ACTIVIDADES</h2>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>SALIDA ESTACIÓN METRO VIÑA</p>
+								<table className='tabla-actividades mt-12'>
+									<thead>
+										<tr>
+											<th></th>
+											<th className='borde'>MARTES 4</th>
+											<th className='borde'>MIÉRCOLES 5</th>
+											<th className='borde'>JUEVES 6</th>
+											<th className='borde'>VIERNES 7</th>
+											<th className='borde'>SÁBADO 8</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>AM<br />10:00<br />13:00</th>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
+											<td className='borde'>LA RECONQUISTA PEATONAL</td>
+											<td className='borde'>BIBLIO MÓVIL</td>
+											<td className='borde'>TALLER ESCALADA INFANTIL / BOULDER MÓVIL</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'>BIBLIO MÓVIL</td>
+											<td className='borde'></td>
+											<td className='borde'>SUSURROS Y CUENTOS EN LA CIUDAD</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th className='borde'></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>SUSURROS Y CUENTOS EN LA CIUDAD</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th>PM<br />15:00<br />18:00</th>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / MUJERES EN EL ARTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / MUJERES EN EL ARTE</td>
+											<td className='borde'>TALLER ESCALADA INFANTIL / BOULDER MÓVIL</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>TALLER ESCALADA INFANTIL / BOULDER MÓVIL</td>
+											<td className='borde'></td>
+										</tr>
+									</tbody>
+								</table>
+								<div className='text-center mt-12'>
+									<button className='button small fondo-fucsia text-sm font-semibold text-center' onClick={() => setActEstacion(!actEstacion)}>INFO ACTIVIDADES</button>
+								</div>
+								<table className={'tabla-actividades mt-12' + (actEstacion? '' : ' hidden')}>
+									<thead>
+										<tr>
+											<th className='borde-fucsia'>ACTIVIDAD</th>
+											<th className='borde-fucsia'>DESCRIPCIÓN</th>
+											<th className='borde-fucsia'>EDADES</th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>SUSURROS Y CUENTOS EN LA CIUDAD</td>
+											<td className='borde-fucsia'>Susurraremos por la ciudad y terminaresmos con un gran cuento.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños desde los 3 años.</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / MUJERES EN EL ARTE</td>
+											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER ESCALADA INFANTIL / BOULDER MÓVIL</td>
+											<td className='borde-fucsia'>La ciudad tambien es para el deporte, ven a una taller de escalada en el boulder móvil de Tornamesa.</td>
+											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>LA RECONQUISTA PEATONAL</td>
+											<td className='borde-fucsia'>Volvamos a caminar y explorar nuestra ciudad, porque la Ciudad También es tuya. Taller de caminata exploratoria guiada con material de registro.</td>
+											<td className='borde-fucsia'>Desde los 7 años</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 
 							<div className='mt-32'>
@@ -197,6 +418,125 @@ export default function Intervenciones() {
 								</p>
 							</div>
 
+							<div className="mt-16 color-azul hidden lg:block">
+								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>ACTIVIDADES</h2>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>SKATEPARK SAUSALITO</p>
+								<table className='tabla-actividades mt-12'>
+									<thead>
+										<tr>
+											<th></th>
+											<th className='borde'>MARTES 4</th>
+											<th className='borde'>MIÉRCOLES 5</th>
+											<th className='borde'>JUEVES 6</th>
+											<th className='borde'>VIERNES 7</th>
+											<th className='borde'>SÁBADO 8</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>AM<br />10:00<br />13:00</th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'><strong>10:00</strong> MUSICA DEL CONSERVATORIO</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>TALLER SKATE</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
+										</tr>
+										<tr>
+											<th>PM<br />15:00<br />18:00</th>
+											<td className='borde'>TALLER SKATE</td>
+											<td className='borde'>TALLER DE ROLLER URBANO</td>
+											<td className='borde'>TALLER SKATE</td>
+											<td className='borde'>TALLER DE ROLLER URBANO</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'>TALLER DE MURALISMO CON PAYO</td>
+											<td className='borde'>TALLER DE MURALISMO CON PAYO</td>
+											<td className='borde'>TALLER DE MURALISMO CON PAYO</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
+											<td className='borde'></td>
+											<td className='borde'><strong>16:30</strong> MÚSICA EN LA LAGUNa</td>
+											<td className='borde'></td>
+										</tr>
+									</tbody>
+								</table>
+								<div className='text-center mt-12'>
+									<button className='button small fondo-fucsia text-sm font-semibold text-center' onClick={() => setActSkatepark(!actSkatepark)}>INFO ACTIVIDADES</button>
+								</div>
+								<table className={'tabla-actividades mt-12' + (actSkatepark? '' : ' hidden')}>
+									<thead>
+										<tr>
+											<th className='borde-fucsia'>ACTIVIDAD</th>
+											<th className='borde-fucsia'>DESCRIPCIÓN</th>
+											<th className='borde-fucsia'>EDADES</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER SKATE / ESCUELA DE SKATE SAUSALITO</td>
+											<td className='borde-fucsia'>Trae tu tabla y aprende en el mejor lugar de tu ciudad. Taller de la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>Desde los 7 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE ROLLER URBANO / CLUB TACONES BANDIDOS</td>
+											<td className='borde-fucsia'>Trae tus roller y aprende en el mejor lugar de tu ciudad Taller de la I. Municipalidad de Viña del Mar</td>
+											<td className='borde-fucsia'>Desde los 7 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE MURALISMO CON PAYO / PAYOSHOCHTING (30NNA)</td>
+											<td className='borde-fucsia'>¡Ven a pintar un mural con Payo en el mejor Skatepark de Viña del Mar!</td>
+											<td className='borde-fucsia'>Desde los 7 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE MASCARAS FANTÁSTICAS / GRUPO 12NA</td>
+											<td className='borde-fucsia'>Ven a hacer tu mascara con materiales reciclados para la fiesta de cierre.</td>
+											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MÚSICA EN LA LAGUNA</td>
+											<td className='borde-fucsia'>Ven a disfrutar de la música en el borde de la laguna Sausalito.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde-fucsia'>Taller de burbujas gigantes para niños desde los 3 años.</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
 							<div className='mt-32'>
 								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>PLAZA PALACIO CARRASCO</h2>
 								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>4 NORTE CON LIBERTAD</p>
@@ -242,6 +582,145 @@ export default function Intervenciones() {
 								<p className='my-8'>
 									<Image src="/img/fotos/intervenciones/05-plaza-palacio-carrasco.jpg" layout='responsive' width={806} height={452} alt='banner' />
 								</p>
+							</div>
+
+							<div className="mt-16 color-azul hidden lg:block">
+								<h2 className='font-hbold text-xl lg:text-4xl bullet flor-rosada'>ACTIVIDADES</h2>
+								<p className='pl-16 lg:pl-24 text-lg lg:text-2xl mt-1'>PLAZA PALACIO CARRASCO</p>
+								<table className='tabla-actividades mt-12'>
+									<thead>
+										<tr>
+											<th></th>
+											<th className='borde'>MARTES 4</th>
+											<th className='borde'>MIÉRCOLES 5</th>
+											<th className='borde'>JUEVES 6</th>
+											<th className='borde'>VIERNES 7</th>
+											<th className='borde'>SÁBADO 8</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>AM<br />10:00<br />13:00</th>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'><strong>10:30</strong> TALLER DE MUSICOTERAPIA</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'>TALLER DE ARTE</td>
+											<td className='borde'>TALLER DE ARTE</td>
+											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
+											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
+											<td className='borde'><strong>12:00</strong> MÚSICA EN LA PLAZA</td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'>TODO ES RONDA</td>
+											<td className='borde'>FERIA DE ARTE SONORO</td>
+											<td className='borde'><strong>11:00</strong> YOGA PARA NIÑO@S</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+										</tr>
+										<tr>
+											<th className='borde'></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>TALLER MEDIO AMBIENTE</td>
+											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
+										</tr>
+										<tr>
+											<th>PM<br />15:00<br />18:00</th>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
+											<td className='borde'></td>
+											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'>FERIA DE ARTE SONORO</td>
+											<td className='borde'><strong>17:00</strong> YOGA FAMILIAR</td>
+											<td className='borde'></td>
+										</tr>
+									</tbody>
+								</table>
+								<div className='text-center mt-12'>
+									<button className='button small fondo-fucsia text-sm font-semibold text-center' onClick={() => setActPalacio(!actPalacio)}>INFO ACTIVIDADES</button>
+								</div>
+								<table className={'tabla-actividades mt-12' + (actPalacio? '' : ' hidden')}>
+									<thead>
+										<tr>
+											<th className='borde-fucsia'>ACTIVIDAD</th>
+											<th className='borde-fucsia'>DESCRIPCIÓN</th>
+											<th className='borde-fucsia'>EDADES</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
+											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños desde los 3 años.</td>
+											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER MEDIO AMBIENTE / DEPTO MEDIO AMBIENTE VIÑA DEL MAR</td>
+											<td className='borde-fucsia'>Ven a conocer la flora de la Comuna. Taller de la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS URBANOS / GRUPO 12NA</td>
+											<td className='borde-fucsia'>Construyamos con elementos reciclados y de manera colectiva un cuerpo que será un personaje del festival.</td>
+											<td className='borde-fucsia'>Desde los 8 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MÚSICA EN LA PLAZA</td>
+											<td className='borde-fucsia'>Ven a disfrutar de la música en tú ciudad.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TODO ES RONDA: TALLER DE MUSICOTERAPIA PARA PRIMERA INFANCIA</td>
+											<td className='borde-fucsia'>Ven a distrutar una actividad musical para bebés/niñ@s de 0 a 3 años junto a mamá/papá o cuidador cercano.</td>
+											<td className='borde-fucsia'>Hasta los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>ZUMBA KIDS / DEPORTE VIÑA</td>
+											<td className='borde-fucsia'>Trae ropa cómoda y ven amoverte en familia. Taller de la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>4 a 12 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>FERIA DE ARTE SONORO / TSONAMI</td>
+											<td className='borde-fucsia'>Te invitamos a disfrutar el fenómeno de la escucha y el sonido a través de actividades lúdicas.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>YOGA PARA NIÑOS@S</td>
+											<td className='borde-fucsia'>Disfruta haciendo yoga en plena ciudad; trae ropa cómoda, un mat, y ganas de moverte.</td>
+											<td className='borde-fucsia'>De 6 a 12 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>YOGA FAMILIAR</td>
+											<td className='borde-fucsia'>Disfruta haciendo yoga en plena ciudad; trae ropa cómoda, un mat, y ganas de moverte.</td>
+											<td className='borde-fucsia'>De 3 a 6 años y la familias</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE MÁSCARAS FANTÁSTICAS / GRUPO 12NA</td>
+											<td className='borde-fucsia'>Ven a hacer tu mascara con materiales reciclados para la fiesta de cierre.</td>
+											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 
 						</div>
