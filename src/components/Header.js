@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { getEnVivo } from '@/lib/envivo';
 
 const Header = () => {
-	const [enVivo, setEnVivo] = useState(getEnVivo());
+	const [enVivo, setEnVivo] = useState(false);
 	let menuIsOpen = false;
 
 	useEffect(() => {
@@ -13,7 +13,8 @@ const Header = () => {
 				element.addEventListener('click', closeMenu);
 			});
 		}
-
+		// Revisar cada 5 segundos si está en vivo
+		setEnVivo(getEnVivo());
 		const interval = setInterval(() => setEnVivo(getEnVivo()), 5000);
 		return () => {
 			clearInterval(interval);
