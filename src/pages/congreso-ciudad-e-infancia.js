@@ -8,6 +8,7 @@ import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
+import { slides } from '@/lib/invitados'
 
 export default function Congreso(props) {
 	const [videos, setVideos] = useState(props.videos);
@@ -15,7 +16,6 @@ export default function Congreso(props) {
 	const [swiperRef, setSwiperRef] = useState(null);
 	const [isMobile, setIsMobile] = useState(false);
 	const sliderContainerRef = useRef(null);
-	const slides = props.slides;
 
 	function goToSlider(slide) {
 		swiperRef.slideTo(slide);
@@ -208,76 +208,9 @@ export async function getStaticProps(context) {
 		videos[index].new = new Date() >= new Date(video.acf.fecha_publicacion) && new Date() < nextDay;
 	})
 
-	const slides = [
-		{
-			name: 'ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS',
-			country: 'CHILE',
-			desc: '',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-1.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-7.png',
-			published: false,
-			new: false,
-		},
-		{
-			name: 'MARTA ROMÁN',
-			country: 'ESPAÑA',
-			desc: 'Marta Román es geógrafa de la infancia. Su trabajo va dirigido a que niñas y niños puedan recuperar las calles y plazas donde jugar, encontrarse con sus iguales, formar parte de la sociedad y crecer con autonomía. Es socia consultora de Gea21 y ha escrito varios libros sobre esta temática, entre los que destaca: "¡Hagan sitio, por favor! La reintroducción de la infancia en la ciudad"',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-2.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-1.png',
-			published: false,
-			new: false,
-		},
-		{
-			name: 'TIM GILL',
-			country: 'INGLATERRA',
-			desc: 'Tim Gill es académico, escritor y consultor independiente, vive en Londres y es defensor mundial del juego al aire libre y la movilidad infantil. Es autor de "Urban Playground: How child-friendly planning and design can save cities" y "No Fear: Growing up in a risk-averse society".',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-3.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-5.png',
-			published: false,
-			new: false,
-		},
-		{
-			name: 'CECILIA VACA JONES',
-			country: 'ECUADOR',
-			desc: 'Cecilia Vaca-Jones es consultora en materia de políticas sociales, ex-Directora Ejecutiva de la Fundación Bernard van Leer. Ex Ministra Coordinadora de Desarrollo Social en Ecuador. Posee amplia experiencia en la gestión de políticas y programas de desarrollo social. En su trayectoria profesional el principal enfoque de Cecilia ha sido mejorar las condiciones de vida de la niñez, las mujeres y las poblaciones indígenas. Máster en Ciudades de London School of Economics. Máster en Políticas Sociales para el Desarrollo Sostenible de la Universidad de Bolonia. Licenciada en Relaciones Internacionales de la Pontificia Universidad Católica de Ecuador.', 
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-4.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-4.png',
-			published: false,
-			new: false,
-		},
-		{
-			name: 'RODRIGO MAYORGA',
-			country: 'CHILE',
-			desc: 'Rodrigo Mayorga es historiador, profesor y antropólogo educacional. Es académico UC, investigador postdoctoral del Centro de Justicia Educacional, y Director General de la Fundación “Momento Constituyente”, cuyo objetivo es entregar educación constituyente, contribuyendo al debate público y a los procesos de construcción colectiva que Chile vive hoy',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-7.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-3.png',
-			published: false,
-			new: false,
-		},
-		{
-			name: 'MATÍAS KNUST',
-			country: 'CHILE',
-			desc: 'Matias Knust es sociólogo de las infancias y director de la Fundación CIFREP. Sociólogo por la Universidad Alberto Hurtado y Magíster en estudios de la infancia por la Universidad de Ciencias y Tecnología de Noruega (NTNU). Hoy es miembro del Núcleo de Investigación en Primera Infancia y Política Pública de la Universidad de Chile.',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-5.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-2.png',
-			published: false,
-			new: false,
-		},
-		{
-			name: 'FELIPE LECANNELIER',
-			country: 'CHILE',
-			desc: 'Felipe es psicólogo clínico de formación, magíster en Epistemología y Filosofía de las Ciencias de la Universidad de Chile, y doctor en Psicología de la Universidad Autónoma de Madrid. Se ha especializado en temas relativos al apego infantil, el trauma, infancia y salud mental. Actualmente se desempeña como académico de la Facultad de Medicina de la Universidad de Chile, asesor nacional e internacional, y es autor de libros como “A.M.A.R Hacia un cuidado respetuoso de apego en la infancia”, “El trauma oculto en la infancia” y “Volver a Mirar”.',
-			imgd: '/img/fotos/congreso/5-invitados-especiales-banner-6.jpg',
-			imgm: '/img/fotos/congreso/invitados-especiales-6.png',
-			published: false,
-			new: false,
-		},
-	]
-
   return {
     props: {
 			videos,
-			slides,
 		},
   }
 }
