@@ -14,7 +14,7 @@ export default function Intervenciones() {
 	return (
 		<>
 			<Head>
-					<title>Locus Festival Internacional Infancia y Adolescencia en la Ciudad</title>
+					<title>Intervenciones urbanas en Viña del Mar - LOCUS</title>
 			</Head>
 
 			<Header />

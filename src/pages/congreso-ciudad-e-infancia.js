@@ -38,7 +38,7 @@ export default function Congreso(props) {
   return (
         <>
             <Head>
-                <title>Locus Festival Internacional Infancia y Adolescencia en la Ciudad</title>
+                <title>Congreso Ciudad e Infancia - LOCUS</title>
             </Head>
 
             <Header />

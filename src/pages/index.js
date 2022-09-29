@@ -19,7 +19,7 @@ export default function Home({noticias}) {
     return (
         <>
             <Head>
-                <title>Locus Festival Internacional Infancia y Adolescencia en la Ciudad</title>
+                <title>LOCUS Festival Internacional Infancia y Adolescencia en la Ciudad</title>
             </Head>
 
             <Header />
