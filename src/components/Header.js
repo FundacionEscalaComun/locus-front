@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-import { enVivo } from '@/lib/envivo';
+import { getEnVivo } from '@/lib/envivo';
 
 const Header = () => {
+	const [enVivo, setEnVivo] = useState(false);
 	let menuIsOpen = false;
 
 	useEffect(() => {
@@ -11,7 +12,12 @@ const Header = () => {
 			document.querySelectorAll('nav a').forEach(function(element) {
 				element.addEventListener('click', closeMenu);
 			});
-		   }
+		}
+
+		const interval = setInterval(() => setEnVivo(getEnVivo()), 5000);
+		return () => {
+			clearInterval(interval);
+		};
 	}, []);
 
 	const toggleMenu = () => {
