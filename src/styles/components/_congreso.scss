@@ -82,6 +82,7 @@
 
 main.video {
 	height: 100vh;
+	height: calc(100vh - 88px);
 	background-color: $negro;
 	iframe {
 		aspect-ratio: 16 / 9;

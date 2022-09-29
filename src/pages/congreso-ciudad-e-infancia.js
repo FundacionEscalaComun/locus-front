@@ -86,7 +86,7 @@ estudio y desarrollo de ciudades amigables con la infancia.</p>
 										<p className='lg:pl-12 text-sm mb-6'>{slide.country}</p>
 										<p className='lg:pl-12 text-sm mb-6 lg:w-96 text-left'>{slide.desc}</p>
 										{slide.published
-										? <Link href={'/invitado/' + index}><a className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>VER VIDEO</a></Link>
+										? <Link href={'/invitado/' + slide.slug}><a className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>VER VIDEO</a></Link>
 										: <span className='lg:ml-12 button xsmall fondo-blanco text-sm font-semibold'>PRONTO DISPONIBLE</span>
 										}
 									</div>
