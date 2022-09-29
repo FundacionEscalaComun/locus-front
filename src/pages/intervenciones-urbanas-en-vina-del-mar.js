@@ -125,7 +125,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
 											<td className='borde'></td>
-											<td className='borde'>BIBLIO MÓVIL</td>
+											<td className='borde'></td>
 										</tr>
 										<tr>
 											<th className='borde'></th>
@@ -194,11 +194,6 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / MUJERES EN EL ARTE</td>
 											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños</td>
 											<td className='borde-fucsia'>Desde los 3 años</td>
-										</tr>
-										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
-											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
-											<td className='borde-fucsia'>Todo público</td>
 										</tr>
 										<tr>
 											<td className='borde-fucsia color-fucsia font-semibold'>MUSICA DEL CONSERVATORIO</td>
@@ -439,7 +434,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
-											<td className='borde'><strong>10:00</strong> MUSICA DEL CONSERVATORIO</td>
+											<td className='borde'>TALLER SKATE</td>
 										</tr>
 										<tr>
 											<th></th>
@@ -447,7 +442,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
-											<td className='borde'>TALLER SKATE</td>
+											<td className='borde'>MÚSICA EN LA LAGUNA</td>
 										</tr>
 										<tr>
 											<th></th>
@@ -605,7 +600,7 @@ export default function Intervenciones() {
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
 											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
 											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
-											<td className='borde'><strong>10:30</strong> TALLER DE MUSICOTERAPIA</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
 										</tr>
 										<tr>
 											<th></th>
@@ -613,7 +608,7 @@ export default function Intervenciones() {
 											<td className='borde'>TALLER DE ARTE</td>
 											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
 											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
-											<td className='borde'><strong>12:00</strong> MÚSICA EN LA PLAZA</td>
+											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
 										</tr>
 										<tr>
 											<th></th>
@@ -621,7 +616,7 @@ export default function Intervenciones() {
 											<td className='borde'>TODO ES RONDA</td>
 											<td className='borde'>FERIA DE ARTE SONORO</td>
 											<td className='borde'><strong>11:00</strong> YOGA PARA NIÑO@S</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>BIBLIOMÓVIL</td>
 										</tr>
 										<tr>
 											<th className='borde'></th>
@@ -629,7 +624,15 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'>TALLER MEDIO AMBIENTE</td>
-											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
+											<td className='borde'><strong>10:30</strong> ZUMBA KIDS</td>
+										</tr>
+										<tr>
+											<th className='borde'></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'><strong>11:30</strong> MÚSICA EN LA PLAZA</td>
 										</tr>
 										<tr>
 											<th>PM<br />15:00<br />18:00</th>
@@ -642,7 +645,7 @@ export default function Intervenciones() {
 										<tr>
 											<th></th>
 											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
-											<td className='borde'></td>
+											<td className='borde'>TALLER DE MUSICOTERAPIA</td>
 											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
 											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
 											<td className='borde'></td>
@@ -683,6 +686,11 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS URBANOS / GRUPO 12NA</td>
 											<td className='borde-fucsia'>Construyamos con elementos reciclados y de manera colectiva un cuerpo que será un personaje del festival.</td>
 											<td className='borde-fucsia'>Desde los 8 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
+											<td className='borde-fucsia'>Todo público</td>
 										</tr>
 										<tr>
 											<td className='borde-fucsia color-fucsia font-semibold'>MÚSICA EN LA PLAZA</td>
