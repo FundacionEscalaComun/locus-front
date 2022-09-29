@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { getEnVivo } from '@/lib/envivo';
 
 const Header = () => {
-	const [enVivo, setEnVivo] = useState(false);
+	const [enVivo, setEnVivo] = useState(getEnVivo());
 	let menuIsOpen = false;
 
 	useEffect(() => {
