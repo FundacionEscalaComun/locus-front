@@ -392,7 +392,7 @@ export default function Intervenciones() {
 								</p>
 								<h3 className='font-bold mt-8 text-xl'>Proyecto</h3>
 								<p className='mb-8'>
-									Dona tu plaza y aprende
+									Dona tu tabla y aprende
 								</p>
 								<h3 className='font-bold mt-8 text-xl'>Equipo</h3>
 								<p className='mb-8'>
@@ -624,7 +624,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'>TALLER MEDIO AMBIENTE</td>
-											<td className='borde'><strong>10:30</strong> ZUMBA KIDS</td>
+											<td className='borde'><strong>10:00 y 11:00</strong> TALLER MUSICOTERAPIA</td>
 										</tr>
 										<tr>
 											<th className='borde'></th>
@@ -632,7 +632,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
-											<td className='borde'><strong>11:30</strong> MÚSICA EN LA PLAZA</td>
+											<td className='borde'><strong>12:00</strong> MÚSICA EN LA PLAZA</td>
 										</tr>
 										<tr>
 											<th>PM<br />15:00<br />18:00</th>
@@ -645,7 +645,7 @@ export default function Intervenciones() {
 										<tr>
 											<th></th>
 											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
-											<td className='borde'>TALLER DE MUSICOTERAPIA</td>
+											<td className='borde'></td>
 											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
 											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
 											<td className='borde'></td>
