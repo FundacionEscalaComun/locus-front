@@ -453,7 +453,7 @@ export default function Intervenciones() {
 											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 										</tr>
 										<tr>
-											<th></th>
+											<th className='borde'></th>
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
@@ -613,13 +613,13 @@ export default function Intervenciones() {
 										<tr>
 											<th></th>
 											<td className='borde'></td>
-											<td className='borde'>TODO ES RONDA</td>
+											<td className='borde'></td>
 											<td className='borde'>FERIA DE ARTE SONORO</td>
 											<td className='borde'><strong>11:00</strong> YOGA PARA NIÑO@S</td>
 											<td className='borde'>BIBLIOMÓVIL</td>
 										</tr>
 										<tr>
-											<th className='borde'></th>
+											<th></th>
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
