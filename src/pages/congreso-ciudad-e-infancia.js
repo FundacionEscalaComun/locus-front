@@ -50,7 +50,7 @@ export default function Congreso(props) {
 						<p className='my-8'>El Congreso digital se plantea como un espacio de encuentro, discusión,
 aprendizaje y divulgación en torno al tema de las infancias en la ciudad y el
 lugar de los niñ@s y jóvenes en ellas.</p>
-						<p className='my-8'>Entre el 4 y el 7 de octubre, se liberarán en esta página las entrevistas a invitados especiales, charlas, semillas y cápsulas que presentan investigaciones, estudios y proyectos sobre el lugar de las infancias en la ciudad y sus espacios públicos.</p>
+						<p className='my-8'><strong>Entre el 4 y el 7 de octubre, se liberarán en esta página las entrevistas a invitados especiales, charlas, semillas y cápsulas que presentan investigaciones, estudios y proyectos sobre el lugar de las infancias en la ciudad y sus espacios públicos.</strong></p>
 						<p className='my-8'>El congreso se plantea como una plataforma colaborativa de recursos abiertos a todos para que el amplio abanico de experiencias con enfoque en la pertinencia infantil en la ciudad puedan darse a conocer y que tejemos en conjunto una red que fortalezca iniciativas y proyectos a lo largo de Chile y el mundo, y así poder descifrar los beneficios que trae el vínculo con la ciudad, los espacios públicos y la naturaleza, en el desarrollo de la niñez.</p>
 						<p className='mt-8 text-center'>Anímate a participar, ¡la ciudad también es tuya!</p>
 
