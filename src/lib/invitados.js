@@ -2,7 +2,7 @@ const ahora = new Date();
 
 // actualizar fechas después de pruebas
 
-const martes = ahora >= new Date('2022-09-04 16:30:00 GMT-03:00');
+const martes = ahora >= new Date('2022-09-04 19:30:00 GMT-03:00');
 const miercoles = ahora >= new Date('2022-09-05 10:00:00 GMT-03:00');
 const jueves = ahora >= new Date('2022-09-06 10:00:00 GMT-03:00');
 const viernes = ahora >= new Date('2022-10-07 10:00:00 GMT-03:00');
