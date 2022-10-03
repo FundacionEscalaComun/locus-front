@@ -20,7 +20,7 @@ const Footer = (props) => (
 		<section className='container'>
 			<h2 className='text-lg mt-12 mb-8'>PATROCINAN</h2>
 			<div className='grid grid-cols-2 lg:flex lg:flex-wrap justify-between gap-x-16 gap-y-4'>
-				<div className='relative h-28 w-20 lg:w-28'><Image src="/img/logos/web-logo-viña-del-mar.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				<div className='relative h-28 w-28 lg:w-36'><Image src="/img/logos/logo-muni-viña.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-32 lg:w-40'><Image src="/img/logos/web-logo-escuela-arq-diseño-valparaiso.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-16 lg:w-20'><Image src="/img/logos/web-logo-arq-usm.svg" layout='fill' objectFit='contain' alt='logo' /></div>
 				<div className='relative h-28 w-32 lg:w-40'><Image src="/img/logos/web-logo-unicef.svg" layout='fill' objectFit='contain' alt='logo' /></div>
@@ -30,20 +30,22 @@ const Footer = (props) => (
 			</div>
 		</section>
 
-		<section className='container'>
-			<h2 className='text-lg mt-12 mb-8'>AUSPICIO</h2>
-			<div className='flex flex-wrap'>
-				<div className='relative h-16 w-20 lg:w-28'><Image src="/img/logos/ambrosoli.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-16 w-32 lg:w-40 ml-16'><Image src="/img/logos/mustakis.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+		<section className='container lg:flex justify-start gap-16'>
+			<div>
+				<h2 className='text-lg mt-12 mb-8'>AUSPICIO</h2>
+				<div className='flex flex-wrap'>
+					<div className='relative h-16 w-20 lg:w-28'><Image src="/img/logos/ambrosoli.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='relative h-16 w-32 lg:w-40 ml-16'><Image src="/img/logos/mustakis.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				</div>
 			</div>
-		</section>
-
-		<section className='container'>
-			<h2 className='text-lg mt-12 mb-8'>MEDIA PARTNERS</h2>
-			<div className='flex flex-wrap'>
-				<div className='relative h-16 w-24 lg:w-32'><Image src="/img/logos/radio-valparaiso-logo.svg" layout='fill' objectFit='contain' alt='logo' /></div>
-				<div className='relative h-16 w-28 lg:w-36 ml-16'><Image src="/img/logos/el-martutino-logo.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+			<div className='mt-8 lg:mt-0'>
+				<h2 className='text-lg mt-12 mb-8'>MEDIA PARTNERS</h2>
+				<div className='flex flex-wrap'>
+					<div className='relative h-16 w-24 lg:w-32'><Image src="/img/logos/radio-valparaiso-logo.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+					<div className='relative h-16 w-28 lg:w-36 ml-16'><Image src="/img/logos/el-martutino-logo.svg" layout='fill' objectFit='contain' alt='logo' /></div>
+				</div>
 			</div>
+			
 		</section>
 
 		<div className='container flex flex-col lg:flex-row justify-between items-center lg:items-start gap-y-16 lg:lap-y-0 mt-16 lg:mt-28'>
