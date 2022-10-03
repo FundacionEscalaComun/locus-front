@@ -1,5 +1,7 @@
 const ahora = new Date();
 
+const ensayo = ahora >= new Date('2022-10-02 19:30:00 GMT-03:00');
+
 const martes = ahora >= new Date('2022-10-04 19:30:00 GMT-03:00');
 const miercoles = ahora >= new Date('2022-10-05 10:00:00 GMT-03:00');
 const jueves = ahora >= new Date('2022-10-06 10:00:00 GMT-03:00');
@@ -15,7 +17,7 @@ export const slides = [
     imgd: '/img/fotos/congreso/5-invitados-especiales-banner-1.jpg',
     imgm: '/img/fotos/congreso/invitados-especiales-7.png',
     youtube: '',
-    published: martes,
+    published: martes || ensayo,
     new: martes && !miercoles,
   },
   {
@@ -26,7 +28,7 @@ export const slides = [
     imgd: '/img/fotos/congreso/5-invitados-especiales-banner-2.jpg',
     imgm: '/img/fotos/congreso/invitados-especiales-1.png',
     youtube: '6hKwjxvNp1Y',
-    published: miercoles,
+    published: miercoles || ensayo,
     new: miercoles && !jueves,
   },
   {
