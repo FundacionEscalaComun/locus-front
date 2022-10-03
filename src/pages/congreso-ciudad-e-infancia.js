@@ -168,7 +168,7 @@ lugar de los niñ@s y jóvenes en ellas.</p>
 									<p className='text-xs mb-1 uppercase'>{video.acf.cargo}</p>
 									<p className='text-sm mb-6'>{video.acf.descripcion}</p>
 									{video.published
-										? <Link href={'/video/' + video.id}><a className='button xsmall text-sm font-semibold'>VER VIDEO</a></Link>
+										? <Link href={'/video/' + video.slug}><a className='button xsmall text-sm font-semibold'>VER VIDEO</a></Link>
 										: <span className='button xsmall text-sm font-semibold'>PRONTO DISPONIBLE</span>
 									}
 							</article>
