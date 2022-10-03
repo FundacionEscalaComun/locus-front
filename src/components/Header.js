@@ -47,7 +47,7 @@ const Header = () => {
 						{enVivo? 
 							<li className='envivo flex items-stretch'><a href='https://www.youtube.com/channel/UCRmTw_smpU6YTDwr2ISIAVg'>· ¡AHORA EN VIVO!</a></li>
 						: 
-							<li className='flex items-stretch'><a href='#'>CONVOCATORIAS<br />CERRADAS</a></li>
+							<li className='flex items-stretch'></li>
 						}
 						<li className='relative flex items-stretch'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
 						<li className='relative flex items-stretch'>
