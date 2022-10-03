@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-import { getEnVivo } from '@/lib/envivo';
+import { getEnVivo, getEnVivoUrl } from '@/lib/envivo';
 
 const Header = () => {
 	const [enVivo, setEnVivo] = useState(false);
+	const [enVivoUrl, setEnVivoUrl] = useState(false);
 	let menuIsOpen = false;
 
 	useEffect(() => {
@@ -15,6 +16,7 @@ const Header = () => {
 		}
 		// Revisar cada 5 segundos si está en vivo
 		setEnVivo(getEnVivo());
+		setEnVivoUrl(getEnVivoUrl());
 		const interval = setInterval(() => setEnVivo(getEnVivo()), 5000);
 		return () => {
 			clearInterval(interval);
@@ -45,7 +47,7 @@ const Header = () => {
 				<nav className='hidden lg:flex col-span-3 fondo-azul'>
 					<ul className='flex items-stretch justify-between gap-4 font-bold w-full'>
 						{enVivo? 
-							<li className='envivo flex items-stretch'><a href='https://www.youtube.com/channel/UCRmTw_smpU6YTDwr2ISIAVg'>· ¡AHORA EN VIVO!</a></li>
+							<li className='envivo flex items-stretch'><a href={enVivoUrl}>· ¡AHORA EN VIVO!</a></li>
 						: 
 							<li className='flex items-stretch'></li>
 						}
@@ -66,7 +68,7 @@ const Header = () => {
 			{/* menu móvil */}
 			<nav id="menu" className='hidden pl-8 pt-8 pb-8'>
 				<ul className='font-bold w-full'>
-					<li className='my-4'><Link href='/#convocatorias'><a>{enVivo? '· ¡AHORA EN VIVO!' : 'CONVOCATORIAS CERRADAS'}</a></Link></li>
+					{enVivo && <li className='my-4'><a href={enVivoUrl}>· ¡AHORA EN VIVO!</a></li>}
 					<li className='my-4'><Link href='/#sobre'><a>SOBRE LOCUS</a></Link></li>
 					<li className='my-4'>
 						<Link href='/#programa'><a>PROGRAMA</a></Link>
