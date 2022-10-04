@@ -201,6 +201,7 @@ main {
 	span.descarga {
 		position: relative;
 		padding-left: 2rem;
+		display: block;
 		&::before {
 			content: '';
 			width: 16px;
