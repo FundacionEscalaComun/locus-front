@@ -321,7 +321,7 @@ export default function Intervenciones() {
 											<td className='borde-fucsia'>Desde los 3 años</td>
 										</tr>
 										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO ITINERANTE</td>
 											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
 											<td className='borde-fucsia'>Todo público</td>
 										</tr>
@@ -696,7 +696,7 @@ export default function Intervenciones() {
 											<td className='borde-fucsia'>Todo público</td>
 										</tr>
 										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO ITINERANTE</td>
 											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
 											<td className='borde-fucsia'>Todo público</td>
 										</tr>
