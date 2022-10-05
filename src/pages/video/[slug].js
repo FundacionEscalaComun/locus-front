@@ -40,8 +40,8 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
 	const res = await fetch(process.env.NEXT_PUBLIC_WP_URL + '/video?slug=' + context.params.slug + '&t=' + Math.round(new Date().getTime()/1000))
   const videos = await res.json()
-  const youtubeId = videos[0].acf.id_youtube.replace('https://youtu.be/', '')
   const published = typeof videos[0].acf.fecha_publicacion !== 'undefined' && videos[0].acf.fecha_publicacion !== '' && new Date() >= new Date(videos[0].acf.fecha_publicacion);
+  const youtubeId = published? videos[0].acf.id_youtube.replace('https://youtu.be/', '') : ''
 
   return {
     props: {
