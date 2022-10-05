@@ -14,7 +14,7 @@ export const slides = [
     desc: '',
     imgd: '/img/fotos/congreso/5-invitados-especiales-banner-1.jpg',
     imgm: '/img/fotos/congreso/invitados-especiales-7.png',
-    youtube: '',
+    youtube: 'B_8vhmn9bCc',
     published: martes,
     new: martes && !miercoles,
   },
