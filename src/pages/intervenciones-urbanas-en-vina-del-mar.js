@@ -113,15 +113,15 @@ export default function Intervenciones() {
 									<tbody>
 										<tr>
 											<th>AM<br />10:00<br />13:00</th>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 										</tr>
 										<tr>
 											<th></th>
-											<td className='borde'>TALLER DE ARTE</td>
+											<td className='borde'>SUSURRO Y CUENTO LANZAMIENTO</td>
 											<td className='borde'></td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
 											<td className='borde'></td>
@@ -129,16 +129,16 @@ export default function Intervenciones() {
 										</tr>
 										<tr>
 											<th className='borde'></th>
-											<td className='borde'>TALLER DE ARTE SUSURRO Y CUENTO LANZAMIENTO</td>
+											<td className='borde'><strong>11:00</strong> TALLER DE ARTE</td>
 											<td className='borde'></td>
-											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
+											<td className='borde'><strong>12:00</strong> MÚSICA BANDA EL TROLE</td>
 											<td className='borde'></td>
 											<td className='borde'></td>
 										</tr>
 										<tr>
 											<th>PM<br />15:00<br />18:00</th>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
 											<td className='borde'></td>
@@ -194,11 +194,6 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>MUSEO ITINERANTE ARTEQUIN / MUJERES EN EL ARTE</td>
 											<td className='borde-fucsia'>Ven a conocer el museo en la ciudad, tendremos actividades para niños</td>
 											<td className='borde-fucsia'>Desde los 3 años</td>
-										</tr>
-										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>MUSICA DEL CONSERVATORIO</td>
-											<td className='borde-fucsia'>Ven a disfrutar de un presentación del conservatorio izidor handler. Presentado por la I. Municipalidad de Viña del Mar.</td>
-											<td className='borde-fucsia'>Todo público</td>
 										</tr>
 									</tbody>
 								</table>
@@ -260,15 +255,15 @@ export default function Intervenciones() {
 											<th>AM<br />10:00<br />13:00</th>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN MUJERES EN EL ARTE</td>
-											<td className='borde'>LA RECONQUISTA PEATONAL</td>
-											<td className='borde'>BIBLIO MÓVIL</td>
+											<td className='borde'>SUSURROS Y CUENTOS EN LA CIUDAD</td>
+											<td className='borde'>BIBLIO ITINERANTE</td>
 											<td className='borde'>TALLER ESCALADA INFANTIL / BOULDER MÓVIL</td>
 										</tr>
 										<tr>
 											<th></th>
-											<td className='borde'>BIBLIO MÓVIL</td>
 											<td className='borde'></td>
-											<td className='borde'>SUSURROS Y CUENTOS EN LA CIUDAD</td>
+											<td className='borde'></td>
+											<td className='borde'></td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
 											<td className='borde'></td>
 										</tr>
@@ -326,7 +321,7 @@ export default function Intervenciones() {
 											<td className='borde-fucsia'>Desde los 3 años</td>
 										</tr>
 										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO ITINERANTE</td>
 											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
 											<td className='borde-fucsia'>Todo público</td>
 										</tr>
@@ -334,11 +329,6 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>TALLER ESCALADA INFANTIL / BOULDER MÓVIL</td>
 											<td className='borde-fucsia'>La ciudad tambien es para el deporte, ven a una taller de escalada en el boulder móvil de Tornamesa.</td>
 											<td className='borde-fucsia'>Desde los 6 años</td>
-										</tr>
-										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>LA RECONQUISTA PEATONAL</td>
-											<td className='borde-fucsia'>Volvamos a caminar y explorar nuestra ciudad, porque la Ciudad También es tuya. Taller de caminata exploratoria guiada con material de registro.</td>
-											<td className='borde-fucsia'>Desde los 7 años</td>
 										</tr>
 									</tbody>
 								</table>
@@ -434,7 +424,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
-											<td className='borde'>TALLER SKATE</td>
+											<td className='borde'><strong>10:00</strong> MÚSICA EN LA LAGUNA</td>
 										</tr>
 										<tr>
 											<th></th>
@@ -442,7 +432,7 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
-											<td className='borde'>MÚSICA EN LA LAGUNA</td>
+											<td className='borde'><strong>10:00</strong> TALLER DE SKATE</td>
 										</tr>
 										<tr>
 											<th></th>
@@ -462,26 +452,26 @@ export default function Intervenciones() {
 										</tr>
 										<tr>
 											<th>PM<br />15:00<br />18:00</th>
-											<td className='borde'>TALLER SKATE</td>
-											<td className='borde'>TALLER DE ROLLER URBANO</td>
-											<td className='borde'>TALLER SKATE</td>
-											<td className='borde'>TALLER DE ROLLER URBANO</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE SKATE</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE ROLLER URBANO</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE SKATE</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE ROLLER URBANO</td>
 											<td className='borde'></td>
 										</tr>
 										<tr>
 											<th></th>
 											<td className='borde'></td>
-											<td className='borde'>TALLER DE MURALISMO CON PAYO</td>
-											<td className='borde'>TALLER DE MURALISMO CON PAYO</td>
-											<td className='borde'>TALLER DE MURALISMO CON PAYO</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE MURALISMO CON PAYO</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE MURALISMO CON PAYO</td>
+											<td className='borde'><strong>16:00</strong> TALLER DE MURALISMO CON PAYO</td>
 											<td className='borde'></td>
 										</tr>
 										<tr>
 											<th></th>
 											<td className='borde'></td>
-											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
+											<td className='borde'><strong>17:00</strong> PRESENTACIÓN DE GUITARRA / MÚSICA DEL CONSERVATORIO</td>
 											<td className='borde'></td>
-											<td className='borde'><strong>16:30</strong> MÚSICA EN LA LAGUNa</td>
+											<td className='borde'><strong>16:30</strong> MÚSICA EN LA LAGUNA</td>
 											<td className='borde'></td>
 										</tr>
 									</tbody>
@@ -527,6 +517,11 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
 											<td className='borde-fucsia'>Taller de burbujas gigantes para niños desde los 3 años.</td>
 											<td className='borde-fucsia'>Desde los 3 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSICA DEL CONSERVATORIO</td>
+											<td className='borde-fucsia'>Ven a disfrutar de un presentación del Conservatorio Izidor Handler. Presentado por la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>Todo público</td>
 										</tr>
 									</tbody>
 								</table>
@@ -598,14 +593,14 @@ export default function Intervenciones() {
 											<th>AM<br />10:00<br />13:00</th>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 										</tr>
 										<tr>
 											<th></th>
-											<td className='borde'>TALLER DE ARTE</td>
-											<td className='borde'>TALLER DE ARTE</td>
+											<td className='borde'><strong>11:00</strong> TALLER DE ARTE GRABADO</td>
+											<td className='borde'><strong>11:00</strong> TALLER DE ARTE PINTURA</td>
 											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
 											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
 											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
@@ -615,15 +610,15 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'>FERIA DE ARTE SONORO</td>
-											<td className='borde'><strong>11:00</strong> YOGA PARA NIÑO@S</td>
-											<td className='borde'>BIBLIOMÓVIL</td>
+											<td className='borde'>TALLER MEDIO AMBIENTE</td>
+											<td className='borde'>BIBLIO ITINERANTE</td>
 										</tr>
 										<tr>
 											<th></th>
 											<td className='borde'></td>
 											<td className='borde'></td>
 											<td className='borde'></td>
-											<td className='borde'>TALLER MEDIO AMBIENTE</td>
+											<td className='borde'></td>
 											<td className='borde'><strong>10:00 y 11:00</strong> TALLER MUSICOTERAPIA</td>
 										</tr>
 										<tr>
@@ -638,16 +633,16 @@ export default function Intervenciones() {
 											<th>PM<br />15:00<br />18:00</th>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
 											<td className='borde'>MUSEO ITINERANTE ARTEQUIN / ARTES VISUALES Y MEDIO AMBIENTE</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 											<td className='borde'>TALLER DE CONSTRUCCIÓN DE CORPÓREOS</td>
 											<td className='borde'></td>
 										</tr>
 										<tr>
 											<th></th>
-											<td className='borde'>MÚSICA DEL CONSERVATORIO</td>
+											<td className='borde'><strong>17:00</strong> PRESENTACIÓN DE PIANO - MÚSICA DEL CONSERVATORIO</td>
 											<td className='borde'></td>
 											<td className='borde'>TALLER DE MÁSCARAS FANTÁSTICAS</td>
-											<td className='borde'>TALLER DE BURBUJAS GIGANTES EN LA CIUDAD</td>
+											<td className='borde'>TALLER DE BURBUJAS GIGANTES</td>
 											<td className='borde'></td>
 										</tr>
 										<tr>
@@ -656,6 +651,14 @@ export default function Intervenciones() {
 											<td className='borde'></td>
 											<td className='borde'>FERIA DE ARTE SONORO</td>
 											<td className='borde'><strong>17:00</strong> YOGA FAMILIAR</td>
+											<td className='borde'></td>
+										</tr>
+										<tr>
+											<th></th>
+											<td className='borde'></td>
+											<td className='borde'></td>
+											<td className='borde'><strong>16:00</strong> LA RECONQUISTA PEATONAL</td>
+											<td className='borde'></td>
 											<td className='borde'></td>
 										</tr>
 									</tbody>
@@ -688,7 +691,12 @@ export default function Intervenciones() {
 											<td className='borde-fucsia'>Desde los 8 años</td>
 										</tr>
 										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO MÓVIL</td>
+											<td className='borde-fucsia color-fucsia font-semibold'>MUSICA DEL CONSERVATORIO</td>
+											<td className='borde-fucsia'>Ven a disfrutar de un presentación del Conservatorio Izidor Handler. Presentado por la I. Municipalidad de Viña del Mar.</td>
+											<td className='borde-fucsia'>Todo público</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>BIBLIO ITINERANTE</td>
 											<td className='borde-fucsia'>La biblioteca se abre a la ciudad con un espacio para la lectura con muchos libros interantes para la Infacia y adolescencia. Espacio de la I. Municipalidad de Viña del Mar</td>
 											<td className='borde-fucsia'>Todo público</td>
 										</tr>
@@ -701,11 +709,6 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>TODO ES RONDA: TALLER DE MUSICOTERAPIA PARA PRIMERA INFANCIA</td>
 											<td className='borde-fucsia'>Ven a distrutar una actividad musical para bebés/niñ@s de 0 a 3 años junto a mamá/papá o cuidador cercano.</td>
 											<td className='borde-fucsia'>Hasta los 3 años</td>
-										</tr>
-										<tr>
-											<td className='borde-fucsia color-fucsia font-semibold'>ZUMBA KIDS / DEPORTE VIÑA</td>
-											<td className='borde-fucsia'>Trae ropa cómoda y ven amoverte en familia. Taller de la I. Municipalidad de Viña del Mar.</td>
-											<td className='borde-fucsia'>4 a 12 años</td>
 										</tr>
 										<tr>
 											<td className='borde-fucsia color-fucsia font-semibold'>FERIA DE ARTE SONORO / TSONAMI</td>
@@ -726,6 +729,11 @@ export default function Intervenciones() {
 											<td className='borde-fucsia color-fucsia font-semibold'>TALLER DE MÁSCARAS FANTÁSTICAS / GRUPO 12NA</td>
 											<td className='borde-fucsia'>Ven a hacer tu mascara con materiales reciclados para la fiesta de cierre.</td>
 											<td className='borde-fucsia'>Desde los 6 años</td>
+										</tr>
+										<tr>
+											<td className='borde-fucsia color-fucsia font-semibold'>LA RECONQUISTA PEATONAL</td>
+											<td className='borde-fucsia'>Volvamos a caminar y explorar nuestra ciudad, porque la Ciudad También es tuya. Taller de caminata exploratoria guiada con material de registro.</td>
+											<td className='borde-fucsia'>Desde los 7 años</td>
 										</tr>
 									</tbody>
 								</table>
