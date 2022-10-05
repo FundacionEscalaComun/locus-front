@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Header from '@/components/Header'
 import { slides } from '@/lib/invitados'
 
-export default function Video({youtubeId}) {
+export default function Video({title, youtubeId}) {
     return (
       <>
         <Head>
-            <title>LOCUS</title>
+            <title>{title} - LOCUS</title>
         </Head>
 
         <Header />
