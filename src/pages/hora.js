@@ -1,9 +1,9 @@
 export default function hora() {
   const ahora = new Date();
 
-  const martes = ahora >= new Date('2022-10-04 19:30:00 GMT-03:00');
-  const miercoles = ahora >= new Date('2022-10-05 10:00:00 GMT-03:00');
-  const jueves = ahora >= new Date('2022-10-06 10:00:00 GMT-03:00');
+  const martes = ahora.getTime() >= (new Date('2022-10-04 19:30:00 GMT-03:00')).getTime();
+  const miercoles = ahora.getTime() >= (new Date('2022-10-05 10:00:00 GMT-03:00')).getTime();
+  const jueves = ahora.getTime() >= (new Date('2022-10-06 10:00:00 GMT-03:00')).getTime();
 
   return (
     <div>
@@ -11,6 +11,7 @@ export default function hora() {
       <p>Ahora: { ahora.toString() }</p>
       <p>Martes: { martes.toString() }</p>
       <p>Miércoles: { miercoles.toString() }</p>
+      <p>Jueves: { jueves.toString() }</p>
     </div>
   )
 }
