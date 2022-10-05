@@ -1,10 +1,10 @@
-const ahora = new Date();
+const ahora = (new Date()).getTime();
 
-const martes = ahora >= new Date('2022-10-04 19:30:00 GMT-03:00');
-const miercoles = ahora >= new Date('2022-10-05 10:00:00 GMT-03:00');
-const jueves = ahora >= new Date('2022-10-06 10:00:00 GMT-03:00');
-const viernes = ahora >= new Date('2022-10-07 10:00:00 GMT-03:00');
-const sabado = ahora >= new Date('2022-10-08 10:00:00 GMT-03:00');
+const martes = ahora >= (new Date('2022-10-04 19:30:00 GMT-03:00')).getTime();
+const miercoles = ahora >= (new Date('2022-10-05 10:00:00 GMT-03:00')).getTime();
+const jueves = ahora >= (new Date('2022-10-06 10:00:00 GMT-03:00')).getTime();
+const viernes = ahora >= (new Date('2022-10-07 10:00:00 GMT-03:00')).getTime();
+const sabado = ahora >= (new Date('2022-10-08 10:00:00 GMT-03:00')).getTime();
 
 export const slides = [
   {
