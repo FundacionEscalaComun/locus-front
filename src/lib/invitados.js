@@ -8,7 +8,7 @@ const sabado = ahora >= new Date('2022-10-08 10:00:00 GMT-03:00');
 
 export const slides = [
   {
-    name: 'ENTREVISTA A LOS JÓVENES EN EL WORKSHOP LOCUS',
+    name: 'Entrevista a los jóvenes en el Workshop LOCUS',
     slug: 'entrevista-a-los-jovenes-en-el-workshop-locus',
     country: 'CHILE',
     desc: '',
