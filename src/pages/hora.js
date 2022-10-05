@@ -12,6 +12,7 @@ export default function hora() {
       <p>Martes: { martes.toString() }</p>
       <p>Miércoles: { miercoles.toString() }</p>
       <p>Jueves: { jueves.toString() }</p>
+      <p>{ahora.getTime() + '>=' + (new Date('2022-10-04 19:30:00 GMT-03:00')).getTime()}</p>
     </div>
   )
 }
