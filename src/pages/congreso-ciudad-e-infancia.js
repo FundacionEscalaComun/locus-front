@@ -203,6 +203,7 @@ export async function getStaticProps(context) {
 		var nextDay = new Date(video.acf.fecha_publicacion);
 		nextDay.setDate(nextDay.getDate() + 1);
 		videos[index].new = new Date() >= new Date(video.acf.fecha_publicacion) && new Date() < nextDay;
+		videos[index].acf.id_youtube = '';
 	})
 
   return {
