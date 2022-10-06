@@ -64,7 +64,7 @@ export default function Home({noticias}) {
 						</SwiperSlide>
 						<SwiperSlide>
 						<video playsInline controls className="banner" width="640" height="360">
-							<source src="/videos/Lugar Locus 15.06.2022.mp4" type="video/mp4"/>
+							<source src="https://wp.locusfest.cl/wp-content/uploads/2022/10/Lugar-Locus-15.06.2022.mp4" type="video/mp4"/>
 							Your browser does not support the video tag. I suggest you upgrade your browser.
 						</video>
 						</SwiperSlide>
@@ -75,7 +75,7 @@ export default function Home({noticias}) {
 						</SwiperSlide>
 						<SwiperSlide>
 						<video playsInline controls className="banner" width="640" height="360">
-							<source src="/videos/LOCUS Workshop 1 Tesoreando 1minuto + logo La Reconquista.mp4" type="video/mp4"/>
+							<source src="https://wp.locusfest.cl/wp-content/uploads/2022/10/LOCUS-Workshop-1-Tesoreando-1minuto-logo-La-Reconquista.mp4" type="video/mp4"/>
 							Your browser does not support the video tag. I suggest you upgrade your browser.
 						</video>
 						</SwiperSlide>
