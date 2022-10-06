@@ -77,7 +77,7 @@ lugar de los niñ@s y jóvenes en ellas.</p>
 									{!isMobile &&
 										<Image src={slide.imgd} layout='fill' objectFit='cover' alt='foto' />
 									}
-									<div className='container pt-8 lg:pt-28 pb-8 relative text-center lg:text-left'>
+									<div className='container pt-8 lg:pt-20 pb-8 relative text-center lg:text-left'>
 										<h2 className='hidden lg:block pl-16 lg:pl-24 font-hbold text-xl lg:text-4xl leading-tight bullet estrella-blanca mb-12'>¡invitados<br />especiales!</h2>
 										<h3 className='lg:pl-12 font-hbold text-xl mb-2 lg:w-72 uppercase'>{slide.name}</h3>
 										<p className='lg:pl-12 text-sm mb-6'>{slide.country}</p>
