@@ -102,42 +102,42 @@ lugar de los niñ@s y jóvenes en ellas.</p>
 				<section>
 					<div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 my-12">
 						<article className='relative'>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-1.png" width={374} height={211} alt='banner' />
+								<Image src="/img/fotos/congreso/1-invitados-especiales-1.png" width={374} height={211} alt='foto' />
 								{slides[1].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>MARTA ROMÁN</h3>
 								<p className='text-sm mb-6'>ESPAÑA</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(1)}>MÁS INFO</button>
 						</article>
 						<article className='relative'>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-2.png" width={374} height={211} alt='banner' />
+								<Image src="/img/fotos/congreso/1-invitados-especiales-2.png" width={374} height={211} alt='foto' />
 								{slides[2].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>TIM GILL</h3>
 								<p className='text-sm mb-6'>INGLATERRA</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(2)}>MÁS INFO</button>
 						</article>
 						<article className='relative'>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-4.png" width={374} height={211} alt='banner' />
+								<Image src="/img/fotos/congreso/1-invitados-especiales-4.png" width={374} height={211} alt='foto' />
 								{slides[3].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>CECILIA VACA-JONES</h3>
 								<p className='text-sm mb-6'>ECUADOR</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(3)}>MÁS INFO</button>
 						</article>
 						<article className='relative'>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-3.png" width={374} height={211} alt='banner' />
+								<Image src="/img/fotos/congreso/1-invitados-especiales-3.png" width={374} height={211} alt='foto' />
 								{slides[4].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>RODRIGO MAYORGA</h3>
 								<p className='text-sm mb-6'>CHILE</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(4)}>MÁS INFO</button>
 						</article>
 						<article className='relative'>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-5.png" width={374} height={211} alt='banner' />
+								<Image src="/img/fotos/congreso/1-invitados-especiales-5.png" width={374} height={211} alt='foto' />
 								{slides[5].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>MATIAS KNUST</h3>
 								<p className='text-sm mb-6'>CHILE</p>
 								<button className='button xsmall text-sm font-semibold cursor-pointer' onClick={() => goToSlider(5)}>MÁS INFO</button>
 						</article>
 						<article className='relative'>
-								<Image src="/img/fotos/congreso/1-invitados-especiales-6.png" width={374} height={211} alt='banner' />
+								<Image src="/img/fotos/congreso/1-invitados-especiales-6.png" width={374} height={211} alt='foto' />
 								{slides[6].new && <span className='tag-new'><Image src="/img/web-locus-2.svg" width={16} height={16} alt='bullet' /> &nbsp;&nbsp;NUEVO</span>}
 								<h3 className='font-hbold text-xl'>FELIPE LECANNELIER</h3>
 								<p className='text-sm mb-6'>CHILE</p>
