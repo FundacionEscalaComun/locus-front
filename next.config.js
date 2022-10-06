@@ -4,6 +4,6 @@ module.exports = {
 		defaultLocale: "es",
 	},
 	images: {
-	  formats: ['image/avif', 'image/webp'],
+	  formats: ['image/webp'],
 	},
   }
