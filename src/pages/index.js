@@ -49,7 +49,7 @@ export default function Home({noticias}) {
 						>
 						<SwiperSlide>
 							<div className='banner'>
-								<Image src="/img/inicio/home-carrusel-01.jpg" layout='fill' objectFit='cover' alt='banner' />
+								<Image src="/img/inicio/home-carrusel-01.jpg" layout='fill' objectFit='cover' alt='banner anímate a participar' />
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
