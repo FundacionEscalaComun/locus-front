@@ -3,7 +3,7 @@ export function getEnVivo() {
   const martes = ahora >= (new Date('2022-10-04T18:30:00.000-03:00')).getTime() && ahora <= (new Date('2022-10-04T19:30:00.000-03:00')).getTime();
   const miercoles = ahora >= (new Date('2022-10-05T18:30:00.000-03:00')).getTime() && ahora <= (new Date('2022-10-05T19:30:00.000-03:00')).getTime();
   const jueves = ahora >= (new Date('2022-10-06T18:30:00.000-03:00')).getTime() && ahora <= (new Date('2022-10-06T19:30:00.000-03:00')).getTime();
-  const viernes = ahora >= (new Date('2022-10-07T18:30:00.000-03:00')).getTime() && ahora <= (new Date('2022-10-07T19:30:00.000-03:00')).getTime();
+  const viernes = ahora >= (new Date('2022-10-07T13:00:00.000-03:00')).getTime() && ahora <= (new Date('2022-10-07T14:00:00.000-03:00')).getTime();
   return martes || miercoles || jueves || viernes;
 }
 
