@@ -77,7 +77,7 @@ export const slides = [
     name: 'Felipe Lecannelier',
     slug: 'felipe-lecannelier',
     country: 'CHILE',
-    desc: 'Felipe es psicólogo clínico de formación, magíster en Epistemología y Filosofía de las Ciencias de la Universidad de Chile, y doctor en Psicología de la Universidad Autónoma de Madrid. Se ha especializado en temas relativos al apego infantil, el trauma, infancia y salud mental. Actualmente se desempeña como académico de la Facultad de Medicina de la Universidad de Chile, asesor nacional e internacional, y es autor de libros como “A.M.A.R Hacia un cuidado respetuoso de apego en la infancia”, “El trauma oculto en la infancia” y “Volver a Mirar”.',
+    desc: 'Felipe es psicólogo clínico de formación, magíster en Epistemología y Filosofía de las Ciencias de la Universidad de Chile, y doctor en Psicología de la Universidad Autónoma de Madrid. Se ha especializado en temas relativos al apego infantil, el trauma, infancia y salud mental. Actualmente se desempeña como académico de la Facultad de Medicina de la Universidad de Santiago, asesor nacional e internacional, y es autor de libros como “A.M.A.R Hacia un cuidado respetuoso de apego en la infancia”, “El trauma oculto en la infancia” y “Volver a Mirar”.',
     imgd: '/img/fotos/congreso/5-invitados-especiales-banner-6.jpg',
     imgm: '/img/fotos/congreso/invitados-especiales-6.png',
     youtube: 'oaq-C3eKmb8',
